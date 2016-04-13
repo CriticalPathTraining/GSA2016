@@ -1,0 +1,96 @@
+﻿/* basic theme colors */
+.red {
+  background-color: #990033;
+}
+
+.orange {
+  background-color: #CC6633;
+}
+
+.yellow {
+  background-color: #FFCC00;
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../Content/img/PageBackground.jpg");
+}
+
+
+#page_width {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 2px black solid;
+}
+
+#top_row {
+  padding: 4px;
+  background-color: #DDD;
+  background-color: black;
+}
+
+  #top_row a {
+    text-decoration: none;
+    color: white;
+  }
+
+    #top_row a img {
+      border-style: none;
+    }
+
+#banner {
+  height: 75px;
+  background-color: #FFF;
+}
+
+#site_logo {
+  float: left;
+  background-image: url("../Content/img/AppIcon.gif");
+  width: 75px;
+  height: 75px;
+}
+
+#site_title {
+  margin-top: 20px;
+  float: left;
+  font-size: 36px;
+  color: #000;
+}
+
+#toolbar {
+  margin: 0px;
+  border: 1px solid DarkBlue;
+  padding: 8px;
+  background-color: #FFC;
+  border-top: 1px solid #990033;
+  border-bottom: 1px solid #990033;
+}
+
+  #navbar .ui-button {
+    font-size: 12px;
+    padding: 4px;
+    min-width: 12%;
+  }
+
+
+
+#content_box {
+  padding: 4px 8px 12px 24px;
+  min-height: 480px;
+}
+
+
+/* jQuery UI Overrides */
+
+.ui-tabs .ui-tabs-panel {
+  min-height: 480px;
+  padding: 4px;
+}
+
+
+
+

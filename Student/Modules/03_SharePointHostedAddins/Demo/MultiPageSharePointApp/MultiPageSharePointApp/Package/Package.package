@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="b50b7b49-a537-4b5e-93c0-fabe75fd4385" 
+        solutionId="b50b7b49-a537-4b5e-93c0-fabe75fd4385" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MultiPageSharePointApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="d2dc74c0-a9a2-4a25-833e-4506af279f35" />
+  </features>
+</package>

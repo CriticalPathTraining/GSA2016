@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ClientWebPart Name="BetterAppPart" 
+								 Title="Better App Part" 
+								 Description="A really nice app part" 
+								 DefaultWidth="600" 
+								 DefaultHeight="200">
+
+    <!-- Content element identifies the location of the page that will render inside the client web part
+         Properties are referenced on the query string using the pattern _propertyName_
+         Example: Src="~appWebUrl/Pages/ClientWebPart1.aspx?Property1=_property1_" -->
+    <Content Type="html" Src="~appWebUrl/Pages/BetterAppPart.aspx?BackgroundColor=_BackgroundColor_&amp;HeaderColor=_HeaderColor_&amp;{StandardTokens}" />
+
+    <!-- Define properties in the Properties element.
+         Remember to put Property Name on the Src attribute of the Content element above. -->
+    <Properties>
+
+			<Property
+          Name="BackgroundColor"
+          WebDisplayName="Add Background Color"
+          Type="boolean"
+          DefaultValue="false"
+          WebCategory="Custom Wingtip Properties"
+          RequiresDesignerPermission="true" >
+			</Property>
+
+			<Property
+          Name="HeaderColor"
+          WebDisplayName="Header Color"
+          Type="enum"
+          DefaultValue="Black"
+          WebCategory="Custom Wingtip Properties"
+          RequiresDesignerPermission="true" >
+				<EnumItems>
+					<EnumItem WebDisplayName="Black" Value="Black"/>
+					<EnumItem WebDisplayName="Blue" Value="Blue"/>
+					<EnumItem WebDisplayName="Green" Value="Green"/>
+				</EnumItems>
+			</Property>
+
+		</Properties>
+
+  </ClientWebPart>
+</Elements>

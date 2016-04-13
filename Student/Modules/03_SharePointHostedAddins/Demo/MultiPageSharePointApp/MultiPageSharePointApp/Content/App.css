@@ -1,0 +1,92 @@
+﻿/* basic theme colors */
+.red {
+  background-color: #990033;
+}
+
+.orange {
+  background-color: #CC6633;
+}
+
+.yellow {
+  background-color: #FFCC00;
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #CC6633;
+}
+
+
+#page_width {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 2px black solid;
+}
+
+#top_row {
+  padding: 4px;
+  background-color: #DDD;
+  background-color: black;
+}
+
+  #top_row a {
+    text-decoration: none;
+    color: white;
+  }
+
+    #top_row a img {
+      border-style: none;
+    }
+
+#banner {
+  height: 75px;
+  background-color: #FFF;
+}
+
+#site_logo {
+  float: left;
+  background-image: url("../Content/img/AppIcon.gif");
+  width: 75px;
+  height: 75px;
+}
+
+#site_title {
+  margin-top: 20px;
+  float: left;
+  font-size: 36px;
+  color: #000;
+}
+
+#navbar {
+  margin: 0px;
+  border-top: 3px solid #990033;
+  border-bottom: 2px solid #990033;
+  padding: 4px;
+  background-color: #FFC;
+  border-top: 1px solid #990033;
+  border-bottom: 1px solid #990033;
+}
+
+#navbar a:link, #navbar a:visited, #navbar a:active, #navbar a:hover {
+  text-decoration: none;
+  color: #990033;
+}
+
+
+
+#content_box {
+  padding: 16px 8px 12px 8px;
+  min-height: 480px;
+}
+
+
+/* jQuery UI Overrides */
+
+.ui-tabs .ui-tabs-panel {
+  min-height: 480px;
+  padding: 4px;
+}

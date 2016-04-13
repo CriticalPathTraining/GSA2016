@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="00227bc3-5817-412a-b64c-d889aa0f08c0" 
+        solutionId="00227bc3-5817-412a-b64c-d889aa0f08c0" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MyResizableAppPart"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="a08f3b12-7b6d-4c37-a606-27c781e890a4" />
+  </features>
+</package>

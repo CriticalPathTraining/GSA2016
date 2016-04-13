@@ -1,0 +1,66 @@
+﻿<%@ Master %>
+
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head2" runat="server">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+  <title>Multi-Page SharePoint App</title>
+  <SharePoint:StartScript ID="StartScript1" runat="server" />
+  <SharePoint:CssLink ID="CssLink1" runat="server" Version="15" />
+  <SharePoint:CacheManifestLink ID="CacheManifestLink1" runat="server" />
+  <SharePoint:ScriptLink ID="ScriptLink1" Language="javascript" Name="core.js" OnDemand="true" runat="server" Localizable="false" />
+  <SharePoint:ScriptLink ID="ScriptLink2" Language="javascript" Name="menu.js" OnDemand="true" runat="server" Localizable="false" />
+  <SharePoint:ScriptLink ID="ScriptLink3" Language="javascript" Name="callout.js" OnDemand="true" runat="server" Localizable="false" />
+  <SharePoint:ScriptLink ID="ScriptLink4" Language="javascript" Name="sharing.js" OnDemand="true" runat="server" Localizable="false" />
+  <SharePoint:ScriptLink ID="ScriptLink5" Language="javascript" Name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
+
+  <link href="../Content/App.css" rel="stylesheet" />
+  <asp:ContentPlaceHolder ID="PlaceHolderAdditionalPageHead" runat="server" />
+
+</head>
+<body>
+  <form id="form1" runat="server">
+    <WebPartPages:SPWebPartManager ID="SPWebPartManager1" runat="Server" />
+    <asp:ScriptManager ID="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+
+    <div id="page_width">
+
+      <div id="top_row">
+        <SharePoint:ReturnToParentLink
+          ID="BackToParentLink"
+          runat="server"
+          Icon="../Content/img/backarrow.png" />
+      </div>
+
+      <div id="banner">
+        <div id="site_logo">&nbsp;</div>
+        <div id="site_title">Multi-Page App Demo</div>
+      </div>
+
+      <div id="navbar">
+        <a href="default.aspx">Home</a>&nbsp;|&nbsp;
+        <a href="customers.aspx">Customers</a>&nbsp;|&nbsp;
+        <a href="addcustomer.aspx">Add Customer</a>
+      </div>
+
+      <div id="content_box">
+        <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
+      </div>
+
+    </div>
+    <div>
+  </form>
+</body>
+</html>
+
+

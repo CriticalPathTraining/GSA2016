@@ -1,0 +1,3 @@
+C:\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\bin\Debug\WingtipAppParts.pdb
+C:\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\obj\Debug\WingtipAppParts.dll
+C:\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\obj\Debug\WingtipAppParts.pdb

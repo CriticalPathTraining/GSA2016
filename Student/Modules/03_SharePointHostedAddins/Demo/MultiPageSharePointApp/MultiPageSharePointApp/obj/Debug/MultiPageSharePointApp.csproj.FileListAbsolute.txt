@@ -1,0 +1,3 @@
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MultiPageSharePointApp\MultiPageSharePointApp\bin\Debug\MultiPageSharePointApp.pdb
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MultiPageSharePointApp\MultiPageSharePointApp\obj\Debug\MultiPageSharePointApp.dll
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MultiPageSharePointApp\MultiPageSharePointApp\obj\Debug\MultiPageSharePointApp.pdb

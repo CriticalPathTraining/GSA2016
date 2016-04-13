@@ -1,0 +1,12 @@
+C:\DevProjects\MyResizableAppPart\MyResizableAppPart\bin\Debug\MyResizableAppPart.pdb
+C:\DevProjects\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.dll
+C:\DevProjects\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.pdb
+C:\DevProjects\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.csprojResolveAssemblyReference.cache
+C:\Extras\MyResizableAppPart\MyResizableAppPart\bin\Debug\MyResizableAppPart.pdb
+C:\Extras\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.csprojResolveAssemblyReference.cache
+C:\Extras\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.dll
+C:\Extras\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.pdb
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\bin\Debug\MyResizableAppPart.pdb
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.csprojResolveAssemblyReference.cache
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.dll
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b50b7b49-a537-4b5e-93c0-fabe75fd4385" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="MultiPageSharePointApp_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="d2dc74c0-a9a2-4a25-833e-4506af279f35" Scope="Web" Title="MultiPageSharePointApp Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\img\AppIcon.gif" />
+    <ElementFile Location="Content\img\backarrow.png" />
+    <ElementFile Location="Content\img\PageBackground.jpg" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\CustomApp.master" />
+    <ElementFile Location="Pages\AddCustomer.aspx" />
+    <ElementFile Location="Pages\Customers.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.min.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.js" />
+    <ElementFile Location="Scripts\jquery-1.8.2.intellisense.js" />
+    <ElementFile Location="Scripts\customers.js" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

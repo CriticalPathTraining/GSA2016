@@ -1,0 +1,3 @@
+C:\Student\Modules\03_SharePointHostedAddins\Demo\WingtipCustomActions\WingtipCustomActions\bin\Debug\WingtipCustomActions.pdb
+C:\Student\Modules\03_SharePointHostedAddins\Demo\WingtipCustomActions\WingtipCustomActions\obj\Debug\WingtipCustomActions.dll
+C:\Student\Modules\03_SharePointHostedAddins\Demo\WingtipCustomActions\WingtipCustomActions\obj\Debug\WingtipCustomActions.pdb

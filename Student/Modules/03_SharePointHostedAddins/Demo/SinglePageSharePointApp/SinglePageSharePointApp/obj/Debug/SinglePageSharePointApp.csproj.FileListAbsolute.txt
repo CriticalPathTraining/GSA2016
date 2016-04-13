@@ -1,0 +1,3 @@
+C:\Student\Modules\03_SharePointHostedAddins\Demo\SinglePageSharePointApp\SinglePageSharePointApp\bin\Debug\SinglePageSharePointApp.pdb
+C:\Student\Modules\03_SharePointHostedAddins\Demo\SinglePageSharePointApp\SinglePageSharePointApp\obj\Debug\SinglePageSharePointApp.dll
+C:\Student\Modules\03_SharePointHostedAddins\Demo\SinglePageSharePointApp\SinglePageSharePointApp\obj\Debug\SinglePageSharePointApp.pdb

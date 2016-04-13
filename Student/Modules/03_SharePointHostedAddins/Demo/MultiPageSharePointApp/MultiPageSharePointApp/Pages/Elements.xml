@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\CustomApp.master" Url="Pages/CustomApp.master" ReplaceContent="TRUE" />
+    <File Path="Pages\AddCustomer.aspx" Url="Pages/AddCustomer.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\Customers.aspx" Url="Pages/Customers.aspx" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

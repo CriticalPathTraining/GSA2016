@@ -1,0 +1,1 @@
+C:\Student\Modules\03_SharePointHostedAddins\Demo\MultiPageSharePointApp\MultiPageSharePointApp\bin\Debug\MultiPageSharePointApp.debugapp
