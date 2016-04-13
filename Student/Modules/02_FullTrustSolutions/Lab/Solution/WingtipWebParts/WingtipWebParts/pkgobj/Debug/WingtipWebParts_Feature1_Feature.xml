@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="7ab971ca-13a8-4116-bbe7-c22b4c4870c7" Scope="Site" Title="WingtipWebParts Feature1">
+  <ElementManifests>
+    <ElementManifest Location="HelloPart\Elements.xml" />
+    <ElementFile Location="HelloPart\HelloPart.webpart" />
+    <ElementManifest Location="ListInspectorWebPart\Elements.xml" />
+    <ElementFile Location="ListInspectorWebPart\ListInspectorWebPart.webpart" />
+  </ElementManifests>
+</Feature>

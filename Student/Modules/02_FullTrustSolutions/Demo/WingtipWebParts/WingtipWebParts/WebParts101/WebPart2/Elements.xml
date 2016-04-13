@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="WebPart2" List="113" Url="_catalogs/wp">
+    <File Path="WebPart2\WebPart2.webpart" Url="WingtipWebParts_WebPart2.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Web Parts 101" />
+    </File>
+  </Module>
+</Elements>

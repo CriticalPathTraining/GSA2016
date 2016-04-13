@@ -14,3 +14,5 @@ if ($dashboardSettings.DisplayLevel -eq "OnDemand"){
   $dashboardSettings.Update()
   Write-Host "Developer dashboard enabled." -ForegroundColor Gray
 }
+
+

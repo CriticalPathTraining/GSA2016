@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Customers" Direction="0" FolderCreation="FALSE" Url="Lists/Customers" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100706e9539a34243ff9ae2fe1dfa9a7ef7" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" /><FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" /><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" /><FieldRef ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" Name="Email" /><FieldRef ID="{038d1503-4629-40f6-adaf-b47d1ab2d4fe}" Name="Company" /><FieldRef ID="{fd630629-c165-4513-b43c-fdb16b86a14d}" Name="WorkPhone" /><FieldRef ID="{2ab923eb-9880-4b47-9965-ebf93ae15487}" Name="HomePhone" /><FieldRef ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" Name="WorkAddress" /><FieldRef ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" Name="WorkCity" /><FieldRef ID="{ceac61d3-dda9-468b-b276-f4a6bb93f14f}" Name="WorkState" /><FieldRef ID="{9a631556-3dac-49db-8d2f-fb033b0fdc24}" Name="WorkZip" /><FieldRef ID="{3f3a5c85-9d5a-4663-b925-8b68a678ea3a}" Name="WorkCountry" /><FieldRef ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Comments" /></FieldRefs></ContentType><ContentTypeRef ID="0x0106">
+        <Folder TargetName="Contact" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <Field Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Last_Name;" Type="Computed" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitle" /><Field Name="LinkTitleNoMenu" ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" DisplayName="$Resources:core,Last_Name;" Type="Computed" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LinkTitleNoMenu" /><Field Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="$Resources:core,Last_Name;" Type="Text" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" /><Field ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" DisplayName="$Resources:core,First_Name;" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FirstName" /><Field ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" Name="Email" DisplayName="$Resources:core,E-mail_Address15;" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Email" /><Field ID="{038d1503-4629-40f6-adaf-b47d1ab2d4fe}" Name="Company" DisplayName="$Resources:core,Company;" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Company" /><Field ID="{fd630629-c165-4513-b43c-fdb16b86a14d}" Name="WorkPhone" DisplayName="$Resources:core,Business_Phone;" IMEMode="inactive" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkPhone" /><Field ID="{2ab923eb-9880-4b47-9965-ebf93ae15487}" Name="HomePhone" DisplayName="$Resources:core,Home_Phone;" IMEMode="inactive" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="HomePhone" /><Field ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" Name="WorkAddress" DisplayName="$Resources:core,Address;" Type="Note" NumLines="2" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkAddress" /><Field ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" Name="WorkCity" DisplayName="$Resources:core,City;" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkCity" /><Field ID="{ceac61d3-dda9-468b-b276-f4a6bb93f14f}" Name="WorkState" DisplayName="$Resources:core,State_Province;" Type="Text" NumLines="2" Sortable="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkState" /><Field ID="{9a631556-3dac-49db-8d2f-fb033b0fdc24}" Name="WorkZip" DisplayName="$Resources:core,ZIP_Postal_Code;" IMEMode="inactive" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkZip" /><Field ID="{3f3a5c85-9d5a-4663-b925-8b68a678ea3a}" Name="WorkCountry" DisplayName="$Resources:core,Country_Region;" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkCountry" /><Field ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Comments" DisplayName="$Resources:core,Notes;" RichText="TRUE" Type="Note" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Comments" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef><FieldRef Name="FirstName"></FieldRef><FieldRef Name="WorkPhone"></FieldRef><FieldRef Name="Email"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+            
+          <FieldRef Name="Title"></FieldRef><FieldRef Name="FirstName"></FieldRef></OrderBy>
+        </Query>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Contacts;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/contacts.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">10</RowLimit>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="FirstName" /><FieldRef Name="LinkTitle" /><FieldRef Name="Company" /><FieldRef Name="WorkPhone" /><FieldRef Name="HomePhone" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+            
+          <FieldRef Name="Title"></FieldRef><FieldRef Name="FirstName"></FieldRef></OrderBy>
+        </Query>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+    <DefaultDescription>
+            $Resources:core,contact_list_desc;
+        </DefaultDescription>
+  </MetaData>
+</List>

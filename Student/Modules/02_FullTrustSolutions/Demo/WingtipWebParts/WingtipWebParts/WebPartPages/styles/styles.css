@@ -1,0 +1,22 @@
+﻿#MSO_ContentTable {
+  padding: 8px;
+  background-color: white
+}
+
+#Main {
+  background-color: White;
+  padding: 8px;
+  min-height: 400px;
+  width: auto;
+}
+
+.ms-TPSectionTD {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+div.WingtipEditorDiv {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  font-weight: bold;
+}

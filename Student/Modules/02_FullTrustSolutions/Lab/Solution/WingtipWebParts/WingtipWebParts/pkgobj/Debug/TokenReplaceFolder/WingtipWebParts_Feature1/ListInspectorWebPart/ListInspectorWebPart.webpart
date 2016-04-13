@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="WingtipWebParts.ListInspectorWebPart.ListInspectorWebPart, WingtipWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e7d32d6ace1134fa" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">List Inspector Web Part</property>
+        <property name="Description" type="string">
+          A Web Part which shows all the lists in the current site and allows you to get several of its property values.
+        </property>
+        <property name="ChromeType" type="string">TitleAndBorder</property>
+        <property name="CatalogIconImageUrl" type="string">_layouts/15/images/WingtipWebParts/WebPartIcon.gif</property>
+        <property name="TitleIconImageUrl" type="string">_layouts/15/images/WingtipWebParts/WebPartIcon.gif</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

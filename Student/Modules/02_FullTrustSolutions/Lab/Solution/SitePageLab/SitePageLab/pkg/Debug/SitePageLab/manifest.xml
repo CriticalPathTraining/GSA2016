@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2ac5b267-e03c-48ef-9898-87ea406ede19" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="SitePageLab.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SitePageLab_MainSite\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="WebPartPages">
+
+    <File Path="WebPartPages\WebPartPage2Zones.aspx" Url="WebPartPages/WebPart1.aspx" >
+      <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="0">
+        <![CDATA[ <webParts>
+                    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                      <metaData>
+                        <type name="WingtipWebParts.WebPart1.WebPart1, $SharePoint.Project.AssemblyFullName$" />
+                        <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                      </metaData>
+                      <data>
+                        <properties>
+                          <property name="Title" type="string">Web Part 1</property>
+                          <property name="Description" type="string">Inside SharePoint 2010</property>
+                        </properties>
+                      </data>
+                    </webPart>
+                  </webParts> 
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="WebPartPages\WebPartPage2Zones.aspx" Url="WebPartPages/WebPart2.aspx" >
+      <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="0">
+        <![CDATA[ <webParts>
+                    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                      <metaData>
+                        <type name="WingtipWebParts.WebPart2.WebPart2, $SharePoint.Project.AssemblyFullName$" />
+                        <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                      </metaData>
+                      <data>
+                        <properties>
+                          <property name="Title" type="string">Web Part 2</property>
+                          <property name="Description" type="string">Inside SharePoint 2010</property>
+                        </properties>
+                      </data>
+                    </webPart>
+                  </webParts> 
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="WebPartPages\WebPartPage2Zones.aspx" Url="WebPartPages/WebPart3.aspx" >
+      <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="0">
+        <![CDATA[ <webParts>
+                    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                      <metaData>
+                        <type name="WingtipWebParts.WebPart3.WebPart3, $SharePoint.Project.AssemblyFullName$" />
+                        <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                      </metaData>
+                      <data>
+                        <properties>
+                          <property name="Title" type="string">Web Part 3</property>
+                          <property name="Description" type="string">Inside SharePoint 2010</property>
+                        </properties>
+                      </data>
+                    </webPart>
+                  </webParts> 
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="WebPartPages\WebPartPage2Zones.aspx" Url="WebPartPages/WebPart4.aspx" >
+      <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="0">
+        <![CDATA[ <webParts>
+                    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                      <metaData>
+                        <type name="WingtipWebParts.WebPart4.WebPart4, $SharePoint.Project.AssemblyFullName$" />
+                        <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                      </metaData>
+                      <data>
+                        <properties>
+                          <property name="Title" type="string">Web Part 4</property>
+                          <property name="Description" type="string">Inside SharePoint 2010</property>
+                        </properties>
+                      </data>
+                    </webPart>
+                  </webParts> 
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="WebPartPages\WebPartPage1Zone.aspx" Url="WebPartPages/WebPart5.aspx" >
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="0">
+        <![CDATA[ <webParts>
+                    <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                      <metaData>
+                        <type name="WingtipWebParts.WebPart5.WebPart5, $SharePoint.Project.AssemblyFullName$" />
+                        <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+                      </metaData>
+                      <data>
+                        <properties>
+                          <property name="Title" type="string">Web Part 5</property>
+                          <property name="Description" type="string">Inside SharePoint 2010</property>
+                        </properties>
+                      </data>
+                    </webPart>
+                  </webParts> 
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="WebPartPages\WebPartPage1Zone.aspx" Url="WebPartPages/CustomProperties.aspx" >
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="0">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.CustomProperties1.CustomProperties1, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Custom Properties 1</property>
+                  <property name="Description" type="string">Sample Web Part from Inside SharePoint 2010</property>
+                  <property name="UserGreeting" type="string">It was the best of times</property>
+                  <property name="TextFontSize" type="int">18</property>
+                  <property name="TextFontColor" type="string">Blue</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.CustomProperties2.CustomProperties2, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Custom Properties 2</property>
+                  <property name="Description" type="string">Sample Web Part from Inside SharePoint 2010</property>
+                  <property name="UserGreeting" type="string">It was the worst of times</property>
+                  <property name="TextFontSize" type="WingtipWebParts.CustomProperties2.TextFontSizeEnum, WingtipWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=02c28bbe1a6ff546">Eighteen</property>
+                  <property name="TextFontColor" type="WingtipWebParts.CustomProperties2.TextFontColorEnum, WingtipWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=02c28bbe1a6ff546">Green</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="2">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.CustomProperties3.CustomProperties3, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Custom Properties 3</property>
+                  <property name="Description" type="string">Sample Web Part from Inside SharePoint 2010</property>
+                  <property name="UserGreeting" type="string">It was the age of the SharePoint developer</property>
+                  <property name="TextFontSize" type="int">18</property>
+                  <property name="TextFontColor" type="string">Purple</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+    <File Path="WebPartPages\WebPartPage1Zone.aspx" Url="WebPartPages/WebPartVerbs.aspx" >
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="0">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.WebPartVerbs101.WebPartVerbs101, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Web Part Verbs 101</property>
+                  <property name="Description" type="string">SharePoint 2010 Demoware from Critical Path Training</property>
+                  <property name="AllowMinimize" type="bool">False</property>
+                  <property name="AllowHide" type="bool">False</property>
+                  <property name="AllowConnect" type="bool">False</property>
+                  <property name="AllowEdit" type="bool">False</property>
+                  <property name="AllowClose" type="bool">False</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.WebPartVerbsFontDemo.WebPartVerbsFontDemo, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Web Part Verbs Font Demo</property>
+                  <property name="Description" type="string">SharePoint 2010 Demoware from Critical Path Training</property>
+                  <property name="TextFontSize" type="int">14</property>
+                  <property name="TextFontColor" type="string">Blue</property>
+                  <property name="AllowMinimize" type="bool">False</property>
+                  <property name="AllowHide" type="bool">False</property>
+                  <property name="AllowConnect" type="bool">False</property>
+                  <property name="AllowEdit" type="bool">False</property>
+                  <property name="AllowClose" type="bool">False</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+
+    <File Path="WebPartPages\WebPartPage2Zones.aspx" Url="WebPartPages/WebPartConnections.aspx" >
+      <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="0">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.FontConnectionProvider.FontConnectionProvider, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Font Provider 1</property>
+                  <property name="Description" type="string">Sample Web Part from Inside SharePoint 2010</property>
+                  <property name="UserGreeting" type="string">There's nothing you can do that can't be done</property>
+                  <property name="TextFontSize" type="int">14</property>
+                  <property name="TextFontColor" type="string">Blue</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="Left" WebPartOrder="1">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.FontConnectionProvider.FontConnectionProvider, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Font Provider 2</property>
+                  <property name="Description" type="string">Sample Web Part from Inside SharePoint 2010</property>
+                  <property name="UserGreeting" type="string">Nothing you can say but you can learn how to play the game</property>
+                  <property name="TextFontSize" type="int">14</property>
+                  <property name="TextFontColor" type="string">Green</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="0">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.FontConnectionConsumer.FontConnectionConsumer, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Font Consumer 1</property>
+                  <property name="Description" type="string">xx</property>
+                  <property name="UserGreeting" type="string">Nothing you can sing that can't be sung</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="1">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.FontConnectionConsumer.FontConnectionConsumer, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Font Consumer 2</property>
+                  <property name="Description" type="string">xx</property>
+                  <property name="UserGreeting" type="string">It's Easy</property>
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+
+
+    </File>
+
+    <File Path="WebPartPages\WebPartPage2Zones.aspx" Url="WebPartPages/WebPartsPreconnected.aspx" />
+
+    <File Path="WebPartPages\WebPartPage1Zone.aspx" Url="WebPartPages/AsyncDemoWebPart.aspx" >
+      <AllUsersWebPart WebPartZoneID="Main" WebPartOrder="0">
+        <![CDATA[         
+          <webParts>
+            <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+              <metaData>
+                <type name="WingtipWebParts.AsyncRssReader.AsyncRssReader, $SharePoint.Project.AssemblyFullName$" />
+                <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+              </metaData>
+              <data>
+                <properties>
+                  <property name="Title" type="string">Async RSS Reader Web Part</property>
+                  <property name="Description" type="string">SharePoint 2010 Demoware from Critical Path Training</property>
+
+                  <property name="RssSourceUrl" type="string">http://sharepoint.microsoft.com/blog/_layouts/listfeed.aspx?List={72C1C85B-1D2D-4A4A-90DE-CA74A7808184}</property>
+                  
+                  <property name="ChromeState" type="chromestate">Normal</property>
+                  <property name="ExportMode" type="exportmode">All</property>
+
+                  <property name="CatalogIconImageUrl" type="string">_layouts/images/WingtipWebParts/WebPartIcon.gif</property>
+                  <property name="TitleIconImageUrl" type="string">_layouts/images/WingtipWebParts/WebPartIcon.gif</property>
+
+                  <property name="AllowMinimize" type="bool">False</property>
+                  <property name="AllowHide" type="bool">False</property>
+                  <property name="AllowConnect" type="bool">False</property>
+                  <property name="AllowEdit" type="bool">False</property>
+                  <property name="AllowClose" type="bool">False</property>
+                  <property name="AllowZoneChange" type="bool">True</property>
+                  
+                </properties>
+              </data>
+            </webPart>
+          </webParts>
+        ]]>
+      </AllUsersWebPart>
+    </File>
+
+    <File Path="WebPartPages\styles\styles.css" Url="WebPartPages/styles/styles.css" />
+
+</Module>
+</Elements>

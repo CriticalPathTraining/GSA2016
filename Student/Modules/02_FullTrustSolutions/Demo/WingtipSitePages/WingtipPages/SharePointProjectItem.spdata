@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="WingtipPages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Page1.aspx" Target="WingtipPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Page2.aspx" Target="WingtipPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Page3.aspx" Target="WingtipPages\" Type="ElementFile" />
+    <ProjectItemFile Source="styles.css" Target="WingtipPages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

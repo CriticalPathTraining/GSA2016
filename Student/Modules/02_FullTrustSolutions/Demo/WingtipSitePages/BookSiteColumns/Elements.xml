@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+
+
+  <Field
+    ID="{11e6b032-2d81-4068-9766-75bb26271e33}"
+    Name="BookAuthor"        
+    DisplayName="Author"
+    Type="Text"
+    Required="TRUE"
+    Group="Wingtip Site Columns" />
+
+  <Field 
+    ID="{7bb22fe4-ca40-4e15-818d-74eb401be8c2}" 
+    Name="YearPublished"
+    DisplayName="Year Published"
+    Type="Text"
+    Required="TRUE"
+    Group="Wingtip Site Columns" />
+  
+  <Field 
+    ID="{732082d9-3288-4ce8-92bc-2ba8bf4f39e1}" 
+    Name="AuthorCountry"
+    DisplayName="Author Country"
+    Type="Text"
+    Required="TRUE"
+    Group="Wingtip Site Columns" />
+  
+  <Field 
+    ID="{f5b18ca4-d41c-46e5-a4a1-f1703ede46ae}" 
+    Name="OriginalLanguage"
+    DisplayName="Original Language"
+    Type="Text"
+    Required="TRUE"
+    Group="Wingtip Site Columns" />
+
+</Elements>

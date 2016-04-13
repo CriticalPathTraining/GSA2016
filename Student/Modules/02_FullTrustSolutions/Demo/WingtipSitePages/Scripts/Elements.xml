@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\CustomRendering1.js" Url="Scripts/CustomRendering1.js" />
+    <File Path="Scripts\CustomRendering2.js" Url="Scripts/CustomRendering2.js" />
+  </Module>
+</Elements>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MySitePages">
+    <File Path="MySitePages\Page1.aspx" Url="MySitePages/Page1.aspx" />
+    <File Path="MySitePages\Page2.aspx" Url="MySitePages/Page2.aspx" />
+    <File Path="MySitePages\Page3.aspx" Url="MySitePages/Page3.aspx" />
+    <File Path="MySitePages\styles.css" Url="MySitePages/styles.css" />
+  </Module>
+</Elements>

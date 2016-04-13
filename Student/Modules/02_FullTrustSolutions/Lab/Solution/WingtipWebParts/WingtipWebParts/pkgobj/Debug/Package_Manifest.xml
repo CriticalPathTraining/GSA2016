@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="15867331-644b-4b76-8dd1-71dfaa5579b4" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="WingtipWebParts.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="WingtipWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e7d32d6ace1134fa" Namespace="WingtipWebParts.HelloPart" TypeName="*" />
+        <SafeControl Assembly="WingtipWebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e7d32d6ace1134fa" Namespace="WingtipWebParts.ListInspectorWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\WingtipWebParts\ListInspectorWebPart\ListInspectorWebPartUserControl.ascx" />
+    <TemplateFile Location="Images\WingtipWebParts\FeatureIcon.gif" />
+    <TemplateFile Location="Images\WingtipWebParts\SiteIcon.gif" />
+    <TemplateFile Location="Images\WingtipWebParts\WebPartIcon.gif" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="WingtipWebParts_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

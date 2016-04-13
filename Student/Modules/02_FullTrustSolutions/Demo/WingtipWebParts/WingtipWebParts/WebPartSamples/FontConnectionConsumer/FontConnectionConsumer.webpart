@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="WingtipWebParts.FontConnectionConsumer.FontConnectionConsumer, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">FontConnectionConsumer</property>
+        <property name="Description" type="string">My WebPart</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="ExportMode" type="exportmode">All</property>
+
+        <property name="CatalogIconImageUrl" type="string">_layouts/images/WingtipWebParts/WebPartIcon.gif</property>
+        <property name="TitleIconImageUrl" type="string">_layouts/images/WingtipWebParts/WebPartIcon.gif</property>
+
+        <property name="AllowMinimize" type="bool">False</property>
+        <property name="AllowHide" type="bool">False</property>
+        <property name="AllowConnect" type="bool">False</property>
+        <property name="AllowEdit" type="bool">False</property>
+        <property name="AllowClose" type="bool">False</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Books" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Books" Description="My favorite books">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Fairy tales</Field>
+          <Field Name="BookAuthor">Hans Christian Andersen</Field>
+          <Field Name="YearPublished">1837</Field>
+          <Field Name="AuthorCountry">Denmark</Field>
+          <Field Name="OriginalLanguage">Danish</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">One Thousand and One Nights</Field>
+          <Field Name="BookAuthor">Anonymous</Field>
+          <Field Name="YearPublished">1500</Field>
+          <Field Name="AuthorCountry">Egypt</Field>
+          <Field Name="OriginalLanguage">Arabic</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pride and Prejudice</Field>
+          <Field Name="BookAuthor">Jane Austen</Field>
+          <Field Name="YearPublished">1813</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Wuthering Heights</Field>
+          <Field Name="BookAuthor">Emily Brontë</Field>
+          <Field Name="YearPublished">1847</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">The Stranger</Field>
+          <Field Name="BookAuthor">Albert Camus</Field>
+          <Field Name="YearPublished">1942</Field>
+          <Field Name="AuthorCountry">Algeria</Field>
+          <Field Name="OriginalLanguage">French</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Journey to the End of the Night</Field>
+          <Field Name="BookAuthor">Louis-Ferdinand Céline</Field>
+          <Field Name="YearPublished">1932</Field>
+          <Field Name="AuthorCountry">France</Field>
+          <Field Name="OriginalLanguage">French</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Don Quixote</Field>
+          <Field Name="BookAuthor">Miguel de Cervantes</Field>
+          <Field Name="YearPublished">1615</Field>
+          <Field Name="AuthorCountry">Spain</Field>
+          <Field Name="OriginalLanguage">Spanish</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">The Canterbury Tales</Field>
+          <Field Name="BookAuthor">Geoffrey Chaucer</Field>
+          <Field Name="YearPublished">1400</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Great Expectations</Field>
+          <Field Name="BookAuthor">Charles Dickens</Field>
+          <Field Name="YearPublished">1861</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Crime and Punishment</Field>
+          <Field Name="BookAuthor">Fyodor Dostoyevsky</Field>
+          <Field Name="YearPublished">1866</Field>
+          <Field Name="AuthorCountry">Russia</Field>
+          <Field Name="OriginalLanguage">Russian</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">The Sound and the Fury</Field>
+          <Field Name="BookAuthor">William Faulkner</Field>
+          <Field Name="YearPublished">1929</Field>
+          <Field Name="AuthorCountry">United States</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">One Hundred Years of Solitude</Field>
+          <Field Name="BookAuthor">Gabriel García Márquez</Field>
+          <Field Name="YearPublished">1967</Field>
+          <Field Name="AuthorCountry">Colombia</Field>
+          <Field Name="OriginalLanguage">Spanish</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Love in the Time of Cholera</Field>
+          <Field Name="BookAuthor">Gabriel García Márquez</Field>
+          <Field Name="YearPublished">1985</Field>
+          <Field Name="AuthorCountry">Colombia</Field>
+          <Field Name="OriginalLanguage">Spanish</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Faust</Field>
+          <Field Name="BookAuthor">Johann Wolfgang von Goethe</Field>
+          <Field Name="YearPublished">1832</Field>
+          <Field Name="AuthorCountry">Germany</Field>
+          <Field Name="OriginalLanguage">German</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">The Old Man and the Sea</Field>
+          <Field Name="BookAuthor">Ernest Hemingway</Field>
+          <Field Name="YearPublished">1952</Field>
+          <Field Name="AuthorCountry">United States</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">A Doll's House</Field>
+          <Field Name="BookAuthor">Henrik Ibsen</Field>
+          <Field Name="YearPublished">1879</Field>
+          <Field Name="AuthorCountry">Norway</Field>
+          <Field Name="OriginalLanguage">Norwegian</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ulysses</Field>
+          <Field Name="BookAuthor">James Joyce</Field>
+          <Field Name="YearPublished">1922</Field>
+          <Field Name="AuthorCountry">Ireland</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Zorba the Greek</Field>
+          <Field Name="BookAuthor">Nikos Kazantzakis</Field>
+          <Field Name="YearPublished">1946</Field>
+          <Field Name="AuthorCountry">Greece</Field>
+          <Field Name="OriginalLanguage">Greek</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sons and Lovers</Field>
+          <Field Name="BookAuthor">D. H. Lawrence</Field>
+          <Field Name="YearPublished">1913</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pippi Longstocking</Field>
+          <Field Name="BookAuthor">Astrid Lindgren</Field>
+          <Field Name="YearPublished">1945</Field>
+          <Field Name="AuthorCountry">Sweden</Field>
+          <Field Name="OriginalLanguage">Swedish</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">The Magic Mountain</Field>
+          <Field Name="BookAuthor">Thomas Mann</Field>
+          <Field Name="YearPublished">1924</Field>
+          <Field Name="AuthorCountry">Germany</Field>
+          <Field Name="OriginalLanguage">German</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Moby-Dick</Field>
+          <Field Name="BookAuthor">Herman Melville</Field>
+          <Field Name="YearPublished">1851</Field>
+          <Field Name="AuthorCountry">United States</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Lolita</Field>
+          <Field Name="BookAuthor">Vladimir Nabokov</Field>
+          <Field Name="YearPublished">1955</Field>
+          <Field Name="AuthorCountry">Russia</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Nineteen Eighty-Four</Field>
+          <Field Name="BookAuthor">George Orwell</Field>
+          <Field Name="YearPublished">1949</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Metamorphoses</Field>
+          <Field Name="BookAuthor">Ovid</Field>
+          <Field Name="YearPublished">1001</Field>
+          <Field Name="AuthorCountry">Roman Empire</Field>
+          <Field Name="OriginalLanguage">Classical Latin</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">In Search of Lost Time</Field>
+          <Field Name="BookAuthor">Marcel Proust</Field>
+          <Field Name="YearPublished">1927</Field>
+          <Field Name="AuthorCountry">France</Field>
+          <Field Name="OriginalLanguage">French</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Hamlet</Field>
+          <Field Name="BookAuthor">William Shakespeare</Field>
+          <Field Name="YearPublished">1603</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">King Lear</Field>
+          <Field Name="BookAuthor">William Shakespeare</Field>
+          <Field Name="YearPublished">1608</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Othello</Field>
+          <Field Name="BookAuthor">William Shakespeare</Field>
+          <Field Name="YearPublished">1609</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Gulliver's Travels</Field>
+          <Field Name="BookAuthor">Jonathan Swift</Field>
+          <Field Name="YearPublished">1726</Field>
+          <Field Name="AuthorCountry">Ireland</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">War and Peace</Field>
+          <Field Name="BookAuthor">Leo Tolstoy</Field>
+          <Field Name="YearPublished">1869</Field>
+          <Field Name="AuthorCountry">Russia</Field>
+          <Field Name="OriginalLanguage">Russian</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Adventures of Huckleberry Finn</Field>
+          <Field Name="BookAuthor">Mark Twain</Field>
+          <Field Name="YearPublished">1884</Field>
+          <Field Name="AuthorCountry">United States</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Leaves of Grass</Field>
+          <Field Name="BookAuthor">Walt Whitman</Field>
+          <Field Name="YearPublished">1855</Field>
+          <Field Name="AuthorCountry">United States</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mrs Dalloway</Field>
+          <Field Name="BookAuthor">Virginia Woolf</Field>
+          <Field Name="YearPublished">1925</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">To the Lighthouse</Field>
+          <Field Name="BookAuthor">Virginia Woolf</Field>
+          <Field Name="YearPublished">1927</Field>
+          <Field Name="AuthorCountry">England</Field>
+          <Field Name="OriginalLanguage">English</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Fifty Shades of SharePoint</Field>
+          <Field Name="BookAuthor">Andrew Connell</Field>
+          <Field Name="YearPublished">2013</Field>
+          <Field Name="AuthorCountry">United States</Field>
+          <Field Name="OriginalLanguage">XSLT</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

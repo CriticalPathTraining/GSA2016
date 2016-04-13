@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="15867331-644b-4b76-8dd1-71dfaa5579b4" solutionId="15867331-644b-4b76-8dd1-71dfaa5579b4" resetWebServer="false" sharePointProductVersion="16.0" name="WingtipWebParts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ce9d2405-8a93-4c5d-9f9f-2c46c5ff6746" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="f6008ae2-98fc-4b58-836f-c9d5782d7016" />
+  </projectItems>
+</package>

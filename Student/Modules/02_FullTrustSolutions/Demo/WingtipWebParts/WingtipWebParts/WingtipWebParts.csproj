@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{748C4BB1-AC75-45BA-9AC3-C55A2489A1C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WingtipWebParts</RootNamespace>
+    <AssemblyName>WingtipWebParts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ProjectMode>SharePointCustomization</ProjectMode>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebPartSamples\AsyncProcessing101\AsyncProcessing101.cs" />
+    <Compile Include="WebPartSamples\AsyncRssReader\AsyncRssReader.cs" />
+    <Compile Include="WebPartSamples\IFontProvider.cs" />
+    <Compile Include="WebPartSamples\FontConnectionConsumer\FontConnectionConsumer.cs" />
+    <Compile Include="WebPartSamples\FontConnectionProvider\FontConnectionProvider.cs" />
+    <Compile Include="WebPartSamples\CustomProperties3\CustomProperties3Editor.cs" />
+    <Compile Include="WebPartSamples\CustomProperties3\CustomProperties3.cs" />
+    <Compile Include="WebPartSamples\CustomProperties2\CustomProperties2.cs" />
+    <Compile Include="WebPartSamples\CustomProperties1\CustomProperties1.cs" />
+    <Compile Include="Features\MainSite\MainSite.EventReceiver.cs">
+      <DependentUpon>MainSite.feature</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts101\WebPart1\WebPart1.cs" />
+    <Compile Include="WebParts101\WebPart2\WebPart2.cs" />
+    <Compile Include="WebParts101\WebPart3\WebPart3.cs" />
+    <Compile Include="WebParts101\WebPart4\WebPart4.cs" />
+    <Compile Include="WebParts101\WebPart4\WebPart4UserControl.ascx.cs">
+      <DependentUpon>WebPart4UserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts101\WebPart4\WebPart4UserControl.ascx.designer.cs">
+      <DependentUpon>WebPart4UserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts101\WebPart5\WebPart5.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartSamples\WebPartVerbs101\WebPartVerbs101.cs" />
+    <Compile Include="WebPartSamples\WebPartVerbsFontDemo\WebPartVerbsFontDemo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebPartSamples\AsyncProcessing101\Elements.xml" />
+    <Content Include="WebPartSamples\AsyncRssReader\Elements.xml" />
+    <Content Include="Images\WingtipWebParts\FeatureIcon.gif" />
+    <Content Include="WebPartSamples\FontConnectionConsumer\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebPartSamples\FontConnectionProvider\Elements.xml" />
+    <Content Include="Images\WingtipWebParts\WebPartIcon.gif" />
+    <Content Include="Images\WingtipWebParts\DecreaseFontSize.gif" />
+    <Content Include="Images\WingtipWebParts\IncreaseFontSize.gif" />
+    <Content Include="WebPartPages\WebPartPage1Zone.aspx" />
+    <Content Include="WebPartSamples\CustomProperties3\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebPartSamples\CustomProperties2\Elements.xml" />
+    <Content Include="WebPartSamples\CustomProperties1\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts101\WebPart4\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts101\WebPart4\WebPart4UserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebPartPages\styles\styles.css" />
+    <Content Include="WebPartPages\WebPartPage2Zones.aspx" />
+    <Content Include="WebPartSamples\WebPartVerbs101\Elements.xml" />
+    <Content Include="WebPartSamples\WebPartVerbsFontDemo\Elements.xml" />
+    <None Include="WebPartSamples\AsyncProcessing101\AsyncProcessing101.webpart" />
+    <None Include="WebPartSamples\AsyncProcessing101\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f710fec-062f-4fce-b011-004473295a19}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\AsyncRssReader\AsyncRssReader.webpart" />
+    <None Include="WebPartSamples\AsyncRssReader\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34a78806-1a73-45d2-982c-eed4e231ab53}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\FontConnectionConsumer\FontConnectionConsumer.webpart" />
+    <None Include="WebPartSamples\FontConnectionConsumer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0abe5a3-e106-42a9-bdfe-ac86eae45f27}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\FontConnectionProvider\FontConnectionProvider.webpart" />
+    <None Include="WebPartSamples\FontConnectionProvider\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b754f276-e75b-4be2-8d6c-48efc0549123}</SharePointProjectItemId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a5c0b43e-f462-4681-8561-bfc167befbc7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\CustomProperties3\CustomProperties3.webpart" />
+    <None Include="WebPartSamples\CustomProperties3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6eb53458-dc47-423e-92d2-333218a03a73}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\CustomProperties2\CustomProperties2.webpart" />
+    <None Include="WebPartSamples\CustomProperties2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dd5e9aa2-eb24-45b3-baab-70111ed605f5}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\CustomProperties1\CustomProperties1.webpart" />
+    <None Include="WebPartSamples\CustomProperties1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{78c6871e-bc76-4de3-8469-fc15a857bf19}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts101\WebPart4\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{814bc435-e340-4080-bf5e-24e38f9b872a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts101\WebPart4\WebPart4.webpart" />
+    <None Include="WebParts101\WebPart1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e175bff9-d6cb-486d-82ac-bdf3b7881bb9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts101\WebPart1\WebPart1.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WebParts101\WebPart2\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b96c6f63-0efa-4247-8ec7-82e6ec742d12}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts101\WebPart2\WebPart2.webpart" />
+    <None Include="WebParts101\WebPart3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{902e0745-7ec7-4cd1-bfd4-b2b7bca10794}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts101\WebPart3\WebPart3.webpart" />
+    <None Include="WebParts101\WebPart5\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a568956-15ae-4149-a876-2620f36b76bf}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts101\WebPart5\WebPart5.webpart" />
+    <None Include="Features\MainSite\MainSite.feature">
+      <FeatureId>{80837f4e-f468-449c-98aa-816335a42f36}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{f08b0dbf-bd74-4e84-8a90-57e9e7ddf89f}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebPartPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d392554-b651-4d64-a9cb-2b61ac8b833a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\WebPartVerbs101\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{050cc8c1-3599-4f68-a484-7d37949a95d4}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\WebPartVerbs101\WebPartVerbs101.webpart" />
+    <None Include="WebPartSamples\WebPartVerbsFontDemo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0ea6757b-2f0f-44a9-87ac-5c027c2784b2}</SharePointProjectItemId>
+    </None>
+    <None Include="WebPartSamples\WebPartVerbsFontDemo\WebPartVerbsFontDemo.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebParts101\WebPart1\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts101\WebPart2\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts101\WebPart3\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebParts101\WebPart5\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\MainSite\MainSite.Template.xml">
+      <DependentUpon>MainSite.feature</DependentUpon>
+    </Content>
+    <Content Include="WebPartPages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XSLT\RssFeedToHtml.xslt">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="false" />
+</Project>

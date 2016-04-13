@@ -1,0 +1,40 @@
+﻿h3 {
+  margin-top: 18px;
+  font-size: 1.8em;
+  color: darkblue;
+  border-bottom: 1px solid DarkBlue;
+}
+
+p {
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+#quote {
+  margin-left: 12px;
+  width: 500px;
+  border: 1px solid #bbb;
+  background-color: #eee;
+  padding: 8px;
+  font-size: 1.5em;
+  color: #333;
+  font-style: italic;
+}
+
+#quote_author {
+  margin-top: 4px;
+  margin-left: 16px;
+  font-size: 1.2em;
+  color: #999;
+}
+
+#div1 {
+  display: inline-block;
+  width: 200px;
+  height: 400px;
+  border: 1px black solid;
+  background-color: #eee;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+}

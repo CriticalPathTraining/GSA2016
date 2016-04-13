@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="WingtipWebParts.WebPart1.WebPart1, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        
+        <property name="Title" type="string">Web Part 1</property>
+        <property name="Description" type="string">An example using RenderContents</property>
+
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="ExportMode" type="exportmode">All</property>
+
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AllowConnect" type="bool">True</property>
+
+        <property name="CatalogIconImageUrl" type="string" >
+          _layouts/images/WingtipWebParts/WebPartIcon.gif
+        </property>
+        
+        <property name="TitleIconImageUrl" type="string">
+          _layouts/images/WingtipWebParts/WebPartIcon.gif
+        </property>
+
+
+    
+      </properties>
+    </data>
+  </webPart>
+</webParts>

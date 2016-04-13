@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Site Page Lab from GSA2016" Id="68b89019-7016-40e9-9e03-8a9d2971b336" ReceiverAssembly="SitePageLab, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dc1f0a769b6736b3" ReceiverClass="SitePageLab.Features.MainSite.MainSiteEventReceiver" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="CustomSiteColumns\Elements.xml" />
+    <ElementManifest Location="Customers\Elements.xml" />
+    <ElementManifest Location="BooksInstance\Elements.xml" />
+    <ElementManifest Location="Books\Elements.xml" />
+    <ElementFile Location="Books\Schema.xml" />
+    <ElementManifest Location="MySitePages\Elements.xml" />
+    <ElementFile Location="MySitePages\Page1.aspx" />
+    <ElementFile Location="MySitePages\Page2.aspx" />
+    <ElementFile Location="MySitePages\Page3.aspx" />
+    <ElementFile Location="MySitePages\styles.css" />
+  </ElementManifests>
+</Feature>
