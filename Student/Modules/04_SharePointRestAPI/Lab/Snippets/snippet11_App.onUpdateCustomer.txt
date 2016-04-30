@@ -1,0 +1,16 @@
+function onUpdateCustomer() {
+
+  // scrape input values from dialog
+  var Id = $("#customer_id").val();
+  var FirstName = $("#firstName").val();
+  var LastName = $("#lastName").val();
+  var Company = $("#company").val();
+  var WorkPhone = $("#workPhone").val();
+  var HomePhone = $("#homePhone").val();
+  var Email = $("#email").val();
+  var ETag = $("#etag").val();
+
+  // update customer
+  var promise = Wingtip.Customers.DataAccess.updateCustomer(Id, FirstName, LastName, Company, WorkPhone, HomePhone, Email, ETag);
+  promise.then(onSuccess, onError);
+}

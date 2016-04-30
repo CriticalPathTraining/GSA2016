@@ -1,0 +1,15 @@
+function onAddCustomer() {
+
+  // get input data from add customer dialog
+  var LastName = $("#lastName").val();
+  var FirstName = $("#firstName").val();
+  var Company = $("#company").val();
+  var WorkPhone = $("#workPhone").val();
+  var HomePhone = $("#homePhone").val();
+  var Email = $("#email").val();
+
+  // add new customer 
+  var promise = Wingtip.Customers.DataAccess.addCustomer(FirstName, LastName, Company, WorkPhone, HomePhone, Email);
+  promise.then(onSuccess, onError);
+
+}

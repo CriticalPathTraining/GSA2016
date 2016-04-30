@@ -1,0 +1,13 @@
+function getCustomers() {
+
+  // clear results and add spinning gears icon
+  $("#content_box").empty();
+  $("<img>", { "src": "../Content/img/GEARS.gif" }).appendTo("#content_box");
+
+  // call view-model function which returns promise
+  var promise = Wingtip.Customers.DataAccess.getCustomers()
+
+  // use promise to implement what happens when OData result is ready
+  promise.then(onGetCustomersComplete, onError);
+
+}

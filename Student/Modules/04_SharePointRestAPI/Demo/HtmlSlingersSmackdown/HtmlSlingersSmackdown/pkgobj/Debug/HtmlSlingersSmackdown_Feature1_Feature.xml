@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="9091eb6d-1575-4c3d-a377-cf642965d7a1" Scope="Web" Title="HtmlSlingersSmackdown Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\rainman.aspx" />
+    <ElementFile Location="Pages\angular.aspx" />
+    <ElementFile Location="Pages\caveman.aspx" />
+    <ElementFile Location="Pages\CustomApp.master" />
+    <ElementFile Location="Pages\jquery.aspx" />
+    <ElementFile Location="Pages\jsrender.aspx" />
+    <ElementFile Location="Pages\knockout.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\Wingtip.Customers.DataAccess.js" />
+    <ElementFile Location="Scripts\slingers\angular.js" />
+    <ElementFile Location="Scripts\slingers\caveman.js" />
+    <ElementFile Location="Scripts\slingers\jquery.js" />
+    <ElementFile Location="Scripts\slingers\jsrender.js" />
+    <ElementFile Location="Scripts\slingers\knockout.js" />
+    <ElementFile Location="Scripts\slingers\rainman.js" />
+    <ElementFile Location="Scripts\angular.js" />
+    <ElementFile Location="Scripts\angular-resource.js" />
+    <ElementFile Location="Scripts\angular-route.js" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-2.1.0.intellisense.js" />
+    <ElementFile Location="Scripts\jquery-2.1.0.js" />
+    <ElementFile Location="Scripts\jquery-2.1.0.min.js" />
+    <ElementFile Location="Scripts\jquery-2.1.0.min.map" />
+    <ElementFile Location="Scripts\jsrender_v1.0_beta.js" />
+    <ElementFile Location="Scripts\knockout-3.0.0.debug.js" />
+    <ElementFile Location="Scripts\knockout-3.0.0.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\img\AppIcon.gif" />
+    <ElementFile Location="Content\img\backarrow.png" />
+    <ElementFile Location="Content\img\PageBackground.jpg" />
+    <ElementFile Location="Content\img\rainman.jpg" />
+    <ElementFile Location="Content\img\angular.jpg" />
+    <ElementFile Location="Content\img\caveman.jpg" />
+    <ElementFile Location="Content\img\jQuery.jpg" />
+    <ElementFile Location="Content\img\jsRender.jpg" />
+    <ElementFile Location="Content\img\Knockout.jpg" />
+    <ElementFile Location="Content\img\Smackdown.jpg" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="Customers\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="Customers\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

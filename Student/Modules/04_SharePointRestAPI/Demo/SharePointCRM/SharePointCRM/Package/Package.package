@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="c2411e22-c0c9-42e5-8337-d9e942f76b62" 
+        solutionId="c2411e22-c0c9-42e5-8337-d9e942f76b62" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SharePointCRM"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="15eca7f4-8c08-438f-bc55-a5af1050df6d" />
+  </features>
+</package>

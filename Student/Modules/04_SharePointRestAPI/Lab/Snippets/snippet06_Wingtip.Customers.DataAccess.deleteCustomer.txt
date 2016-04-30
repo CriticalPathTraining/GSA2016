@@ -1,0 +1,17 @@
+var deleteCustomer = function (Id) {
+
+    var requestUri = "../_api/web/lists/getByTitle('Customers')/items(" + Id + ")";
+
+    var requestHeaders = {
+      "accept": "application/json;odata=verbose",
+      "X-RequestDigest": requestDigest,
+      "If-Match": "*"
+    }
+
+    return $.ajax({
+      url: requestUri,
+      type: "DELETE",
+      headers: requestHeaders,
+    });
+
+};

@@ -1,0 +1,4 @@
+function onUpdateCustomerRequest(customerId) {
+  var promise = Wingtip.Customers.DataAccess.getCustomer(customerId);
+  promise.then(onUpdateCustomerDialog, onError);
+}

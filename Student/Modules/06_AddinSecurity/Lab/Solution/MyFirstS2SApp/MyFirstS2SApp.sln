@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstS2SApp", "MyFirstS2SApp\MyFirstS2SApp.csproj", "{8355A51A-EADD-4481-AB86-0D9B3A430D52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstS2SAppWeb", "MyFirstS2SAppWeb\MyFirstS2SAppWeb.csproj", "{2A30C88B-D108-4EBB-AB40-D1E9300315F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8355A51A-EADD-4481-AB86-0D9B3A430D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8355A51A-EADD-4481-AB86-0D9B3A430D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8355A51A-EADD-4481-AB86-0D9B3A430D52}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8355A51A-EADD-4481-AB86-0D9B3A430D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8355A51A-EADD-4481-AB86-0D9B3A430D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8355A51A-EADD-4481-AB86-0D9B3A430D52}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2A30C88B-D108-4EBB-AB40-D1E9300315F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A30C88B-D108-4EBB-AB40-D1E9300315F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A30C88B-D108-4EBB-AB40-D1E9300315F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A30C88B-D108-4EBB-AB40-D1E9300315F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

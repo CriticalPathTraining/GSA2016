@@ -1,0 +1,3 @@
+C:\Student\Modules\04_SharePointRestAPI\Demo\HtmlSlingersSmackdown\HtmlSlingersSmackdown\bin\Debug\HtmlSlingersSmackdown.pdb
+C:\Student\Modules\04_SharePointRestAPI\Demo\HtmlSlingersSmackdown\HtmlSlingersSmackdown\obj\Debug\HtmlSlingersSmackdown.dll
+C:\Student\Modules\04_SharePointRestAPI\Demo\HtmlSlingersSmackdown\HtmlSlingersSmackdown\obj\Debug\HtmlSlingersSmackdown.pdb

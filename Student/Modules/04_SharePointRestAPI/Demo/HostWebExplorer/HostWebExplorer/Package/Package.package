@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="3bd815fb-8467-4d51-b079-55aaeae0559d" 
+        solutionId="3bd815fb-8467-4d51-b079-55aaeae0559d" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="HostWebExplorer"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="20374bf5-9d8f-4016-860c-833e7d38cd14" />
+  </features>
+</package>

@@ -1,0 +1,13 @@
+var getCustomer = function (Id) {
+
+    // begin work to call across network
+    var requestUri = "../_api/web/lists/getByTitle('Customers')/items(" + Id + ")";
+
+
+    return $.ajax({
+      url: requestUri,
+      contentType: "application/json;odata=verbose",
+      headers: { "accept": "application/json;odata=verbose" }
+    });
+
+}

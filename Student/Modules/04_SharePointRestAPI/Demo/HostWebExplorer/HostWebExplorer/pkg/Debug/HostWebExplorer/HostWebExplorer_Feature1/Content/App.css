@@ -1,0 +1,183 @@
+﻿
+fieldset {
+  font-family: sans-serif;
+  border: 5px solid #1F497D;
+  background: #ddd;
+}
+
+  fieldset legend {
+    background: yellow;
+    color: red;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #ddd;
+    margin-left: 20px;
+  }
+
+
+
+/* basic theme colors */
+.red {
+  background-color: #990033;
+}
+
+.orange {
+  background-color: #CC6633;
+}
+
+.yellow {
+  background-color: #FFCC00;
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../Content/img/PageBackground.jpg");
+}
+
+
+#page_width {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 2px black solid;
+}
+
+#top_row {
+  padding: 4px;
+  background-color: #DDD;
+  background-color: black;
+}
+
+  #top_row a {
+    text-decoration: none;
+    color: white;
+  }
+
+    #top_row a img {
+      border-style: none;
+    }
+
+#banner {
+  height: 75px;
+  background-color: #FFF;
+}
+
+#site_logo {
+  float: left;
+  background-image: url("../Content/img/AppIcon.gif");
+  width: 75px;
+  height: 75px;
+}
+
+#site_title {
+  margin-top: 20px;
+  float: left;
+  font-size: 36px;
+  color: #000;
+}
+
+.table_inside_tab {
+  margin: 8px;
+  background-color: white;
+}
+
+  .table_inside_tab, .table_inside_tab td {
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+  }
+
+    .table_inside_tab thead {
+      background-color: black;
+      color: white;
+    }
+
+    .table_inside_tab td {
+      padding: 4px 8px 4px 8px;
+      font-size: 0.6em;
+      word-break: break-all;
+      min-width: 140px;
+      vertical-align: top;
+    }
+
+
+.table_inside_accordian {
+  margin-left: 12px;
+}
+
+  .table_inside_accordian, .table_inside_accordian td {
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+  }
+
+    .table_inside_accordian thead {
+      background-color: black;
+      color: white;
+    }
+
+    .table_inside_accordian td {
+      padding: 4px 8px 4px 8px;
+      font-size: 0.6em;
+      word-break: break-all;
+      min-width: 240px;
+      vertical-align: top;
+    }
+
+/* jQuery UI Overrides */
+
+
+.ui-tabs {
+}
+
+  .ui-tabs .ui-tabs-panel {
+    min-height: 360px;
+    padding: 4px;
+    margin: 0px;
+  }
+
+    .ui-tabs .ui-tabs-panel h2 {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      background-color: black;
+      color: white;
+      font-family: 'Arial Unicode MS', Arial, sans-serif;
+      font-size: 18px;
+      padding: 2px;
+      padding-left: 8px;
+    }
+
+.ui-widget-content {
+}
+
+
+.ui-accordion .ui-accordion-content {
+  height: 0px;
+  padding: 4px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.ui-accordion .ui-accordion-content-active {
+  height: auto !important;
+  padding: 4px;
+  margin: 0px;
+  overflow: visible;
+}
+
+.ui-accordion .ui-accordion-header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 0.7em;
+}
+
+#fileHierarchyContainer {
+  font-size: 12px;
+  background-color: white;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid #990033;
+  padding: 1px 16px 12px 3px;
+}

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\img\AppIcon.gif" Url="Content/img/AppIcon.gif" ReplaceContent="TRUE" />
+    <File Path="Content\img\backarrow.png" Url="Content/img/backarrow.png" ReplaceContent="TRUE" />
+    <File Path="Content\img\GEARS.GIF" Url="Content/img/GEARS.GIF" ReplaceContent="TRUE" />
+    <File Path="Content\img\PageBackground.jpg" Url="Content/img/PageBackground.jpg" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

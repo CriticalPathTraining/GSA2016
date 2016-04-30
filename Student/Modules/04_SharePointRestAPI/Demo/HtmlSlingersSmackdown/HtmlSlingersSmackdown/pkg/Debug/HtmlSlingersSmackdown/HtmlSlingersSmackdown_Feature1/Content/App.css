@@ -1,0 +1,155 @@
+﻿/* basic theme colors */
+.red {
+  background-color: #990033;
+}
+
+.orange {
+  background-color: #CC6633;
+}
+
+.yellow {
+  background-color: #FFCC00;
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #CC6633;
+}
+
+
+#page_width {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 2px black solid;
+}
+
+#top_row {
+  padding: 4px;
+  background-color: #DDD;
+  background-color: black;
+}
+
+  #top_row a {
+    text-decoration: none;
+    color: white;
+  }
+
+    #top_row a img {
+      border-style: none;
+    }
+
+#banner {
+  height: 75px;
+  background-color: #FFF;
+}
+
+#site_logo {
+  float: left;
+  background-image: url("../Content/img/AppIcon.gif");
+  width: 75px;
+  height: 75px;
+}
+
+#site_title {
+  margin-top: 20px;
+  float: left;
+  font-size: 36px;
+  color: #000;
+}
+
+#navbar {
+  margin: 0px;
+  border-top: 3px solid #990033;
+  border-bottom: 2px solid #990033;
+  padding: 4px;
+  background-color: #FFC;
+  border-top: 1px solid #990033;
+  border-bottom: 1px solid #990033;
+}
+
+  #navbar a:link, #navbar a:visited, #navbar a:active, #navbar a:hover {
+    text-decoration: none;
+    color: #990033;
+  }
+
+
+
+#content_box {
+  padding: 16px 8px 12px 8px;
+  min-height: 480px;
+}
+
+
+/* jQuery UI Overrides */
+
+.ui-tabs .ui-tabs-panel {
+  min-height: 480px;
+  padding: 4px;
+}
+
+
+#customersTable {
+  background-color: #999;
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+}
+
+  #customersTable a img {
+    text-decoration: none;
+    border-style: none;
+  }
+
+
+  #customersTable thead td {
+    background-color: #333;
+    color: White;
+  }
+
+  #customersTable td {
+    color: #222;
+    border: 1px black solid;
+    padding: 4px;
+    background-color: White;
+    border-collapse: collapse;
+  }
+
+#welcome_title{
+  margin: 12px;
+  padding: 0px;
+  color: #990033;
+  font-size: 38px;
+  border-bottom: 2px solid #990033;
+}
+
+#contestant_image {
+ float: right;
+ margin-top: 32px;
+ margin-right: 240px;
+ width: 400px;
+ border: 2px solid black;
+}
+
+#contestant_list{
+  font-size: 32px;
+}
+
+#contestant_list li {
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+#contestant_list li a{
+  text-decoration: none;
+}
+
+  #contestant_list li a:visited, #contestant_list li a:active, #contestant_list li a:link {
+    color: black;
+  }
+  #contestant_list li a:hover{
+    color: #990033;
+  }

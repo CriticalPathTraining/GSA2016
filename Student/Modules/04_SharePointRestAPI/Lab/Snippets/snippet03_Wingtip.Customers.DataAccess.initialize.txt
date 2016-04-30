@@ -1,0 +1,13 @@
+var initialize = function () {
+
+    var deferred = $.ajax({
+      url: "../_api/contextinfo",
+      type: "POST",
+      headers: { "accept": "application/json;odata=verbose" }
+    })
+
+    deferred.then(function (data) {
+      requestDigest = data.d.GetContextWebInformation.FormDigestValue      
+    });
+
+}

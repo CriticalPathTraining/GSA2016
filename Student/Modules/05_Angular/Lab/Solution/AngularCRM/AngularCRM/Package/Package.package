@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="079d8848-5160-4ec3-9470-d7ce6faa3206" 
+        solutionId="079d8848-5160-4ec3-9470-d7ce6faa3206" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AngularCRM"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="02190c55-80bb-4fcf-8038-ef5cc62ae6d7" />
+  </features>
+</package>

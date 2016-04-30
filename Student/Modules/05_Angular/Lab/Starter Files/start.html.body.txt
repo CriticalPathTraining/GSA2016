@@ -1,0 +1,27 @@
+<body>
+
+    <div class="container">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Angular CRM</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Add Customer</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="lnkHostWeb">Back to Host Web</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="content-box" />
+    </div>
+
+</body>

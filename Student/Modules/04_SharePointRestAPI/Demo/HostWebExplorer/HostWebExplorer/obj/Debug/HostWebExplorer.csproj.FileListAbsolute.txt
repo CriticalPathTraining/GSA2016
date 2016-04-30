@@ -1,0 +1,4 @@
+C:\Student\Modules\04_SharePointRestAPI\Demo\HostWebExplorer\HostWebExplorer\bin\Debug\HostWebExplorer.pdb
+C:\Student\Modules\04_SharePointRestAPI\Demo\HostWebExplorer\HostWebExplorer\obj\Debug\HostWebExplorer.dll
+C:\Student\Modules\04_SharePointRestAPI\Demo\HostWebExplorer\HostWebExplorer\obj\Debug\HostWebExplorer.pdb
+C:\Student\Modules\04_SharePointRestAPI\Demo\HostWebExplorer\HostWebExplorer\obj\Debug\HostWebExplorer.csprojResolveAssemblyReference.cache

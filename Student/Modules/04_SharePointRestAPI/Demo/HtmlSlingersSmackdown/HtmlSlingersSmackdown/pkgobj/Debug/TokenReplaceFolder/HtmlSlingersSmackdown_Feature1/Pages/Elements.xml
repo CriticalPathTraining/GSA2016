@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\rainman.aspx" Url="Pages/rainman.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\angular.aspx" Url="Pages/angular.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\caveman.aspx" Url="Pages/caveman.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\CustomApp.master" Url="Pages/CustomApp.master" ReplaceContent="TRUE" />
+    <File Path="Pages\jquery.aspx" Url="Pages/jquery.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\jsrender.aspx" Url="Pages/jsrender.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\knockout.aspx" Url="Pages/knockout.aspx" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,26 @@
+service.addCustomer = function (FirstName, LastName, WorkPhone, HomePhone, Email) {
+  var restQueryUrl = "../_api/web/lists/getByTitle('Customers')/items";
+
+  var customerData = {
+      __metadata: { "type": "SP.Data.CustomersListItem" },
+      Title: LastName,
+      FirstName: FirstName,
+      WorkPhone: WorkPhone,
+      HomePhone: HomePhone,
+      Email: Email
+  };
+
+  var requestBody = JSON.stringify(customerData);       
+
+  return $http({
+      method: 'POST',
+      url: restQueryUrl,
+      contentType: "application/json;odata=verbose",
+      data: requestBody,
+      headers: {
+          "Accept": "application/json; odata=verbose",
+          "X-RequestDigest": requestDigest,
+          "content-type": "application/json;odata=verbose"
+      }
+  });
+}

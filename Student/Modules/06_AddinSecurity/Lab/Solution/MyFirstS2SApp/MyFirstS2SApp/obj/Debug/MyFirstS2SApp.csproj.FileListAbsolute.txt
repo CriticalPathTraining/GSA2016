@@ -1,0 +1,3 @@
+C:\Student\Modules\06_AddinSecurity\Lab\Solution\MyFirstS2SApp\MyFirstS2SApp\bin\Debug\MyFirstS2SApp.pdb
+C:\Student\Modules\06_AddinSecurity\Lab\Solution\MyFirstS2SApp\MyFirstS2SApp\obj\Debug\MyFirstS2SApp.dll
+C:\Student\Modules\06_AddinSecurity\Lab\Solution\MyFirstS2SApp\MyFirstS2SApp\obj\Debug\MyFirstS2SApp.pdb

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="abf9dc21-1f33-4a23-b62d-b8f1267aeb80" 
+        solutionId="abf9dc21-1f33-4a23-b62d-b8f1267aeb80" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SPRestPagingDemo2"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="d13555fa-cf83-4aae-a33e-85efbc45cfba" />
+  </features>
+</package>

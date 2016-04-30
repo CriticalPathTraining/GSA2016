@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="15eca7f4-8c08-438f-bc55-a5af1050df6d" Scope="Web" Title="SharePointCRM Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\start.htm" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\Wingtip.Customers.DataAccess.js" />
+    <ElementFile Location="Scripts\jquery-2.1.1.min.map" />
+    <ElementFile Location="Scripts\jquery-2.1.1.min.js" />
+    <ElementFile Location="Scripts\jquery-2.1.1.js" />
+    <ElementFile Location="Scripts\jquery-2.1.1.intellisense.js" />
+    <ElementFile Location="Scripts\jquery-ui-1.10.4.min.js" />
+    <ElementFile Location="Scripts\jquery-ui-1.10.4.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\img\DELITEM.GIF" />
+    <ElementFile Location="Content\img\EDITITEM.GIF" />
+    <ElementFile Location="Content\img\AppIcon.gif" />
+    <ElementFile Location="Content\themes\base\minified\jquery-ui.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <ElementFile Location="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <ElementFile Location="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ElementFile Location="Content\themes\base\minified\images\animated-overlay.gif" />
+    <ElementFile Location="Content\themes\base\jquery-ui.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.tooltip.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.theme.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.tabs.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.spinner.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.slider.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.selectable.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.resizable.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.progressbar.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.menu.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.dialog.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.datepicker.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.core.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.button.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.base.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.autocomplete.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.all.css" />
+    <ElementFile Location="Content\themes\base\jquery.ui.accordion.css" />
+    <ElementFile Location="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <ElementFile Location="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <ElementFile Location="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <ElementFile Location="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <ElementFile Location="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <ElementFile Location="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <ElementFile Location="Content\themes\base\images\animated-overlay.gif" />
+    <ElementFile Location="Content\img\GEARS.gif" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="Customers\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="Customers\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

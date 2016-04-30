@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="99918b22-2143-4d18-84c5-16025de12d72" 
+        solutionId="99918b22-2143-4d18-84c5-16025de12d72" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AppPermissionsLab"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="db928103-cf2a-4caf-a1f6-5c3d60106fb8" />
+  </features>
+</package>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>SharePoint REST/OData Lab Solution</title>
+
+  <script src="../Scripts/jquery-2.1.1.js"></script>
+  <script src="../Scripts/jquery-ui-1.10.4.js"></script>
+  <link href="../Content/themes/base/jquery-ui.css" rel="stylesheet" />
+
+  <script src="../Scripts/Wingtip.Customers.DataAccess.js"></script>
+  <script src="../Scripts/App.js"></script>
+  <link href="../Content/App.css" rel="stylesheet" />
+
+</head>
+<body>
+  <form>
+    <div id="page_width">
+
+      <div id="nav_bar">
+        &nbsp;
+      </div>
+
+      <header id="page_header">
+        <div id="site_logo">&nbsp</div>
+        <h1 id="site_title">SharePoint REST API Lab Solution</h1>
+      </header>
+
+      <nav id="toolbar">
+        <input type="button" id="cmdAddNewCustomer" value="Add New Customer" class="ui-button" />
+      </nav>
+
+      <div id="content_box"></div>
+
+      <div id="customer_dialog" style="display: none;">
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td>
+              <input id="firstName" />
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td>
+              <input id="lastName" />
+            </td>
+          </tr>
+          <tr>
+            <td>Company:</td>
+            <td>
+              <input id="company" />
+            </td>
+          </tr>
+          <tr>
+            <td>Work Phone:</td>
+            <td>
+              <input id="workPhone" />
+            </td>
+          </tr>
+          <tr>
+            <td>Home Phone:</td>
+            <td>
+              <input id="homePhone" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <input id="email" />
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- hidden controls -->
+        <div style="display: none">
+          <input id="customer_id" />
+          <input id="etag" />
+        </div>
+
+      </div>
+
+    </div>
+  </form>
+
+</body>
+</html>

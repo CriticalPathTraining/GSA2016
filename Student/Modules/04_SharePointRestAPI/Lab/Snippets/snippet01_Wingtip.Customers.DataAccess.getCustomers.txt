@@ -1,0 +1,13 @@
+var getCustomers = function () {
+
+  var requestUri = "../_api/web/lists/getByTitle('Customers')/items" +
+                    "?$select=ID,FirstName,Title,Company,WorkPhone,HomePhone,Email" +
+                    "&$orderby=Title,FirstName";
+
+  // send call across network
+  return $.ajax({
+    url: requestUri,
+    headers: { "accept": "application/json;odata=verbose" }
+  });
+
+};

@@ -1,0 +1,32 @@
+var updateCustomer = function (Id, FirstName, LastName, Company, WorkPhone, HomePhone, Email, ETag) {
+
+    var requestUri = "../_api/web/lists/getByTitle('Customers')/items(" + Id + ")";
+
+    var requestHeaders = {
+      "accept": "application/json;odata=verbose",
+      "X-HTTP-Method": "MERGE",
+      "X-RequestDigest": requestDigest,
+      "If-Match": ETag
+    }
+
+    var customerData = {
+      __metadata: { "type": "SP.Data.CustomersListItem" },
+      Title: LastName,
+      FirstName: FirstName,
+      Company: Company,
+      WorkPhone: WorkPhone,
+      HomePhone: HomePhone,
+      Email: Email
+    };
+
+    var requestBody = JSON.stringify(customerData);
+
+    return $.ajax({
+      url: requestUri,
+      type: "POST",
+      contentType: "application/json;odata=verbose",
+      headers: requestHeaders,
+      data: requestBody,
+    });
+
+};

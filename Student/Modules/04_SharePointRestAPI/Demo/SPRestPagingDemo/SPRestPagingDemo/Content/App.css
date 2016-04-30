@@ -1,0 +1,137 @@
+﻿
+/* basic theme colors */
+.red {
+  background-color: #990033;
+}
+
+.orange {
+  background-color: #CC6633;
+}
+
+.yellow {
+  background-color: #FFCC00;
+}
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFD;
+}
+
+
+#page_width {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 2px black solid;
+}
+
+#top_row {
+  padding: 4px;
+  background-color: #DDD;
+  background-color: black;
+}
+
+  #top_row a {
+    text-decoration: none;
+    color: white;
+  }
+
+    #top_row a img {
+      border-style: none;
+    }
+
+#banner {
+  height: 75px;
+  background-color: #FFF;
+}
+
+#status_message{
+  float: right;
+  margin-top: 12px;
+  margin-right: 48px;
+  padding: 4px;
+  background-color: #FFFFCC;
+  color: #990033;
+  border: 1px solid #990033;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: Arial;
+
+}
+
+#site_logo {
+  float: left;
+  background-image: url("../Content/img/AppIcon.gif");
+  width: 75px;
+  height: 75px;
+}
+
+#site_title {
+  margin-top: 20px;
+  float: left;
+  font-size: 36px;
+  color: #000;
+}
+
+#page_tabs{
+  background-color: #FFCC00;
+  padding: 1px;
+  border: black 1px solid;
+  padding: 0px;
+  padding-left: 4px;
+}
+
+#page_tabs input{
+  margin: 4px 2px 0px 2px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-style: none;
+}
+
+
+#url_showcase {
+  border: #990033 2PX SOLID;
+  background-color: #FFFFCC;
+  padding: 6px;
+  font-size: 14px;
+  height: 32PX;
+}
+
+#content_box {
+  min-height: 480px;
+  padding: 0px;
+}
+
+
+#customersTable {
+  background-color: #999;
+  border-collapse: collapse;
+  font-size: 12px;
+  width:100%
+}
+
+ #customersTable a img {
+    text-decoration: none;
+    border-style: none;
+  }
+
+
+  #customersTable thead td {
+    background-color: #333;
+    color: White;
+  }
+
+  #customersTable td {
+    color: #222;
+    border: 1px black solid;
+    padding: 4px;
+    background-color: White;
+    border-collapse: collapse;
+  }

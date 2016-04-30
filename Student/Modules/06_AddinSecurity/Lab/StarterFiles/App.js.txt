@@ -1,0 +1,48 @@
+$(onPageReady);
+
+function onPageReady() {
+  $("#cmdGetSiteInfo").click(onGetSiteInfo);
+}
+
+function onGetSiteInfo() {
+
+  // create URL to make REST call into host web
+  var hostWebUrl = getQueryStringParameter("SPHostUrl");
+
+  var requestUri = "../_api/SP.AppContextSite(@target)/web/" +
+                  "?$select=Id,Title,Url" +
+                  "&@target='" + hostWebUrl + "'";
+
+
+  // issue web service request against host web
+  $.ajax({
+    url: requestUri,
+    type: "GET",
+    headers: { "ACCEPT": "application/json;odata=verbose" }
+  }).then(onComplete, onError);
+
+}
+
+function onComplete(data) {
+  $("#content_box").text("Host Web Title: " + data.d.Title);
+};
+
+function onError(error) {
+  var errorNumber = error.status;
+  var errorMessage = errorNumber + " - " + error.statusText;
+  $("#content_box").text("Error: " + errorMessage);
+}
+
+
+function getQueryStringParameter(paramName) {
+  var querystring = document.URL.split("?")[1];
+  if (querystring) {
+    var params = querystring.split("&");
+    for (var index = 0; (index < params.length) ; index++) {
+      var current = params[index].split("=");
+      if (paramName.toUpperCase() === current[0].toUpperCase()) {
+        return decodeURIComponent(current[1]);
+      }
+    }
+  }
+}

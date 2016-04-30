@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2e9d7bd8-7cd7-47ea-9563-22d8df5f6f7d" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="HtmlSlingersSmackdown_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="MyFirstS2SAppSolution"
+     ProductID="{b5e9a36b-33c1-4dbf-b69f-d1ef8b8ed7f2}"
+     Version="1.0.0.0"
+     SharePointMinVersion="16.0.0.0"
+>
+  <Properties>
+    <Title>My First S2S App Solution</Title>
+    <StartPage>~remoteAppUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="*" />
+  </AppPrincipal>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Read" />
+  </AppPermissionRequests>
+</App>

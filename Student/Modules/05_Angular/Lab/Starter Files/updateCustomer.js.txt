@@ -1,0 +1,28 @@
+service.updateCustomer = function (id, FirstName, LastName, WorkPhone, HomePhone, Email, etag) {
+  var restQueryUrl = "../_api/web/lists/getByTitle('Customers')/items(" + id + ")";
+
+  var customerData = {
+      __metadata: { "type": "SP.Data.CustomersListItem" },
+      Title: LastName,
+      FirstName: FirstName,
+      WorkPhone: WorkPhone,
+      HomePhone: HomePhone,
+      Email: Email
+  };
+
+  var requestBody = JSON.stringify(customerData);
+
+  return $http({
+      method: 'POST',
+      url: restQueryUrl,
+      contentType: "application/json;odata=verbose",
+      data: requestBody,
+      headers: {
+          "Accept": "application/json; odata=verbose",
+          "X-RequestDigest": requestDigest,
+          "content-type": "application/json;odata=verbose",
+          "If-Match": etag,
+          "X-HTTP-METHOD": "PATCH"
+      }
+  });
+}

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Customers" OnQuickLaunch="TRUE" TemplateType="105" FeatureId="00bfea71-7e6d-4186-9ba8-c047ac750105" Url="Lists/Customers" Description="A test list to demo paging">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="FirstName">Quincy</Field>
+          <Field Name="Title">Nelson</Field>
+          <Field Name="Company">Benthic Petroleum</Field>
+          <Field Name="Email">Quincy.Nelson@BenthicPetroleum.com</Field>
+          <Field Name="WorkPhone">1(340)608-7748</Field>
+          <Field Name="HomePhone">1(340)517-3737</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Jude</Field>
+          <Field Name="Title">Mason</Field>
+          <Field Name="Company">Cyberdyne Systems</Field>
+          <Field Name="Email">Jude.Mason@CyberdyneSystems.com</Field>
+          <Field Name="WorkPhone">1(203)408-0466</Field>
+          <Field Name="HomePhone">1(203)411-0071</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Sid</Field>
+          <Field Name="Title">Stout</Field>
+          <Field Name="Company">Roxxon</Field>
+          <Field Name="Email">Sid.Stout@Roxxon.com</Field>
+          <Field Name="WorkPhone">1(518)258-6571</Field>
+          <Field Name="HomePhone">1(518)376-8576</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Gilberto</Field>
+          <Field Name="Title">Gillespie</Field>
+          <Field Name="Company">Shinra Electric Power Company</Field>
+          <Field Name="Email">Gilberto.Gillespie@ShinraElectricPowerCompany.com</Field>
+          <Field Name="WorkPhone">1(270)510-1720</Field>
+          <Field Name="HomePhone">1(270)755-7810</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Diane</Field>
+          <Field Name="Title">Strickland</Field>
+          <Field Name="Company">Izon</Field>
+          <Field Name="Email">Diane.Strickland@Izon.com</Field>
+          <Field Name="WorkPhone">1(407)413-4851</Field>
+          <Field Name="HomePhone">1(407)523-5411</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Jacqueline</Field>
+          <Field Name="Title">Zimmerman</Field>
+          <Field Name="Company">Zorg Industries</Field>
+          <Field Name="Email">Jacqueline.Zimmerman@ZorgIndustries.com</Field>
+          <Field Name="WorkPhone">1(844)234-0550</Field>
+          <Field Name="HomePhone">1(844)764-3522</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Naomi</Field>
+          <Field Name="Title">Schroeder</Field>
+          <Field Name="Company">ComTron</Field>
+          <Field Name="Email">Naomi.Schroeder@ComTron.com</Field>
+          <Field Name="WorkPhone">1(204)355-6648</Field>
+          <Field Name="HomePhone">1(204)356-2831</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Lynne</Field>
+          <Field Name="Title">Stephens</Field>
+          <Field Name="Company">Trade Federation</Field>
+          <Field Name="Email">Lynne.Stephens@TradeFederation.com</Field>
+          <Field Name="WorkPhone">1(407)787-7308</Field>
+          <Field Name="HomePhone">1(407)732-1700</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Luther</Field>
+          <Field Name="Title">Sullivan</Field>
+          <Field Name="Company">Metacortex</Field>
+          <Field Name="Email">Luther.Sullivan@Metacortex.com</Field>
+          <Field Name="WorkPhone">1(323)755-3404</Field>
+          <Field Name="HomePhone">1(323)684-7814</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Rose</Field>
+          <Field Name="Title">Parsons</Field>
+          <Field Name="Company">Hanso Foundation</Field>
+          <Field Name="Email">Rose.Parsons@HansoFoundation.com</Field>
+          <Field Name="WorkPhone">1(802)357-5583</Field>
+          <Field Name="HomePhone">1(802)727-0246</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Bridgette</Field>
+          <Field Name="Title">Meadows</Field>
+          <Field Name="Company">Brown Streak Railroad</Field>
+          <Field Name="Email">Bridgette.Meadows@BrownStreakRailroad.com</Field>
+          <Field Name="WorkPhone">1(250)468-4824</Field>
+          <Field Name="HomePhone">1(250)403-3653</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Merle</Field>
+          <Field Name="Title">Black</Field>
+          <Field Name="Company">Volée Airlines</Field>
+          <Field Name="Email">Merle.Black@VoléeAirlines.com</Field>
+          <Field Name="WorkPhone">1(248)240-1267</Field>
+          <Field Name="HomePhone">1(248)221-0302</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Berta</Field>
+          <Field Name="Title">Wilkinson</Field>
+          <Field Name="Company">Doublemeat Palace</Field>
+          <Field Name="Email">Berta.Wilkinson@DoublemeatPalace.com</Field>
+          <Field Name="WorkPhone">1(270)830-5347</Field>
+          <Field Name="HomePhone">1(270)338-3401</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Brandi</Field>
+          <Field Name="Title">Bates</Field>
+          <Field Name="Company">Duff Beer</Field>
+          <Field Name="Email">Brandi.Bates@DuffBeer.com</Field>
+          <Field Name="WorkPhone">1(808)660-1110</Field>
+          <Field Name="HomePhone">1(808)833-4310</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Ana</Field>
+          <Field Name="Title">Mathews</Field>
+          <Field Name="Company">WarioWare, Inc.</Field>
+          <Field Name="Email">Ana.Mathews@WarioWare,Inc..com</Field>
+          <Field Name="WorkPhone">1(844)663-5428</Field>
+          <Field Name="HomePhone">1(844)782-2117</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Chet</Field>
+          <Field Name="Title">Lawson</Field>
+          <Field Name="Company">The Crab Shack</Field>
+          <Field Name="Email">Chet.Lawson@TheCrabShack.com</Field>
+          <Field Name="WorkPhone">1(340)843-4478</Field>
+          <Field Name="HomePhone">1(340)523-1010</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Danial</Field>
+          <Field Name="Title">Stephenson</Field>
+          <Field Name="Company">Grand Trunk Semaphore Company</Field>
+          <Field Name="Email">Danial.Stephenson@GrandTrunkSemaphoreCompany.com</Field>
+          <Field Name="WorkPhone">1(281)682-3050</Field>
+          <Field Name="HomePhone">1(281)335-6431</Field>
+        </Row>
+        <Row>
+          <Field Name="FirstName">Adela</Field>
+          <Field Name="Title">Gilbert</Field>
+          <Field Name="Company">Fabrikam</Field>
+          <Field Name="Email">Adela.Gilbert@Fabrikam.com</Field>
+          <Field Name="WorkPhone">1(402)874-6536</Field>
+          <Field Name="HomePhone">1(402)311-8241</Field>
+        </Row>
+
+
+
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

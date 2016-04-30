@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\wingtip.utilities.js" Url="Scripts/wingtip.utilities.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.1.0.min.map" Url="Scripts/jquery-2.1.0.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.1.0.min.js" Url="Scripts/jquery-2.1.0.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.1.0.js" Url="Scripts/jquery-2.1.0.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.1.0.intellisense.js" Url="Scripts/jquery-2.1.0.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-ui-1.10.4.min.js" Url="Scripts/jquery-ui-1.10.4.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-ui-1.10.4.js" Url="Scripts/jquery-ui-1.10.4.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\knockout-3.0.0.js" Url="Scripts/knockout-3.0.0.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\knockout-3.0.0.debug.js" Url="Scripts/knockout-3.0.0.debug.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\CPT.SharePoint.Web.DataAccess.js" Url="Scripts/CPT.SharePoint.Web.DataAccess.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-treeview.js" Url="Scripts/jquery-treeview.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7F2D2B8-4BE6-4DB1-86AD-B8AAC5AB0B84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HtmlSlingersSmackdown</RootNamespace>
+    <AssemblyName>HtmlSlingersSmackdown</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{b0a9b99a-8c6b-44f2-bddf-2ba26e6d1dd1}</AppFeaturePartId>
+    <WspPartId>{e5a4826c-a623-4f3d-9452-586cbbab70f3}</WspPartId>
+    <WorkflowPartId>{b032970a-db09-45f2-a7f3-b688527b6836}</WorkflowPartId>
+    <CspkgPartId>{99c818f5-02aa-435b-82b3-ecc611a62651}</CspkgPartId>
+    <SqlPackagePartId>{15fd479a-ef8f-4223-8f17-5dd9a02c90f4}</SqlPackagePartId>
+    <MinimumOfficeToolsVersion>14.6</MinimumOfficeToolsVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Lists\Customers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f567b777-8cd5-4d90-bbd8-5610bc46d28f}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\CustomApp.master" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{357b3b72-8717-4d5a-b94b-83600caf708b}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\img\angular.jpg" />
+    <Content Include="Content\img\AppIcon.gif" />
+    <Content Include="Content\img\backarrow.png" />
+    <EmbeddedResource Include="Content\img\PageBackground.jpg" />
+    <Content Include="Content\img\caveman.jpg" />
+    <Content Include="Content\img\jQuery.jpg" />
+    <Content Include="Content\img\jsRender.jpg" />
+    <Content Include="Content\img\Knockout.jpg" />
+    <Content Include="Content\img\rainman.jpg" />
+    <Content Include="Content\img\Smackdown.jpg" />
+    <Content Include="Lists\Customers\Elements.xml" />
+    <Content Include="Pages\angular.aspx" />
+    <Content Include="Pages\caveman.aspx" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-2.1.0.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{15fd479a-ef8f-4223-8f17-5dd9a02c90f4}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\jquery.aspx" />
+    <Content Include="Pages\jsrender.aspx" />
+    <Content Include="Pages\knockout.aspx" />
+    <Content Include="Pages\rainman.aspx" />
+    <Content Include="Scripts\angular-resource.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\jquery-2.1.0.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.0.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Scripts\jsrender_v1.0_beta.js" />
+    <Content Include="Scripts\knockout-3.0.0.debug.js" />
+    <Content Include="Scripts\knockout-3.0.0.js" />
+    <Content Include="Scripts\slingers\angular.js" />
+    <Content Include="Scripts\slingers\caveman.js" />
+    <Content Include="Scripts\slingers\jquery.js" />
+    <Content Include="Scripts\slingers\jsrender.js" />
+    <Content Include="Scripts\slingers\knockout.js" />
+    <Content Include="Scripts\slingers\rainman.js" />
+    <Content Include="Scripts\Wingtip.Customers.DataAccess.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27408438-fb25-4506-8828-5b70b34ecb49}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d6232be2-9f68-48b5-ab39-39e4e04a2784}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{2e9d7bd8-7cd7-47ea-9563-22d8df5f6f7d}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{9091eb6d-1575-4c3d-a377-cf642965d7a1}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

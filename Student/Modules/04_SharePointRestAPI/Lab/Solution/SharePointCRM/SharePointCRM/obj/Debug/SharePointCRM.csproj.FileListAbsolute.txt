@@ -1,0 +1,3 @@
+C:\Student\Modules\04_SharePointRestAPI\Lab\Solution\SharePointCRM\SharePointCRM\bin\Debug\SharePointCRM.pdb
+C:\Student\Modules\04_SharePointRestAPI\Lab\Solution\SharePointCRM\SharePointCRM\obj\Debug\SharePointCRM.dll
+C:\Student\Modules\04_SharePointRestAPI\Lab\Solution\SharePointCRM\SharePointCRM\obj\Debug\SharePointCRM.pdb
