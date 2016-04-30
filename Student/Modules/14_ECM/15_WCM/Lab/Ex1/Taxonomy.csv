@@ -1,0 +1,35 @@
+Id	ParentId	Name
+0		Electronics
+1	0	Computers
+2	0	Cameras
+3	0	TV and video
+4	0	Audio
+5	0	Phones
+6	0	Home appliances
+101	1	Laptops
+102	1	Tablets
+103	1	Desktops
+104	1	Monitors
+105	1	Printers, scanners and fax
+106	1	Computers accessories
+201	2	Digital cameras
+202	2	Digital SLR cameras
+203	2	Camcorders
+204	2	Camera accessories
+301	3	Televisions
+302	3	DVD players
+303	3	Home theater system
+304	3	Car video
+401	4	MP3
+402	4	Speakers
+403	4	Headphones
+404	4	Car audio
+501	5	Home and office phones
+502	5	Mobile phones
+503	5	Smart phones
+504	5	PDAs
+601	6	Washers and dryers
+602	6	Refrigerators
+603	6	Microwaves
+604	6	Air conditioners
+605	6	Fans

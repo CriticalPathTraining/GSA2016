@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="f1d8306e-3b89-4c6e-be50-2693dac516ba.CustomAction"
+                RegistrationType="List"
+                RegistrationId="100"
+                Location="EditControlBlock"
+                Sequence="10001"
+                Title="Invoke &apos;CustomAction&apos; action">
+    <!-- 
+    Update the Url below to the page you want the custom action to use.
+    Start the URL with the token ~remoteAppUrl if the page is in the
+    associated web project, use ~appWebUrl if page is in the app project.
+    -->
+    <UrlAction Url="~remoteAppUrl/Pages/CustomAction.aspx?Source={Source}&amp;ListURLDir={ListUrlDir}&amp;ListID={ListId}&amp;ItemURL={ItemUrl}&amp;ItemID={ItemId}&amp;{StandardTokens}" />
+  </CustomAction>
+</Elements>

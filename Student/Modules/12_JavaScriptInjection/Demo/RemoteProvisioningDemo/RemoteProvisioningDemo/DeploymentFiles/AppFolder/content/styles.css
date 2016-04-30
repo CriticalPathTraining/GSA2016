@@ -1,0 +1,63 @@
+﻿
+#content_box ul, .formattedList {
+  color: darkblue;
+  font-size: 1.25em;
+}
+
+#content_box table, .formattedTable {
+  border-collapse: collapse;
+}
+ #content_box table thead tr td, .formattedTable thead tr td {
+    border: 1px solid black;
+    padding: 4px;
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+  }
+
+  #content_box table tr td, .formattedTable tr td {
+    border: 1px solid black;
+    padding: 4px;
+    color: darkblue;
+    font-size: 1.25em;
+  }
+
+ .csrHeaderDiv{
+   padding: 8px;
+   background-color: #FDFDFD;
+   border: 1px solid #EEE;
+   border-radius: 4px;
+   margin-bottom: 8px;
+ }
+ 
+ .csrHeaderDiv a, .csrHeaderDiv a:link, .csrHeaderDiv a:visited, .csrHeaderDiv a:hover, .csrHeaderDiv a:active  {
+   font-weight: bold;
+   color: #9b0036;
+   text-decoration: none;
+ }
+
+.csr1CustomerBlock {
+  display: inline-block;
+  width: 320px;
+  height: 100px;
+  max-height: 100px;
+  margin: 12px;
+  border: 1px black solid;
+  background-color: #fafaa4;
+  color: black;
+  text-align: left;
+  font-size: 12px;
+}
+
+.csr1CustomerBlockHeader {
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 1.25em;
+  padding: 2px;
+}
+
+.csr1CustomerBlockBody {
+  color: #444;
+  padding: 2px;
+}

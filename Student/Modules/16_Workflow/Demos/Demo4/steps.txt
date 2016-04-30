@@ -1,0 +1,7 @@
+> Ensure server setup for Workflow 1.0 Manager debugging
+> Login as SP_Content (WM & SP service account)
+	> Launch Fiddler
+	> Recucle WWW & Workflow Backend Service
+> Login as Ken Sanchez & deploy in a 2nd window (staying logged in as SP_Content in the first
+	> Deploy & run the workflow from demo 3
+> Go back ot SP_Content login & watch the workflow proceed with Fiddler

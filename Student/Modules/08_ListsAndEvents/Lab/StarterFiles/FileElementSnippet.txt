@@ -1,0 +1,21 @@
+<File Path="Pages\Default.aspx" Url="Pages/Default.aspx">
+  <AllUsersWebPart WebPartZoneID="Full" WebPartOrder="0">
+    <![CDATA[
+      <webParts>
+        <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+          <metaData>
+            <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=14.0.0.0,Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+            <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+          </metaData>
+          <data>
+            <properties>
+              <property name="Title" type="string">Announcements (RER)</property>
+              <property name="ListDisplayName" type="string">Announcements (RER)</property> 
+               <property name="ChromeType" type="chrometype">TitleOnly</property>
+            </properties>
+          </data>
+        </webPart>
+      </webParts>
+    ]]>
+  </AllUsersWebPart>
+</File>

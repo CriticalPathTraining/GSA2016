@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAddinDemo", "OAuthAddinDemo\OAuthAddinDemo.csproj", "{F328BC7E-4FB6-4794-9675-01142AF403AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAddinDemoWeb", "OAuthAddinDemoWeb\OAuthAddinDemoWeb.csproj", "{C57DE3B0-AF08-439F-A3CC-201CA1066DA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F328BC7E-4FB6-4794-9675-01142AF403AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F328BC7E-4FB6-4794-9675-01142AF403AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F328BC7E-4FB6-4794-9675-01142AF403AF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F328BC7E-4FB6-4794-9675-01142AF403AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F328BC7E-4FB6-4794-9675-01142AF403AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F328BC7E-4FB6-4794-9675-01142AF403AF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C57DE3B0-AF08-439F-A3CC-201CA1066DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57DE3B0-AF08-439F-A3CC-201CA1066DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57DE3B0-AF08-439F-A3CC-201CA1066DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57DE3B0-AF08-439F-A3CC-201CA1066DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

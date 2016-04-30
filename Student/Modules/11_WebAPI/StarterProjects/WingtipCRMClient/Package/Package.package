@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="d24ffa24-97cb-4dd8-a09a-1a832a8e13d8" 
+        solutionId="d24ffa24-97cb-4dd8-a09a-1a832a8e13d8" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="WingtipCRMClient"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="0947e7e1-e818-4062-aff5-ddeaf9d8bfd0" />
+  </features>
+</package>

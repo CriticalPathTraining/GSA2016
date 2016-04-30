@@ -1,0 +1,59 @@
+﻿#categoryList {
+    list-style-type:none;
+    color: #039;
+}
+
+.dashboard-Container {
+    height:300px;
+    width:600px;
+    margin-top:20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+.dashboard-Title {
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.dashboard-Left {
+    float:left;
+}
+
+.dashboard-Right {
+    float:right;
+}
+
+.dashboard-Header {
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:10px;
+    color: #039;
+}
+
+#salesTable
+{
+	font-size: 12px;
+	background: #fff;
+	margin: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+#salesTable th
+{
+	font-size: 12px;
+	font-weight: normal;
+    color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#salesTable td
+{
+    color: #669;
+	padding: 18px 16px 0px 16px;
+}
+
+#salesTable tbody tr:hover td
+{
+	color: #009;
+}

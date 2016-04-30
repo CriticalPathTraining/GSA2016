@@ -1,0 +1,64 @@
+﻿body {
+  background-color: #DDD;
+  overflow: visible;
+}
+
+#pageWidth {
+  width: 1200px;
+  margin: auto;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+#contentBody {
+  border-top: 1px solid black;
+  padding: 8px;
+}
+
+
+
+#contentBody h2 {
+  font-size: 2.0em;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+#contentBody h3 {
+  margin-top: 12px;
+  font-size: 1.5em;
+  color: DarkBlue;
+  padding-bottom: 2px;
+  border-bottom: 2px DarkBlue solid;
+  margin-bottom: 8px;
+}
+
+
+table {
+}
+
+table, table td {
+  border: #999 1px solid;
+  color: black;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 4px;
+  border-collapse: collapse;
+  vertical-align: top;
+  text-wrap: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-size: 9pt;
+}
+
+table td ul {
+	margin: 2px;
+	padding-left: 8px;
+}
+
+
+table td ul li {
+	margin-left: 2px;
+}

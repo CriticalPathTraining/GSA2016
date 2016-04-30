@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  
+  <ClientWebPart 
+    Name="AppPart" 
+    Title="Wingtip App Part Title" 
+    Description="My app part" 
+    DefaultWidth="600" DefaultHeight="360">
+    
+    <Content 
+      Type="html" 
+      Src="~remoteAppUrl/Pages/AppPart.aspx?{StandardTokens}" />
+
+   
+    
+  </ClientWebPart>
+  
+</Elements>

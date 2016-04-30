@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxonomyManagedCSOM", "TaxonomyManagedCSOM.csproj", "{BE1DF92D-67F6-4705-BDBF-F2398B62DB03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE1DF92D-67F6-4705-BDBF-F2398B62DB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1DF92D-67F6-4705-BDBF-F2398B62DB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1DF92D-67F6-4705-BDBF-F2398B62DB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1DF92D-67F6-4705-BDBF-F2398B62DB03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

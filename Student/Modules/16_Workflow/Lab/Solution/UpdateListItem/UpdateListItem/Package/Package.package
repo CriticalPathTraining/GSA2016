@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="0d97b7dc-7f5f-4576-99aa-9e7858976631" 
+        solutionId="0d97b7dc-7f5f-4576-99aa-9e7858976631" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="UpdateListItem"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="381866cb-5f8e-470a-b0d2-315c93eedd82" />
+  </features>
+</package>

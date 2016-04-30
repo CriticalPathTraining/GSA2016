@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" %>
+
+<!doctype html>
+<html>
+<head>
+    <title>OAuth Demo App</title>
+    <script src="../Scripts/jquery-2.2.3.js"></script>
+    <script src="../Scripts/jquery-ui-1.11.4.js"></script>
+    <link href="../Content/themes/base/all.css" rel="stylesheet" />
+    <script src="../Scripts/sp.ui.controls.debug.js"></script>
+    <link href="../Content/app.css" rel="stylesheet" />
+    <script src="../Scripts/RemoteWeb.master.js"></script>
+
+    <asp:ContentPlaceHolder ID="PlaceholderAdditionalPageHead" runat="server" />
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="pageWidth">
+            <div id="chrome_ctrl_container"></div>
+            <div id="contentBody">
+                <asp:ContentPlaceHolder ID="PlaceholderMain" runat="server" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

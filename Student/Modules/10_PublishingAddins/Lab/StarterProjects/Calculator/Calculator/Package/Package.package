@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="6397d9f0-0850-4a03-b8c2-2265f4d640f3" 
+        solutionId="6397d9f0-0850-4a03-b8c2-2265f4d640f3" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Calculator"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="5434a157-0bbd-4e4c-b250-3b3e18f8ae34" />
+  </features>
+</package>

@@ -1,0 +1,71 @@
+﻿<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.SharePoint.WebPartPages.ScriptEditorWebPart, Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="HelpUrl" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="Description" type="string">Allows authors to insert HTML snippets or scripts.</property>
+        <property name="Content" type="string">&lt;div data-ng-app='myApp'&gt;
+    &lt;div data-ng-controller='myCtrl'&gt;
+        &lt;div data-ng-show="showWelcome"&gt;Welcome, {{fullName}}&lt;/div&gt;
+         &lt;div data-ng-show="!showWelcome"&gt;Working on it...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  CDNManager.getScript('angular.min.js',function() {
+
+     angular.module('myApp',[]).controller('myCtrl', ['$scope', '$http', function myCtrl($scope, $http) {
+         
+       $scope.fullName ="";
+       $scope.showWelcome = false;
+
+        $http({
+            url: "../_api/web/currentUser",
+            params: {
+                "$select": "Title"
+            },
+            method: "GET",
+            headers: {
+                "accept": "application/json"
+            }
+        }).then( function (json) {         
+             $scope.fullName = json.data.Title;
+             console.log(json.data.Title);
+        }).catch( function (err) {
+            alert(err.statusText);
+        }).finally( function () {
+            $scope.showWelcome = true
+        });;
+         
+     }]);
+    
+  });
+&lt;/script&gt;
+
+</property>
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="Title" type="string">CDN Manager and Angular</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="TitleUrl" type="string" />
+        <property name="ChromeType" type="chrometype">Default</property>
+        <property name="AllowConnect" type="bool">True</property>
+        <property name="Width" type="unit" />
+        <property name="Height" type="unit" />
+        <property name="HelpMode" type="helpmode">Navigate</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

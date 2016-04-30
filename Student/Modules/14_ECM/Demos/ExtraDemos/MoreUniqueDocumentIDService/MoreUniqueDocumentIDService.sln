@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreUniqueDocumentIDService", "MoreUniqueDocumentIDService.csproj", "{0C686AAC-7891-4C08-950C-2D4F4800D8DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C686AAC-7891-4C08-950C-2D4F4800D8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C686AAC-7891-4C08-950C-2D4F4800D8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C686AAC-7891-4C08-950C-2D4F4800D8DB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0C686AAC-7891-4C08-950C-2D4F4800D8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C686AAC-7891-4C08-950C-2D4F4800D8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C686AAC-7891-4C08-950C-2D4F4800D8DB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

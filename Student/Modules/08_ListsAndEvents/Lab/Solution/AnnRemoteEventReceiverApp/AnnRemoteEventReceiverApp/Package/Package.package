@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="a39f8772-0ab0-44e4-8924-a060a703c5cb" 
+        solutionId="a39f8772-0ab0-44e4-8924-a060a703c5cb" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AnnRemoteEventReceiverApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="1890a45e-5bcb-4410-85e7-37f131165116" />
+  </features>
+</package>

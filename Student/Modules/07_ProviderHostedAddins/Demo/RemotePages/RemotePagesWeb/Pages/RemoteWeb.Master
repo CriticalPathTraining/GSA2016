@@ -1,0 +1,75 @@
+﻿
+<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+  <title>Remote App Pages</title>
+  <link href="/Contents/app.css" type="text/css" rel="Stylesheet" />
+  <script src="../Scripts/jquery-2.0.3.js"></script>
+  
+  <script src="../Scripts/sp.ui.controls.debug.js"></script>
+  
+  <script type="text/javascript">
+
+    function getQueryStringParameter(paramToRetrieve) {
+      var params = document.URL.split("?")[1].split("&");
+      var strParams = "";
+      for (var i = 0; i < params.length; i = i + 1) {
+        var singleParam = params[i].split("=");
+        if (singleParam[0] == paramToRetrieve)
+          return singleParam[1];
+      }
+    }
+
+    $(function() {
+      // determine URL back to host web
+      var hostWebUrl = decodeURIComponent(getQueryStringParameter("SPHostUrl"));
+
+      // create setting object for Chrome control
+      var options = {
+        siteUrl: hostWebUrl,
+        siteTitle: "Back to Host Web",
+        appHelpPageUrl: "help.aspx?SPHostUrl=" + hostWebUrl,
+        appIconUrl: "/Contents/AppIcon.png",
+        appTitle: "My SharePoint App",
+        settingsLinks: [
+          { linkUrl: "start.aspx?SPHostUrl=" + hostWebUrl, displayName: "Home" },
+          { linkUrl: "about.aspx?SPHostUrl=" + hostWebUrl, displayName: "About" },
+          { linkUrl: "contact.aspx?SPHostUrl=" + hostWebUrl, displayName: "Contact" }
+        ]
+      };
+
+      // create Chrome control instance
+      var nav = new SP.UI.Controls.Navigation("chrome_ctrl_container", options);
+      nav.setVisible(true);
+
+      // fix RTM bug with help link
+      var helpIconUrl = hostWebUrl + "/_layouts/15/1033/images/spintl.png";
+      var helpLink = $("#chromeControl_topheader_helplink")
+      helpLink.css({ "background-image": "url('" + helpIconUrl + "')" });
+    });
+
+  </script>
+  
+  <asp:ContentPlaceHolder ID="PlaceholderAdditionalPageHead" runat="server" />
+</head>
+
+<body>
+  <form id="form1" runat="server">
+    <div id="pageWidth">
+      
+      <!-- create div with specific ID to serve as Chrome control placeholder -->
+      <div id="chrome_ctrl_container"></div>
+
+      <!-- Add standard page content underneath Chrome control -->
+      <div id="contentBody">
+        <asp:ContentPlaceHolder ID="PlaceholderMain" runat="server" />
+      </div>
+
+    </div>
+  </form>
+</body>
+</html>

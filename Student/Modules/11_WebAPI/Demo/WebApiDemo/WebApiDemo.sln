@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCustomWebService", "MyCustomWebService\MyCustomWebService.csproj", "{06B8E753-2461-4C00-867C-861E08F00D36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipCRM", "WingtipCRM\WingtipCRM.csproj", "{A323F269-37BF-46FC-82AD-530F2EF36F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceClient_SharePointHostedAddin", "WebServiceClient_SharePointHostedAddin\WebServiceClient_SharePointHostedAddin.csproj", "{6A6CA35C-C904-4680-85A4-CB6EB4614AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceClient_Angular", "WebServiceClient_Angular\WebServiceClient_Angular.csproj", "{07A339AD-B840-401A-A6A2-FF9ABE9C1C12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06B8E753-2461-4C00-867C-861E08F00D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B8E753-2461-4C00-867C-861E08F00D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B8E753-2461-4C00-867C-861E08F00D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B8E753-2461-4C00-867C-861E08F00D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A323F269-37BF-46FC-82AD-530F2EF36F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A323F269-37BF-46FC-82AD-530F2EF36F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A323F269-37BF-46FC-82AD-530F2EF36F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A323F269-37BF-46FC-82AD-530F2EF36F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6CA35C-C904-4680-85A4-CB6EB4614AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6CA35C-C904-4680-85A4-CB6EB4614AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6CA35C-C904-4680-85A4-CB6EB4614AFE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A6CA35C-C904-4680-85A4-CB6EB4614AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6CA35C-C904-4680-85A4-CB6EB4614AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6CA35C-C904-4680-85A4-CB6EB4614AFE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{07A339AD-B840-401A-A6A2-FF9ABE9C1C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A339AD-B840-401A-A6A2-FF9ABE9C1C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A339AD-B840-401A-A6A2-FF9ABE9C1C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A339AD-B840-401A-A6A2-FF9ABE9C1C12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

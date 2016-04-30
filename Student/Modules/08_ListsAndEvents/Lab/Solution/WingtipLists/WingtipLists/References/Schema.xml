@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<List xmlns:ows="Microsoft SharePoint" 
+      Title="References" 
+      FolderCreation="FALSE" 
+      Direction="$Resources:Direction;" 
+      Url="Lists/References" 
+      BaseType="0" 
+      xmlns="http://schemas.microsoft.com/sharepoint/" 
+      EnableContentTypes="TRUE">
+
+  <MetaData>
+  
+    <ContentTypes>
+      <ContentType ID="0x010600B41A66D7CAF3469885C8B3437722E3FC" Name="SalesLead" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{96a5fce6-fbca-4938-8139-f691025cda4a}" DisplayName="Referring Company" Required="FALSE" Name="ReferringCompany" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Last Name" Type="Text" />
+      <Field ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" DisplayName="Last Name" Type="Computed" />
+      <Field ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" DisplayName="Last Name" Type="Computed" />
+
+      <Field ID="{96a5fce6-fbca-4938-8139-f691025cda4a}" Name="ReferringCompany" DisplayName="Referring Company" Type="Text" Required="FALSE" Group="Wingtip Site Columns"></Field>
+      <Field ID="{fdc8216d-dabf-441d-8ac0-f6c626fbdc24}" Name="LastNamePhonetic" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="LastNamePhonetic" Group="$Resources:core,Extended_Columns;" DisplayName="$Resources:core,Last_Name_Phonetic;" Type="Text" Hidden="$Resources:core,True_Unless_Jpn;" />
+      <Field ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FirstName" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,First_Name;" Type="Text" />
+      <Field ID="{ea8f7ca9-2a0e-4a89-b8bf-c51a6af62c73}" Name="FirstNamePhonetic" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FirstNamePhonetic" Group="$Resources:core,Extended_Columns;" DisplayName="$Resources:core,First_Name_Phonetic;" Type="Text" Hidden="$Resources:core,True_Unless_Jpn;" />
+      <Field ID="{475c2610-c157-4b91-9e2d-6855031b3538}" Name="FullName" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FullName" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Full_Name;" Type="Text" />
+      <Field ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" Name="EMail" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EMail" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,E-Mail;" ReadOnly="FALSE" Type="Text" FromBaseType="TRUE" AllowDeletion="TRUE" />
+      <Field ID="{038D1503-4629-40f6-ADAF-B47D1AB2D4FE}" Name="Company" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Company" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Company;" Type="Text" />
+      <Field ID="{034aae88-6e9a-4e41-bc8a-09b6c15fcdf4}" Name="CompanyPhonetic" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CompanyPhonetic" Group="$Resources:core,Extended_Columns;" DisplayName="$Resources:core,Company_Phonetic;" Type="Text" Hidden="$Resources:core,True_Unless_Jpn;" />
+      <Field ID="{c4e0f350-52cc-4ede-904c-dd71a3d11f7d}" Name="JobTitle" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="JobTitle" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Job_Title;" Type="Text" />
+      <Field ID="{fd630629-c165-4513-b43c-fdb16b86a14d}" Name="WorkPhone" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkPhone" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Business_Phone;" Type="Text" IMEMode="inactive" />
+      <Field ID="{2ab923eb-9880-4b47-9965-ebf93ae15487}" Name="HomePhone" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="HomePhone" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Home_Phone;" Type="Text" IMEMode="inactive" />
+      <Field ID="{2a464df1-44c1-4851-949d-fcd270f0ccf2}" Name="CellPhone" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CellPhone" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Mobile_Phone;" Type="Text" IMEMode="inactive" />
+      <Field ID="{9d1cacc8-f452-4bc1-a751-050595ad96e1}" Name="WorkFax" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkFax" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Fax_Number;" Type="Text" IMEMode="inactive" />
+      <Field ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" Name="WorkAddress" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkAddress" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Address;" Type="Note" NumLines="2" Sortable="FALSE" />
+      <Field ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" Name="WorkCity" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkCity" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,City;" Type="Text" />
+      <Field ID="{ceac61d3-dda9-468b-b276-f4a6bb93f14f}" Name="WorkState" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkState" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,State_Province;" Type="Text" NumLines="2" Sortable="TRUE" />
+      <Field ID="{9a631556-3dac-49db-8d2f-fb033b0fdc24}" Name="WorkZip" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkZip" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,ZIP_Postal_Code;" Type="Text" IMEMode="inactive" />
+      <Field ID="{3f3a5c85-9d5a-4663-b925-8b68a678ea3a}" Name="WorkCountry" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkCountry" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Country_Region;" Type="Text" />
+      <Field ID="{a71affd2-dcc7-4529-81bc-2fe593154a5f}" Name="WebPage" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WebPage" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Web_Page;" Type="URL" />
+      <Field ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Type="Note" RichText="TRUE" Name="Comments" Group="_Hidden" DisplayName="$Resources:core,Comments;" Sortable="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Comments" />
+    </Fields>
+    <Views>
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="FirstName" />
+          <FieldRef Name="WorkPhone" />
+          <FieldRef Name="ReferringCompany" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType 
+    ID="0x0100F5EB0315D6B0413C9503E2E54A52363F" 
+    Name="Book" 
+    Group="Wingtip Content Types" 
+    Description="A Demo Content Type" 
+    Inherits="TRUE" 
+    Version="0">
+    
+    <FieldRefs>
+      <FieldRef ID="{11e6b032-2d81-4068-9766-75bb26271e31}" Name="BookAuthor" />
+      <FieldRef ID="{7bb22fe4-ca40-4e15-818d-74eb401be8c3}" Name="YearPublished" />
+      <FieldRef ID="{f5b18ca4-d41c-46e5-a4a1-f1703ede46a1}" Name="OriginalLanguage" />
+      <FieldRef ID="{732082d9-3288-4ce8-92bc-2ba8bf4f39e2}" Name="AuthorCountry" />
+    </FieldRefs>
+    
+  </ContentType>
+  
+  
+  
+</Elements>

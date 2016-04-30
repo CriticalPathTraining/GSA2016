@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" />
+<File Path="Scripts\jquery-1.7.2.js" Url="Scripts/jquery-1.7.2.js" />
+<File Path="Scripts\SP.Taxonomy.debug.js" Url="Scripts/SP.Taxonomy.debug.js" />
+<File Path="Scripts\SP.Taxonomy.js" Url="Scripts/SP.Taxonomy.js" />
+</Module>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="54cdd97a-1911-48e7-963b-26ba18aea5d2.CustomActionDialog"
+                RegistrationType="List"
+                RegistrationId="100"
+                Location="EditControlBlock"
+                Sequence="10001"
+                Title="Custom Action Dialog"
+                HostWebDialog="TRUE"
+                HostWebDialogWidth="600"
+                HostWebDialogHeight="400">
+    <UrlAction Url="~remoteAppUrl/Pages/CustomAction.aspx?Source={Source}&amp;ListURLDir={ListUrlDir}&amp;ListID={ListId}&amp;ItemURL={ItemUrl}&amp;ItemID={ItemId}&amp;{StandardTokens}" />
+  </CustomAction>
+</Elements>

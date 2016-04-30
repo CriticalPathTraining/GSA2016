@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="05742f12-dfa6-44b9-8292-86fab4c73353" 
+        solutionId="05742f12-dfa6-44b9-8292-86fab4c73353" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="BCSDashboardJSOM"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="000d3e38-809e-481b-85a7-cd2a2949863c" />
+  </features>
+</package>

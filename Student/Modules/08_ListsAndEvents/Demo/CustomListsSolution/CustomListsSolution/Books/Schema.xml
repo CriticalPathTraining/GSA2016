@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Books" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Books" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+
+
+      <ContentType ID="0x0100F5EB0315D6B0413C9503E2E54A52363F" Name="Book" Group="Wingtip Content Types" Description="A Demo Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{11e6b032-2d81-4068-9766-75bb26271e31}" Name="BookAuthor" />
+          <FieldRef ID="{7bb22fe4-ca40-4e15-818d-74eb401be8c3}" Name="YearPublished" />
+          <FieldRef ID="{f5b18ca4-d41c-46e5-a4a1-f1703ede46a1}" Name="OriginalLanguage" />
+          <FieldRef ID="{732082d9-3288-4ce8-92bc-2ba8bf4f39e2}" Name="AuthorCountry" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{11e6b032-2d81-4068-9766-75bb26271e31}" Name="BookAuthor" DisplayName="Author" Type="Text" Required="TRUE" Group="Wingtip Site Columns" />
+      <Field ID="{7bb22fe4-ca40-4e15-818d-74eb401be8c3}" Name="YearPublished" DisplayName="Year Published" Type="Text" Required="TRUE" Group="Wingtip Site Columns" />
+      <Field ID="{f5b18ca4-d41c-46e5-a4a1-f1703ede46a1}" Name="OriginalLanguage" DisplayName="Original Language" Type="Text" Required="TRUE" Group="Wingtip Site Columns" />
+      <Field ID="{732082d9-3288-4ce8-92bc-2ba8bf4f39e2}" Name="AuthorCountry" DisplayName="Author Country" Type="Text" Required="TRUE" Group="Wingtip Site Columns" />
+    </Fields>
+    <Views>
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="BookAuthor" />
+          <FieldRef Name="YearPublished" />
+          <FieldRef Name="OriginalLanguage" />
+          <FieldRef Name="AuthorCountry" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="52f3cc35-9fd7-4199-9fd6-c7a40cd303a8" DisplayName="Custom View using JSLink" Type="HTML" ReadOnly="TRUE" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Custom View using JSLink.aspx">
+        <RowLimit>30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Title" />
+          <FieldRef Name="BookAuthor" />
+        </ViewFields>
+        <Query />
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>~site/Scripts/BooksCustomRendering.js</JSLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

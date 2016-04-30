@@ -1,0 +1,97 @@
+﻿body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #DDD;
+}
+
+#page_width {
+  width: 960px;
+  margin: auto;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+#nav_bar {
+  padding: 4px;
+  background-color: black;
+}
+
+  #nav_bar a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+  }
+
+#content_body {
+  border-top: 1px solid black;
+  padding: 8px;
+}
+
+#page_header {
+  height: 72px;
+}
+
+#site_logo {
+  float: left;
+  background-image: url("img/AppIcon.gif");
+  width: 75px;
+  height: 75px;
+}
+
+#site_title {
+  margin: 0px;
+  margin-top: 12px;
+  float: left;
+  font-size: 40px;
+  color: #000;
+}
+
+#toolbar {
+  margin: 0px;
+  padding: 4px;
+  background-color: #000;
+}
+
+#toolbar input[type="submit"] {
+  margin-right: 4px;
+  width: 140px;
+}
+
+#toolbar input[type="text"] {
+  margin-left: 4px;
+  width: 360px;
+}
+
+
+
+#content_box {
+  padding: 0px;
+  min-height: 480px;
+}
+
+#content_box div table {
+  background-color: #999;
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+}
+
+  #content_box div table a img {
+    text-decoration: none;
+    border-style: none;
+  }
+
+
+  #content_box div table thead td {
+    background-color: black;
+    color: White;
+  }
+
+  #content_box div table td {
+    color: #222;
+    border: 1px black solid;
+    padding: 4px;
+    background-color: White;
+    border-collapse: collapse;
+  }

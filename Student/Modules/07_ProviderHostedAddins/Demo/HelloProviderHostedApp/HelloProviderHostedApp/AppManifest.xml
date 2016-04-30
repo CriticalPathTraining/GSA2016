@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="HelloProvider-HostedApp"
+     ProductID="{8d587998-fdbf-4d97-a739-613a647bed83}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0" >
+
+  <Properties>
+    <Title>Hello Provider-Hosted App</Title>
+    <StartPage>~remoteAppUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <!-- turn off external app authentication -->
+    <Internal /> 
+  </AppPrincipal>
+  
+</App>

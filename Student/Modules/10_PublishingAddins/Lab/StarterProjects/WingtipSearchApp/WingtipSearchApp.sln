@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipSearchApp", "WingtipSearchApp\WingtipSearchApp.csproj", "{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipSearchAppWeb", "WingtipSearchAppWeb\WingtipSearchAppWeb.csproj", "{D334B698-7135-485C-926F-9C19D5E6851E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74222D05-4BBC-40BF-AED5-A5D2991DFAC6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D334B698-7135-485C-926F-9C19D5E6851E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D334B698-7135-485C-926F-9C19D5E6851E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D334B698-7135-485C-926F-9C19D5E6851E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D334B698-7135-485C-926F-9C19D5E6851E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

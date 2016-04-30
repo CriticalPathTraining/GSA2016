@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/Announcements" >
+  
+    <Receiver>
+      <Name>AnnouncementsEventReceiverItemAdding</Name>
+      <Type>ItemAdding</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Url>~remoteAppUrl/Services/AnnouncementsEventReceiver.svc</Url>
+    </Receiver>
+    
+    <Receiver>
+      <Name>AnnouncementsEventReceiverItemUpdating</Name>
+      <Type>ItemUpdating</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Url>~remoteAppUrl/Services/AnnouncementsEventReceiver.svc</Url>
+    </Receiver>
+    
+    <Receiver>
+      <Name>AnnouncementsEventReceiverItemAdded</Name>
+      <Type>ItemAdded</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Url>~remoteAppUrl/Services/AnnouncementsEventReceiver.svc</Url>
+    </Receiver>
+    
+    <Receiver>
+      <Name>AnnouncementsEventReceiverItemUpdated</Name>
+      <Type>ItemUpdated</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Url>~remoteAppUrl/Services/AnnouncementsEventReceiver.svc</Url>
+    </Receiver>
+    
+  </Receivers>
+</Elements>

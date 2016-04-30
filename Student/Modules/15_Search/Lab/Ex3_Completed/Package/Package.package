@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="c49be8ba-7727-42b3-aa1c-fd05628123f4" 
+        solutionId="c49be8ba-7727-42b3-aa1c-fd05628123f4" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SearchApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="079438f5-715a-4fc9-b894-6c26ddccc176" />
+  </features>
+</package>

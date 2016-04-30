@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipCRMService", "WingtipCRMService\WingtipCRMService.csproj", "{2F5BDA71-0BE1-4E26-84B1-35107D61F389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipCRMAngularClient", "WingtipCRMAngularClient\WingtipCRMAngularClient.csproj", "{D8D084A1-B058-4BA5-8F6A-E1A88C0C2715}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F5BDA71-0BE1-4E26-84B1-35107D61F389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5BDA71-0BE1-4E26-84B1-35107D61F389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5BDA71-0BE1-4E26-84B1-35107D61F389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5BDA71-0BE1-4E26-84B1-35107D61F389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D084A1-B058-4BA5-8F6A-E1A88C0C2715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D084A1-B058-4BA5-8F6A-E1A88C0C2715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D084A1-B058-4BA5-8F6A-E1A88C0C2715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D084A1-B058-4BA5-8F6A-E1A88C0C2715}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/Announcements (RER)">
+    <Receiver>
+      <Name>AnnRemoteEventReceiverItemAdding</Name>
+      <Type>ItemAdding</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Url>~remoteAppUrl/Services/AnnRemoteEventReceiver.svc</Url>
+    </Receiver>
+  </Receivers>
+</Elements>

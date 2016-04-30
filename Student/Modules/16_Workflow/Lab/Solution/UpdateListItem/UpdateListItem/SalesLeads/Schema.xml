@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SalesLeads" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SalesLeads" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010064d6bbd646ef44ae96da6ed10979e593" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{8bb44400-6aaf-428e-ac16-a60bd0b7bd76}" Name="Age" /><FieldRef ID="{97ea184a-8a71-4b42-a898-14fe28f98c3a}" Name="StreetAddress" /><FieldRef ID="{ed7542b5-3205-47b5-8d15-400cbfcf0ca8}" Name="City" /><FieldRef ID="{977e2e21-a2ad-4f17-a5d4-1b22c40f69c5}" Name="State_x002f_Province" /><FieldRef ID="{7b54867c-6386-4b6b-9283-d08db729cf35}" Name="Zip_x002f_PostalCode" /><FieldRef ID="{cb1fad89-bbc4-4767-a969-d2c8447f4835}" Name="Country_x002f_Region" /><FieldRef ID="{b0c7e716-940f-461b-9006-9fc91fd0e7c8}" Name="BusinessPhone" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="Age" ID="{8bb44400-6aaf-428e-ac16-a60bd0b7bd76}" DisplayName="Age" Type="Number" /><Field Name="StreetAddress" ID="{97ea184a-8a71-4b42-a898-14fe28f98c3a}" DisplayName="Street Address" Type="Text" /><Field Name="City" ID="{ed7542b5-3205-47b5-8d15-400cbfcf0ca8}" DisplayName="City" Type="Text" /><Field Name="State_x002f_Province" ID="{977e2e21-a2ad-4f17-a5d4-1b22c40f69c5}" DisplayName="State/Province" Type="Text" /><Field Name="Zip_x002f_PostalCode" ID="{7b54867c-6386-4b6b-9283-d08db729cf35}" DisplayName="Zip/Postal Code" Type="Text" /><Field Name="Country_x002f_Region" ID="{cb1fad89-bbc4-4767-a969-d2c8447f4835}" DisplayName="Country/Region" Type="Text" /><Field Name="BusinessPhone" ID="{b0c7e716-940f-461b-9006-9fc91fd0e7c8}" DisplayName="Business Phone" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Age" /><FieldRef Name="StreetAddress" /><FieldRef Name="City" /><FieldRef Name="State_x002f_Province" /><FieldRef Name="Zip_x002f_PostalCode" /><FieldRef Name="Country_x002f_Region" /><FieldRef Name="BusinessPhone" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

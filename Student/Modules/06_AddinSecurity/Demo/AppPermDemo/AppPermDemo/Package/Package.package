@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="5c1d2539-79d3-4f78-b867-a0489ac92a33" 
+        solutionId="5c1d2539-79d3-4f78-b867-a0489ac92a33" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AppPermDemo"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="ad28754f-dfac-4e4f-9a72-3ebf742313b8" />
+  </features>
+</package>

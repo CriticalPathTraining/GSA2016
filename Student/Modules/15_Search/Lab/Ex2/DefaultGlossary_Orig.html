@@ -1,0 +1,76 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>DefaultGlossary</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string"></mso:MasterPageDescription>
+<mso:ContentType msdt:dt="string">Item Display Template</mso:ContentType>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">&quot;WorkId&quot;:&quot;WorkId&quot;,&quot;Rank&quot;:&quot;Rank&quot;,&quot;Title&quot;:&quot;Title&quot;,&quot;Author&quot;:&quot;Author&quot;,&quot;Size&quot;:&quot;Size&quot;,&quot;Path&quot;:&quot;Path&quot;,&quot;Description&quot;:&quot;Description&quot;,&quot;Write&quot;:&quot;Write&quot;,&quot;SiteName&quot;:&quot;SiteName&quot;,&quot;CollapsingStatus&quot;:&quot;CollapsingStatus&quot;,&quot;HitHighlightedSummary&quot;:&quot;HitHighlightedSummary&quot;,&quot;HitHighlightedProperties&quot;:&quot;HitHighlightedProperties&quot;,&quot;ContentClass&quot;:&quot;ContentClass&quot;,&quot;IsDocument&quot;:&quot;IsDocument&quot;,&quot;PictureThumbnailURL&quot;:&quot;PictureThumbnailURL&quot;,&quot;ServerRedirectedURL&quot;:&quot;ServerRedirectedURL&quot;,&quot;FileExtension&quot;:&quot;FileExtension&quot;,&quot;DocumentSummarySize&quot;:&quot;DocumentSummarySize&quot;,&quot;DocumentSummary&quot;:&quot;DocumentSummary&quot;</mso:ManagedPropertyMapping>
+<mso:_dlc_DocId msdt:dt="string">X5YX34AVTQNS-6-119</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">fc7371ea-4750-4691-9ae1-27c0602995d5</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">http://sphvm-8071/_layouts/15/DocIdRedir.aspx?ID=X5YX34AVTQNS-6-119, X5YX34AVTQNS-6-119</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="DefaultGlossary">
+<!--#_ 
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+            var id = ctx.ClientControl.get_nextUniqueId();
+            $setResultItem(id, ctx.CurrentItem);
+            var hover_id = "hover_" + id; 
+_#-->
+            <div id="_#= $htmlEncode(id) =#_" name="Item" class="ms-srch-item sch-BHover" onmouseover="EnsureScriptParams('SearchUI.js', 'HP.Init', event, '_#= $scriptEncode(id) =#_', '_#= $scriptEncode(hover_id) =#_', 'DefaultHover');" onmouseout="EnsureScriptParams('SearchUI.js', 'HP.Init', event, '_#= $scriptEncode(id) =#_', '_#= $scriptEncode(hover_id) =#_', 'DefaultHover');">
+                <div id="_#= hover_id =#_" class="sch-HoverOC"></div>
+                <div id="Main">
+<!--#_ 
+                    var hhProps = Srch.U.createXMLDocument("<root>" + ctx.CurrentItem.HitHighlightedProperties + "</root>");
+                    var title = Srch.U.getSingleHHXMLNodeValue(hhProps, "HHTitle");
+                    var url = Srch.U.getSingleHHXMLNodeValue(hhProps, "HHUrl");
+                    if ($isEmptyString(title)) {title = $htmlEncode(ctx.CurrentItem.Title)}
+                    if ($isEmptyString(url)) {url = $htmlEncode(ctx.CurrentItem.Path)} 
+_#-->
+                    <div id="Header">
+                        <a clicktype="Result" id="TitleLink" href="_#= $urlHtmlEncode(ctx.CurrentItem.Path) =#_" title="_#= $htmlEncode(ctx.CurrentItem.Title) =#_">_#= $htmlEncode(Srch.U.getTrimmedProcessedHHXMLString(title, 60)) =#_</a>
+                        
+                    </div>
+<!--#_ 
+                    if(!Srch.U.e(ctx.CurrentItem.HitHighlightedSummary)) { 
+_#-->
+                        <div id="Summary">
+<!--#_ 
+                            var su = Srch.U.getTrimmedHHXMLString(ctx.CurrentItem.HitHighlightedSummary, 120);
+                            su = Srch.U.processHHXML(su); 
+_#-->                      _#= ctx.CurrentItem.DefinitionOWSTXT =#_ 
+                            
+                        </div>
+<!--#_ 
+                    } 
+_#-->
+                    <div id="Footer">
+                        <div id="Path" title="_#= $htmlEncode(ctx.CurrentItem.Path) =#_">
+                            _#= $htmlEncode(Srch.U.truncateUrl(ctx.CurrentItem.Path, 55)) =#_
+                            _#= ctx.CurrentItem.ProductOWSTXT =#_ 
+                        </div>
+                        <div id="CopyLinkDiv">
+<!--#_  
+                        if(window.clipboardData) { 
+_#-->
+                            <a id="CopyLink" href="javascript:Srch.U.copyLink('_#= $urlHtmlEncode(ctx.CurrentItem.Path) =#_')" title="Copy this URL to the clipboard">Copy link</a>
+<!--#_ 
+                        } 
+_#-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--#_ 
+        } 
+_#-->
+    </div>
+</body>
+</html>

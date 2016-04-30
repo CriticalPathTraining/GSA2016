@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     ProductID="{0a5305f8-cec4-45ae-9c82-99224f295685}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>Taxonomy App</Title>
+    <StartPage>~appWebUrl/Pages/Home.aspx</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal />
+  </AppPrincipal>
+
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/taxonomy" Right="Read"/>
+  </AppPermissionRequests>
+
+</App>

@@ -1,0 +1,11 @@
+> Login as non-admin user (Ken Sanchez)
+> Launch VS2012 as admin
+> Create new workflow project, deploy as sandbox for speed
+> Create two variables
+	> GUID - ListItemGuid
+	> string - List Item
+> Grab value from existing list item using following activities & store in variables
+	> GetCurrentItemGuid
+	> LookupSPListItemStringPropert
+> Use a WriteToHistory to log data
+> Use a SetField activity to update list item

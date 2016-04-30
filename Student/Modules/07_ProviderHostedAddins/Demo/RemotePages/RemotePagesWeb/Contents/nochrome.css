@@ -1,0 +1,51 @@
+﻿body {
+  background-color: #eee;
+}
+
+h2 {
+  font-size: 2.0em;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-top: 12px;
+  font-size: 1.5em;
+  color: DarkBlue;
+  padding-bottom: 2px;
+  border-bottom: 2px DarkBlue solid;
+  margin-bottom: 8px;
+}
+
+table {
+  width: 580px;
+  max-width: 580px;
+}
+
+table, table td {
+  border: #999 1px solid;
+  color: black;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 4px;
+  border-collapse: collapse;
+  vertical-align: top;
+  min-width: 172px;
+  text-wrap: normal;
+  display: block;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-size: 9pt;
+}
+
+table td ul {
+	margin: 2px;
+	padding-left: 8px;
+}
+
+
+table td ul li {
+	margin-left: 2px;
+}
