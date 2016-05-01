@@ -1,3 +1,6 @@
 C:\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\bin\Debug\WingtipAppParts.pdb
 C:\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\obj\Debug\WingtipAppParts.dll
 C:\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\obj\Debug\WingtipAppParts.pdb
+C:\GSA2016\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\bin\Debug\WingtipAppParts.pdb
+C:\GSA2016\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\obj\Debug\WingtipAppParts.dll
+C:\GSA2016\Student\Modules\03_SharePointHostedAddins\Lab\Solution\WingtipAppParts\WingtipAppParts\obj\Debug\WingtipAppParts.pdb

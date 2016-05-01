@@ -10,3 +10,7 @@ C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizable
 C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.csprojResolveAssemblyReference.cache
 C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.dll
 C:\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.pdb
+C:\GSA2016\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\bin\Debug\MyResizableAppPart.pdb
+C:\GSA2016\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.csprojResolveAssemblyReference.cache
+C:\GSA2016\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.dll
+C:\GSA2016\Student\Modules\03_SharePointHostedAddins\Demo\MyResizableAppPart\MyResizableAppPart\obj\Debug\MyResizableAppPart.pdb
