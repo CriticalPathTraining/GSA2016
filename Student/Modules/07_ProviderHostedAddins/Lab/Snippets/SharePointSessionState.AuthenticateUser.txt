@@ -1,0 +1,40 @@
+private static void AuthenticateUser() {
+
+      sessionState.RemoteWebUrl = request.Url.Authority;
+      sessionState.HostWebUrl = request["SPHostUrl"];
+      sessionState.HostWebDomain = (new Uri(sessionState.HostWebUrl)).Authority;
+      sessionState.HostWebTitle = request.Form["SPSiteTitle"];
+      string contextTokenString = request.Form["SPAppToken"];
+
+      // create SharePoint context token object 
+      SharePointContextToken contextToken =
+        TokenHelper.ReadAndValidateContextToken(contextTokenString, sessionState.RemoteWebUrl);
+      // read session state from SharePoint context token object 
+      sessionState.HostTenantId = contextToken.Realm;
+      sessionState.TargetResource = contextToken.Audience;
+      sessionState.RefreshToken = contextToken.RefreshToken;
+      sessionState.RefreshTokenExpires = contextToken.ValidTo;
+
+      // use refresh token to acquire access token response from Azure ACS 
+      OAuth2AccessTokenResponse AccessTokenResponse =
+        TokenHelper.GetAccessToken(contextToken, sessionState.HostWebDomain);
+      // Read access token and ExpiresOn value from access token response 
+      sessionState.AccessToken = AccessTokenResponse.AccessToken;
+      sessionState.AccessTokenExpires = AccessTokenResponse.ExpiresOn;
+
+      // call SharePoint REST API to get information about current user 
+      string restUri = sessionState.HostWebUrl + "/_api/web/currentUser/";
+      string jsonCurrentUser = ExecuteGetRequest(restUri, sessionState.AccessToken);
+
+      // convert json result to strongly-typed C# object 
+      SharePointUserResult userResult = JsonConvert.DeserializeObject<SharePointUserResult>(jsonCurrentUser);
+
+      sessionState.CurrentUserName = userResult.Title;
+      sessionState.CurrentUserEmail = userResult.Email;
+
+      // write session state out to ASP.NET session object 
+      session["SharePointSessionState"] = sessionState;
+
+      // update UserIsAuthenticated session variable 
+      session["UserIsAuthenticated"] = "true";
+}

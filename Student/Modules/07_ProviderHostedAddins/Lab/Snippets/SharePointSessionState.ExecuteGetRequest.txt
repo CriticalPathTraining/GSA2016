@@ -1,0 +1,17 @@
+private static string ExecuteGetRequest(string restUri, string accessToken) {
+
+      // setup request 
+      HttpClient client = new HttpClient();
+      client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
+      client.DefaultRequestHeaders.Add("Accept", "application/json");
+      // execute request 
+      HttpResponseMessage response = client.GetAsync(restUri).Result;
+      // handle response 
+      if (response.IsSuccessStatusCode) {
+        return response.Content.ReadAsStringAsync().Result;
+      }
+      else {
+        // ERROR during HTTP GET operation 
+        return string.Empty;
+      }
+}

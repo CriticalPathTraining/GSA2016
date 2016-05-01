@@ -1,0 +1,13 @@
+h2{ 
+  font-size: 16pt; 
+  line-height: 1.0; 
+  color: darkblue; 
+  padding-bottom: 2px; 
+  border-bottom: 1px solid darkblue; 
+  margin-top: 0; 
+  margin-bottom: 12px; 
+} 
+ 
+.table tr td:first-child { 
+  width: 200px; 
+} 

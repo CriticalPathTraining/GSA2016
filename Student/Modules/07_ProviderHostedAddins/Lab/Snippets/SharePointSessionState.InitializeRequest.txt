@@ -1,0 +1,15 @@
+public static void InitializeRequest(ControllerBase controller) {
+
+      if (!UserIsAuthentiated()) {
+        AuthenticateUser();
+      }
+      else {
+        // if user is authenticated, copy session state from previous request 
+        sessionState = (SharePointSessionState)session["SharePointSessionState"];
+      }
+
+      // add session state to ViewBag to make it accessible in views 
+      controller.ViewBag.HostWebUrl = sessionState.HostWebUrl;
+      controller.ViewBag.HostWebTitle = sessionState.HostWebTitle;
+      controller.ViewBag.CurrentUserName = sessionState.CurrentUserName;
+}

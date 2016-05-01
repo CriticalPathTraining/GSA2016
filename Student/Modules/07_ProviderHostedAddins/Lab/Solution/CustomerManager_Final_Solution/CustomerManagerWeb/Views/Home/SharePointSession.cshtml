@@ -1,0 +1,34 @@
+﻿@model CustomerManagerWeb.Models.SharePointSessionState
+
+<h2>SharePoint Session Information</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <td>Remote Web Url:</td>
+        <td>@Model.RemoteWebUrl</td>
+    </tr>
+    <tr>
+        <td>Host Web Url:</td>
+        <td>@Model.HostWebUrl</td>
+    </tr>
+    <tr>
+        <td>Host Web Domain:</td>
+        <td>@Model.HostWebDomain</td>
+    </tr>
+    <tr>
+        <td>Host Web Title:</td>
+        <td>@Model.HostWebTitle</td>
+    </tr>
+    <tr>
+        <td>Current User Account Name:</td>
+        <td>@Model.CurrentUserAccountName</td>
+    </tr>
+    <tr>
+        <td>Current User Display Name:</td>
+        <td>@Model.CurrentUserDisplayName</td>
+    </tr>
+    <tr>
+        <td>Current User Email:</td>
+        <td>@Model.CurrentUserEmail</td>
+    </tr>
+</table>
