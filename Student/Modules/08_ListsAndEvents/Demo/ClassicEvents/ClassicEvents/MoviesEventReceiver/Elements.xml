@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Receivers  ListUrl="Lists/Movies" >
+    
+      <Receiver>
+        <Name>MoviesEventReceiverItemAdding</Name>
+        <Type>ItemAdding</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>ClassicEvents.MoviesEventReceiver.MoviesEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>MoviesEventReceiverItemUpdating</Name>
+        <Type>ItemUpdating</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>ClassicEvents.MoviesEventReceiver.MoviesEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>MoviesEventReceiverItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>ClassicEvents.MoviesEventReceiver.MoviesEventReceiver</Class>
+        <Synchronization>Synchronous</Synchronization>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>MoviesEventReceiverItemUpdated</Name>
+        <Type>ItemUpdated</Type>
+        <Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+        <Class>ClassicEvents.MoviesEventReceiver.MoviesEventReceiver</Class>
+        <Synchronization>Synchronous</Synchronization>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>
