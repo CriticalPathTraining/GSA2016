@@ -2,7 +2,7 @@
 Add-PSSnapin "Microsoft.SharePoint.PowerShell"
 
 $siteDomain = "security.wingtip.com"
-$siteUrl = "http://$siteDomain"
+$siteUrl = "https://$siteDomain"
 $siteDisplayName = "App Security Lab"
 $siteTemplate = "DEV#0"
 $siteOwner = "WINGTIP\Administrator" 
