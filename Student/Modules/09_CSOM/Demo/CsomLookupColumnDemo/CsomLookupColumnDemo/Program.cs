@@ -70,7 +70,6 @@ namespace CsomLookupColumnDemo {
       // set relationship behavior on lookup items to cascade delete
       lookup.RelationshipDeleteBehavior = RelationshipDeleteBehaviorType.Cascade;
       lookup.Update();
-      
 
       clientContext.ExecuteQuery();
 
@@ -161,6 +160,9 @@ namespace CsomLookupColumnDemo {
         using (scope3.StartCatch()) { }
       }
 
+      clientContext.ExecuteQuery();
+
     }
+
   }
 }
