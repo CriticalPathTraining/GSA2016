@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
-  <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{96a5fce6-fbca-4938-8139-f691025cda4a}"
+       ID="{291278dd-8e17-4826-8a99-48c59d33ab05}"
        Name="ReferringCompany"
        DisplayName="Referring Company"
        Type="Text"

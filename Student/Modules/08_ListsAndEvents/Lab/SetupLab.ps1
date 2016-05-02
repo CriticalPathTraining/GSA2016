@@ -2,7 +2,7 @@
 Add-PSSnapin "Microsoft.SharePoint.PowerShell"
 
 $siteDomain = "ListsAndEvents.wingtip.com"
-$siteUrl = "http://$siteDomain"
+$siteUrl = "https://$siteDomain"
 $siteDisplayName = "Lists and Events Lab"
 $siteTemplate = "STS#0"
 $siteOwner = "WINGTIP\Administrator" 
