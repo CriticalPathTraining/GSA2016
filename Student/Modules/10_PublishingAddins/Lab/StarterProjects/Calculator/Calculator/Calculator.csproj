@@ -1,26 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FE0FCBC-2CDA-41A0-B952-7637C78CC604}</ProjectGuid>
+    <ProjectGuid>{40BB0EB3-5CE2-4E54-90B0-C719E5B63F1A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Calculator</RootNamespace>
     <AssemblyName>Calculator</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.6</MinimumOfficeToolsVersion>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
     <ProjectMode>SharePointApp</ProjectMode>
-    <AppFeaturePartId>{7e8985c7-cf1b-49f8-b969-c758f88ed24e}</AppFeaturePartId>
-    <WspPartId>{11ae571d-3740-4ee3-8292-f0b61a72b93d}</WspPartId>
-    <CspkgPartId>{67a590bf-3149-4c32-9f53-373ce260b11c}</CspkgPartId>
-    <SqlPackagePartId>{2e28abc4-d39d-4e41-8982-e3f3235637af}</SqlPackagePartId>
-    <ActiveDeploymentConfiguration>Deploy App for SharePoint</ActiveDeploymentConfiguration>
-    <ActivePublishProfile />
+    <AppFeaturePartId>{81958a45-60e8-41e8-a4d9-6153cc272091}</AppFeaturePartId>
+    <WspPartId>{b8328bb9-9ff9-4d41-9d9a-2edda5eb1823}</WspPartId>
+    <WorkflowPartId>{af13af13-8a08-4cb7-b2d8-7f72a5e17cde}</WorkflowPartId>
+    <CspkgPartId>{a77fba1d-f72b-4ae7-b56f-ce6538bf44a1}</CspkgPartId>
+    <SqlPackagePartId>{aefdfe4c-25d1-4772-8477-af05ed71f490}</SqlPackagePartId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,28 +45,31 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{2ab41d1e-c8a8-400a-ad6e-7c15fee6a69a}</SharePointProjectItemId>
+      <SharePointProjectItemId>{82edce9b-0d5f-44a9-84ab-dc2fc134394d}</SharePointProjectItemId>
     </None>
+    <Content Include="Content\calculator.png" />
+    <Content Include="Content\jquery.calculator.alt.css" />
+    <Content Include="Content\jquery.calculator.css" />
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Scripts\jquery-1.11.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{2e28abc4-d39d-4e41-8982-e3f3235637af}</SharePointProjectItemId>
+      <SharePointProjectItemId>{aefdfe4c-25d1-4772-8477-af05ed71f490}</SharePointProjectItemId>
     </None>
-    <Content Include="Content\calculator.png" />
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
-    <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.6.2.js" />
-    <Content Include="Scripts\jquery-1.6.2.min.js" />
-    <Content Include="Content\jquery.calculator.css" />
-    <Content Include="Scripts\jquery.calculator.min.js" />
+    <Content Include="Scripts\jquery-1.11.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.11.1.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\jquery.calculator.js" />
+    <Content Include="Scripts\jquery.plugin.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{78b17451-de44-4176-ae30-f54bd4c7fda7}</SharePointProjectItemId>
+      <SharePointProjectItemId>{665333fe-c0c3-45c1-b242-1d403280d7b0}</SharePointProjectItemId>
     </None>
     <Content Include="Content\Elements.xml" />
     <Content Include="Content\App.css" />
@@ -76,18 +80,18 @@
     </Content>
     <Content Include="Images\Elements.xml" />
     <None Include="Images\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d70b0b34-54d5-496e-9f3c-ca0de591ceec}</SharePointProjectItemId>
+      <SharePointProjectItemId>{7b941775-3139-4b69-932d-fa4f5f09cb5c}</SharePointProjectItemId>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Package\Package.package">
-      <PackageId>{6397d9f0-0850-4a03-b8c2-2265f4d640f3}</PackageId>
+      <PackageId>{249d88ad-92b2-4821-b4f8-b57e2e3a8bf9}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{5434a157-0bbd-4e4c-b250-3b3e18f8ae34}</FeatureId>
+      <FeatureId>{330d0b6e-92b3-4341-bdbc-766dce5a08a7}</FeatureId>
     </None>
     <None Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>

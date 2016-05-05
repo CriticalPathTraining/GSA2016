@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
-     Name="CalculatorApp"
-     ProductID="{2ab41d1e-c8a8-400a-ad6e-7c15fee6a69a}"
+     Name="Calculator"
+     ProductID="{82edce9b-0d5f-44a9-84ab-dc2fc134394d}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
-    <Title>Calculator App</Title>
+    <Title>Calculator Add-in</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 

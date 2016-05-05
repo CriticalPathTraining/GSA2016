@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package dslVersion="1.0.0.0" 
-        Id="6397d9f0-0850-4a03-b8c2-2265f4d640f3" 
-        solutionId="6397d9f0-0850-4a03-b8c2-2265f4d640f3" 
+        Id="249d88ad-92b2-4821-b4f8-b57e2e3a8bf9" 
+        solutionId="249d88ad-92b2-4821-b4f8-b57e2e3a8bf9" 
         xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
         name="Calculator"
-        sharePointProductVersion="15.0">
+        sharePointProductVersion="16.0">
   <features>
-        <featureReference itemId="5434a157-0bbd-4e4c-b250-3b3e18f8ae34" />
+        <featureReference itemId="330d0b6e-92b3-4341-bdbc-766dce5a08a7" />
   </features>
 </package>

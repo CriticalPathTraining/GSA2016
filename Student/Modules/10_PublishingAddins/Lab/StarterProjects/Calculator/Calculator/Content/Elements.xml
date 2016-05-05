@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Content">
-    <File Path="Content\App.css" Url="Content/App.css" />
-  <File Path="Content\calculator.png" Url="Content/calculator.png" />
-<File Path="Content\jquery.calculator.css" Url="Content/jquery.calculator.css" />
-</Module>
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery.calculator.css" Url="Content/jquery.calculator.css" ReplaceContent="TRUE" />
+    <File Path="Content\calculator.png" Url="Content/calculator.png" ReplaceContent="TRUE" />
+    <File Path="Content\jquery.calculator.alt.css" Url="Content/jquery.calculator.alt.css" ReplaceContent="TRUE" />
+  </Module>
 </Elements>

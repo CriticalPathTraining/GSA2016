@@ -3,9 +3,11 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
     <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="jquery-1.6.2-vsdoc.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="jquery-1.6.2.min.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="jquery-1.6.2.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="jquery.calculator.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.calculator.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.plugin.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.11.1.min.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.11.1.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.11.1.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.11.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

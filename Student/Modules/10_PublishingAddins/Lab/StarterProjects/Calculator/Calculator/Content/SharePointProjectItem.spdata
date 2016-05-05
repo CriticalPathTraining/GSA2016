@@ -3,7 +3,8 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="Content\" Type="ElementManifest" />
     <ProjectItemFile Source="App.css" Target="Content\" Type="ElementFile" />
-    <ProjectItemFile Source="calculator.png" Target="Content\" Type="ElementFile" />
     <ProjectItemFile Source="jquery.calculator.css" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="calculator.png" Target="Content\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.calculator.alt.css" Target="Content\" Type="ElementFile" />
   </Files>
 </ProjectItem>
