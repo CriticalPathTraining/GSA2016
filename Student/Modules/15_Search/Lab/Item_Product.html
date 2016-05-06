@@ -1,0 +1,72 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>Product Item</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays a result tailored for a picture.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">'Title':'Title','Path':'Path','Description':'Description','EditorOWSUSER':'EditorOWSUSER','LastModifiedTime':'LastModifiedTime','CollapsingStatus':'CollapsingStatus','DocId':'DocId','HitHighlightedSummary':'HitHighlightedSummary','HitHighlightedProperties':'HitHighlightedProperties','FileExtension':'FileExtension','ViewsLifeTime':'ViewsLifeTime','ParentLink':'ParentLink','FileType':'FileType','IsContainer':'IsContainer','SecondaryFileExtension':'SecondaryFileExtension','DisplayAuthor':'DisplayAuthor','PictureHeight':'PictureHeight','PictureWidth':'PictureWidth','ImageDateCreated':'ImageDateCreated','PictureThumbnailURL':'PictureThumbnailURL','PictureURL':'PictureURL','ProductCodeOWSTEXT':'ProductCodeOWSTEXT','ProductColorOWSCHCM':'ProductColorOWSCHCM','ProductDescriptionOWSMTXT':'ProductDescriptionOWSMTXT','ProductImageUrlOWSURLH':'ProductImageUrlOWSURLH','ProductListPriceOWSCURR':'ProductListPriceOWSCURR'</mso:ManagedPropertyMapping>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://search.wingtip.com/_catalogs/masterpage/Display Templates/Search/Item_Product.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="Item_Picture">
+<!--#_ 
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+            var id = ctx.ClientControl.get_nextUniqueId();
+            var itemId = id + Srch.U.Ids.item;
+			var hoverId = id + Srch.U.Ids.hover;
+            var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Picture_HoverPanel.js";
+			hoverUrl = null;
+			$setResultItem(itemId, ctx.CurrentItem);
+            ctx.currentItem_ShowHoverPanelCallback = Srch.U.getShowHoverPanelCallback(itemId, hoverId, hoverUrl);
+            ctx.currentItem_HideHoverPanelCallback = Srch.U.getHideHoverPanelCallback();
+_#-->
+            <div id="_#= $htmlEncode(itemId) =#_" name="Item" data-displaytemplate="PictureItem" class="ms-srch-item" onmouseover="_#= ctx.currentItem_ShowHoverPanelCallback =#_" onmouseout="_#= ctx.currentItem_HideHoverPanelCallback =#_">
+<!--#_				
+				if(!Srch.U.n(ctx.CurrentItem.ProductImageUrlOWSURLH) && !ctx.CurrentItem.IsContainer) {
+					var len = ctx.CurrentItem.ProductImageUrlOWSURLH.indexOf(",");
+					ctx.CurrentItem.csr_PathLength = Srch.U.pathTruncationLengthWithPreview;
+                    ctx.CurrentItem.csr_PreviewImage = ctx.CurrentItem.ProductImageUrlOWSURLH.substring(0,len);
+			    }
+_#-->
+				
+				<div class="ms-srch-item-body ms-srch-item-summaryPreview" >
+				<h3 class="ms-srch-ellipsis">
+					<a title="_#=ctx.CurrentItem.Title=#_" class="ms-srch-item-link" href="_#=ctx.CurrentItem.Path=#_">_#=ctx.CurrentItem.Title=#_</a>
+				</h3>
+				<div class="ms-srch-item-previewContainer" style="display: inline-block;float:right;">
+				<a class="ms-srch-item-previewLink" href="_#=ctx.CurrentItem.Path=#_" >
+					<img class="ms-srch-item-preview" alt="_#=ctx.CurrentItem.Title=#_" src="_#=ctx.CurrentItem.csr_PreviewImage=#_"></a></div>
+				Description: _#=ctx.CurrentItem.ProductDescriptionOWSMTXT=#_<br/>
+				Product Code: <b>_#=ctx.CurrentItem.ProductCodeOWSTEXT=#_ </b><br/>
+				<div style="text-align:middle;">Product Color: 
+				<!--#_
+				var colorSplit = ctx.CurrentItem.ProductColorOWSCHCM.split(";#")
+				for(i = 0; i < colorSplit.length; i++){
+				_#-->
+				<div style="background-color:_#=colorSplit[i]=#_;width:25px;height:25px;border-radius:3px;display:inline-block;"></div>
+				<!--#_
+				}
+				_#-->
+				</div><br/>
+				<!--#_
+				var dec = ctx.CurrentItem.ProductListPriceOWSCURR.indexOf(".");
+				var listPrice = "$" + ctx.CurrentItem.ProductListPriceOWSCURR.substring(0,dec+3); 
+				_#-->
+				List Price: _#=listPrice=#_<br/>
+				</div>
+                <div id="_#= $htmlEncode(hoverId) =#_" class="ms-srch-hover-outerContainer"></div>
+            </div>
+<!--#_ 
+        } 
+_#-->
+    </div>
+</body>
+</html>
