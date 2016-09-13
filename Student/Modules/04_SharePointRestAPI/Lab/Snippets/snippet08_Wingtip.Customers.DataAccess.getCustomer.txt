@@ -6,7 +6,6 @@ var getCustomer = function (Id) {
 
     return $.ajax({
       url: requestUri,
-      contentType: "application/json;odata=verbose",
       headers: { "accept": "application/json;odata=verbose" }
     });
 
