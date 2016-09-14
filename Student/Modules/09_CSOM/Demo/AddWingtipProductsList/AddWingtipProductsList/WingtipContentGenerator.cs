@@ -396,7 +396,7 @@ namespace AddWingtipProductsList{
       fieldProductCategory.Update();
       clientContext.ExecuteQuery();
 
-      expenseCategory = clientContext.CastTo<FieldChoice>(CreateSiteColumn("ProductColor", "Product Color", "MultiChoice"));
+      fieldProductColor = clientContext.CastTo<FieldChoice>(CreateSiteColumn("ProductColor", "Product Color", "MultiChoice"));
       string[] choicesCategories = { "White", "Black", "Grey", "Blue", "Red", "Green", "Yellow" };
       fieldProductColor.Choices = choicesCategories;
       fieldProductColor.Update();
