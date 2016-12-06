@@ -5,8 +5,8 @@ $makecert =  $PSScriptRoot + "\makecert.exe"
 
 $certname = "WingtipAppCertificate01"
 $password = ConvertTo-SecureString "Password1" -AsPlainText -Force
-$startdate = (Get-Date).ToString("MM/dd/yyyy")
-$enddate =  ((Get-Date).AddYears(2)).ToString("MM/dd/yyyy")
+$startdate = (Get-Date).ToString("MM'/'dd'/'yyyy")
+$enddate =  ((Get-Date).AddYears(2)).ToString("MM'/'dd'/'yyyy")
 
 # delete any pre-existing certifcates with same name
 Get-ChildItem Cert:\CurrentUser\My | ? {$_.Subject -eq "CN=$certname"} | Remove-Item
