@@ -1,1 +1,0 @@
-Do same steps from HOL ex2
