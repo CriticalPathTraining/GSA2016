@@ -1,0 +1,74 @@
+﻿#page_width {
+  border: 1px solid #ccc;
+}
+
+
+#toolbar {
+  margin: 0px;
+  padding: 6px;
+  background-color: #C2C2C2;
+}
+
+#toolbar .ui-button {
+  font-size: 14px;
+  color: #990033;
+}
+
+#content_box {
+  padding: 0px;
+  min-height:480px;
+}
+
+#contactsTable {
+  background-color: #999;
+  border-collapse: collapse;
+  font-size: 14px;
+  width:100%
+}
+
+ #contactsTable a img {
+    text-decoration: none;
+    border-style: none;
+  }
+
+
+  #contactsTable thead td {
+    background-color: black;
+    color: White;
+  }
+
+  #contactsTable td {
+    color: #222;
+    border: 1px black solid;
+    padding: 4px;
+    background-color: White;
+    border-collapse: collapse;
+  }
+
+#contact_dialog
+{
+  font-size: 14px;
+}
+
+#contact_dialog input {
+  width:480px;
+}
+
+
+.dialog_input_section {
+  padding-top: 4px;
+}
+
+.dialog_input_section_title {
+  margin-top: 8px;
+  color: black;
+  border-bottom: solid black 1px;
+  margin-bottom: 8px;
+}
+
+.dialog_button_section {
+  margin-top: 16px;
+  border-top: solid #CCC 2px;
+  padding-top: 8px;
+  text-align: right;
+}
