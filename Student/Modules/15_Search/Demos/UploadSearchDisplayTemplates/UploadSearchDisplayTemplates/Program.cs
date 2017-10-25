@@ -22,6 +22,7 @@ namespace UploadSearchDisplayTemplates {
       InitializeClientContext(SearchSiteUrl);
 
       UploadToSearchTemplateFolder("Item_Product.html", Properties.Resources.Item_Product_html);
+      UploadToSearchTemplateFolder("Item_Product_HoverPanel.html", Properties.Resources.Item_Product_HoverPanel_html);
 
     }
 

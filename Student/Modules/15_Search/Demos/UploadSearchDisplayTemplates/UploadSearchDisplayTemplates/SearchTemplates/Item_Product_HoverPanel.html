@@ -9,7 +9,7 @@
 <mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
 <mso:TargetControlType msdt:dt="string">;#SearchHoverPanel;#</mso:TargetControlType>
 <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
-<mso:ManagedPropertyMapping msdt:dt="string">'Title':'Title','Path':'Path','Description':'Description','EditorOWSUSER':'EditorOWSUSER','LastModifiedTime':'LastModifiedTime','CollapsingStatus':'CollapsingStatus','DocId':'DocId','HitHighlightedSummary':'HitHighlightedSummary','HitHighlightedProperties':'HitHighlightedProperties','FileExtension':'FileExtension','ViewsLifeTime':'ViewsLifeTime','ParentLink':'ParentLink','FileType':'FileType','IsContainer':'IsContainer','SecondaryFileExtension':'SecondaryFileExtension','DisplayAuthor':'DisplayAuthor'</mso:ManagedPropertyMapping>
+<mso:ManagedPropertyMapping msdt:dt="string">'Title':'Title','Path':'Path','Description':'Description','EditorOWSUSER':'EditorOWSUSER','LastModifiedTime':'LastModifiedTime','CollapsingStatus':'CollapsingStatus','DocId':'DocId','HitHighlightedSummary':'HitHighlightedSummary','HitHighlightedProperties':'HitHighlightedProperties','FileExtension':'FileExtension','ViewsLifeTime':'ViewsLifeTime','ParentLink':'ParentLink','FileType':'FileType','IsContainer':'IsContainer','SecondaryFileExtension':'SecondaryFileExtension','DisplayAuthor':'DisplayAuthor', 'ProductCode':'ProductCode', 'ProductDescription':'ProductDescription', 'ProductListPrice':'ProductListPrice', 'ProductColor':'ProductColor', 'ProductImageUrl':'ProductImageUrl'</mso:ManagedPropertyMapping>
 <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
 <mso:HtmlDesignStatusAndPreview msdt:dt="string">https://search.wingtip.com/_catalogs/masterpage/Display Templates/Search/Item_Product_HoverPanel.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
 </mso:CustomDocumentProperties>
@@ -36,14 +36,60 @@ _#-->
                 <div id="_#= $htmlEncode(id + HP.ids.header) =#_" class="ms-srch-hover-header">
                     _#= ctx.RenderHeader(ctx) =#_
                 </div>
+            
+                <hr/>
+         
+         
                 <div id="_#= $htmlEncode(id + HP.ids.body) =#_" class="ms-srch-hover-body">
-                    _#= ctx.RenderBody(ctx) =#_
-                </div>			
-                <div id="_#= $htmlEncode(id + HP.ids.actions) =#_" class="ms-srch-hover-actions">
-                    _#= ctx.RenderFooter(ctx) =#_
-                </div>
-            </div> 
-        </div>
+
+           
+                <table style="border-collapse: collapse">
+                  <tr>
+                    <td style="border: 1px #AAA solid; padding: 4px;width: 100px;">Product Code:</td>
+                    <td style="border: 1px #AAA solid; padding: 4px;">_#=ctx.CurrentItem.ProductCode=#_</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px #AAA solid; padding: 4px;">Product:</td>
+                    <td style="border: 1px #AAA solid; padding: 4px;">_#=ctx.CurrentItem.Title=#_</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px #AAA solid; padding: 4px;vertical-align: top">Description</td>
+                    <td style="border: 1px #AAA solid; padding: 4px;">_#=ctx.CurrentItem.ProductDescription=#_</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px #AAA solid; padding: 4px;">List Price</td>
+                    <td style="border: 1px #AAA solid; padding: 4px;">$_#=ctx.CurrentItem.ProductListPrice=#_</td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px #AAA solid; padding: 4px;">Colors</td>
+                    <td style="border: 1px #AAA solid; padding: 4px;">
+                      <!--#_
+        var colorSplit = ctx.CurrentItem.ProductColor.split(";")
+        for(i = 0; i < colorSplit.length; i++){
+        _#-->
+                      <div style="background-color:_#=colorSplit[i]=#_;width:12px;height:12px;border: 1px solid #AAA;border-radius:3px;display:inline-block;"></div>
+                      <!--#_
+       }
+      _#-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border: 1px #AAA solid; padding: 4px;vertical-align: top">Product Image</td>
+                    <td style="border: 1px #AAA solid; padding: 4px;"><img src='_#=ctx.CurrentItem.ProductImageUrl=#_' width="120" /></td>
+                  </tr>
+
+                </table>
+           
+                <hr/>
+                <strong>Product Actions</strong>:
+                <a href='_#=ctx.CurrentItem.Path=#_' style="margin: 4px;display:inline-block;width:80px;background:#DDD;padding:4px;text-align:center;border-radius:4px;color: black;">View Product</a>
+                <a href='_#=ctx.CurrentItem.ParentLink=#_' style="margin: 4px;display:inline-block;width:80px;background:#DDD;padding:4px;text-align:center;border-radius:4px;color: black;">View List</a>
+
+         
+            </div>
+           
+        </div> 
+     </div>
     </div>
 </body>
 </html>
