@@ -1,5 +1,0 @@
-C:\Student\Modules\04_SharePointRestAPI\Demo\SPRestPagingDemo2\SPRestPagingDemo2\bin\Debug\SPRestPagingDemo2.pdb
-C:\Student\Modules\04_SharePointRestAPI\Demo\SPRestPagingDemo2\SPRestPagingDemo2\bin\Debug\SPRestPagingDemo2.xml
-C:\Student\Modules\04_SharePointRestAPI\Demo\SPRestPagingDemo2\SPRestPagingDemo2\obj\Debug\SPRestPagingDemo2.dll
-C:\Student\Modules\04_SharePointRestAPI\Demo\SPRestPagingDemo2\SPRestPagingDemo2\obj\Debug\SPRestPagingDemo2.xml
-C:\Student\Modules\04_SharePointRestAPI\Demo\SPRestPagingDemo2\SPRestPagingDemo2\obj\Debug\SPRestPagingDemo2.pdb

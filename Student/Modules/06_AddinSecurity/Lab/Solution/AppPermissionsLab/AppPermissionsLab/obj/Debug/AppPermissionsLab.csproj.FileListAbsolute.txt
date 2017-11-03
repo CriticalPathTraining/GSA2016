@@ -1,3 +1,0 @@
-C:\Student\Modules\06_AddinSecurity\Lab\Solution\AppPermissionsLab\AppPermissionsLab\bin\Debug\AppPermissionsLab.pdb
-C:\Student\Modules\06_AddinSecurity\Lab\Solution\AppPermissionsLab\AppPermissionsLab\obj\Debug\AppPermissionsLab.dll
-C:\Student\Modules\06_AddinSecurity\Lab\Solution\AppPermissionsLab\AppPermissionsLab\obj\Debug\AppPermissionsLab.pdb

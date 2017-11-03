@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="abf9dc21-1f33-4a23-b62d-b8f1267aeb80" SharePointProductVersion="15.0">
-  <FeatureManifests>
-    <FeatureManifest Location="SPRestPagingDemo2_Feature1\Feature.xml" />
-  </FeatureManifests>
-</Solution>

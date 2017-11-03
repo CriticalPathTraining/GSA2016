@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="079d8848-5160-4ec3-9470-d7ce6faa3206" SharePointProductVersion="15.0">
-  <FeatureManifests>
-    <FeatureManifest Location="AngularCRM_Feature1\Feature.xml" />
-  </FeatureManifests>
-</Solution>
