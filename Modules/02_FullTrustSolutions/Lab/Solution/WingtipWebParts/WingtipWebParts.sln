@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipWebParts", "WingtipWebParts\WingtipWebParts.csproj", "{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipWebParts", "WingtipWebParts\WingtipWebParts.csproj", "{F3F54C4A-2708-486C-B650-C9DE604B876B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F3F54C4A-2708-486C-B650-C9DE604B876B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F54C4A-2708-486C-B650-C9DE604B876B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F54C4A-2708-486C-B650-C9DE604B876B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F3F54C4A-2708-486C-B650-C9DE604B876B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F54C4A-2708-486C-B650-C9DE604B876B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F54C4A-2708-486C-B650-C9DE604B876B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {888B52A2-7082-475D-BAA2-D314E4DCA4BF}
 	EndGlobalSection
 EndGlobal

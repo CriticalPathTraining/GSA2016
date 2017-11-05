@@ -12,7 +12,6 @@
         <property name="ChromeType" type="string">TitleAndBorder</property>
         <property name="CatalogIconImageUrl" type="string">_layouts/15/images/WingtipWebParts/WebPartIcon.gif</property>
         <property name="TitleIconImageUrl" type="string">_layouts/15/images/WingtipWebParts/WebPartIcon.gif</property>
-
       </properties>
     </data>
   </webPart>

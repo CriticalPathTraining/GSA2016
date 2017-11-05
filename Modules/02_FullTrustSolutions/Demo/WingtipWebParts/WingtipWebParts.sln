@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipWebParts", "WingtipWebParts\WingtipWebParts.csproj", "{748C4BB1-AC75-45BA-9AC3-C55A2489A1C2}"
 EndProject
@@ -20,5 +20,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE75CEE6-CCD7-45F6-A442-975F1329E41A}
 	EndGlobalSection
 EndGlobal

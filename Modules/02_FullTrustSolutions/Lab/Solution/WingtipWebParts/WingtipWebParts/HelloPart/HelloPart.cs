@@ -8,7 +8,6 @@ using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
 
 namespace WingtipWebParts.HelloPart {
-
   [ToolboxItemAttribute(false)]
   public class HelloPart : WebPart {
     protected override void CreateChildControls() {
@@ -16,6 +15,4 @@ namespace WingtipWebParts.HelloPart {
       this.Controls.Add(label);
     }
   }
-
 }
-

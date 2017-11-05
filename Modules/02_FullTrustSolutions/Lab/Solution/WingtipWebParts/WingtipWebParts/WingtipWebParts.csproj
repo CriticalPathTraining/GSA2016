@@ -1,20 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A56D0CE1-A5AB-4BA2-8F4F-D0A6E3D67079}</ProjectGuid>
+    <ProjectGuid>{F3F54C4A-2708-486C-B650-C9DE604B876B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WingtipWebParts</RootNamespace>
     <AssemblyName>WingtipWebParts</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetOfficeVersion>16.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
-    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
     <SandboxedSolution>False</SandboxedSolution>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -67,23 +66,23 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{ce9d2405-8a93-4c5d-9f9f-2c46c5ff6746}</FeatureId>
+    <None Include="Features\MainSite\MainSite.feature">
+      <FeatureId>{78651bac-edb9-4b61-8281-0f9e05d75219}</FeatureId>
     </None>
     <None Include="HelloPart\HelloPart.webpart" />
     <None Include="HelloPart\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0e02c56b-3818-49b7-96f8-df0e18773aa7}</SharePointProjectItemId>
+      <SharePointProjectItemId>{e872061b-e286-49c2-86a9-7c7edf182ab3}</SharePointProjectItemId>
     </None>
     <None Include="Images\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f6008ae2-98fc-4b58-836f-c9d5782d7016}</SharePointProjectItemId>
+      <SharePointProjectItemId>{fe158e7c-c6b2-4cc7-bb6b-a210f0460064}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
     <None Include="ListInspectorWebPart\ListInspectorWebPart.webpart" />
     <None Include="ListInspectorWebPart\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{82613969-5e48-47b6-a053-77048a0f4d0e}</SharePointProjectItemId>
+      <SharePointProjectItemId>{ef930b23-0d7d-4a3b-b610-f332feec4fa4}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
-      <PackageId>{15867331-644b-4b76-8dd1-71dfaa5579b4}</PackageId>
+      <PackageId>{aa5a6ad7-27bc-40b5-8cfa-0ea4da2a6e38}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
@@ -91,8 +90,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="Features\MainSite\MainSite.Template.xml">
+      <DependentUpon>MainSite.feature</DependentUpon>
     </Content>
     <Content Include="HelloPart\Elements.xml" />
     <Content Include="Images\WingtipWebParts\FeatureIcon.gif" />

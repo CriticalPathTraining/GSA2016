@@ -4,7 +4,6 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 
-
 namespace WingtipWebParts.ListInspectorWebPart {
 
   public partial class ListInspectorWebPartUserControl : UserControl {
@@ -48,5 +47,5 @@ namespace WingtipWebParts.ListInspectorWebPart {
 
     }
 
-  }
+  }  
 }
