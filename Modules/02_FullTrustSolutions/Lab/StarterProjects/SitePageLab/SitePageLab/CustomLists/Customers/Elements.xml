@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Customers"
+                OnQuickLaunch="TRUE"
+                TemplateType="105"
+                FeatureId="00bfea71-7e6d-4186-9ba8-c047ac750105"
+                Url="Lists/Customers"
+                Description="My List Instance">
 
-  <ListInstance
-    Title="Customers"
-    OnQuickLaunch="TRUE"
-    TemplateType="105"
-    FeatureId="00bfea71-7e6d-4186-9ba8-c047ac750105"
-    Url="Lists/Customers"
-    Description="Wingtip Customers List">
+
 
     <Data>
       <Rows>
@@ -2013,6 +2013,7 @@
         </Row>
       </Rows>
     </Data>
+
 
   </ListInstance>
 </Elements>

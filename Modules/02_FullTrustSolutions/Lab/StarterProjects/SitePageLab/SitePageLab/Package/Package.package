@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2ac5b267-e03c-48ef-9898-87ea406ede19" solutionId="2ac5b267-e03c-48ef-9898-87ea406ede19" resetWebServer="false" sharePointProductVersion="16.0" name="SitePageLab" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b948893c-fea8-47a6-8410-dcee6becec2b" solutionId="b948893c-fea8-47a6-8410-dcee6becec2b" resetWebServer="false" sharePointProductVersion="16.0" name="SitePageLab" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
-    <featureReference itemId="da1e07d5-6dbf-4b5a-924c-fa9b67a602e5" />
+    <featureReference itemId="46423ea8-77de-4880-acf9-3a131dfbb1c0" />
   </features>
 </package>
