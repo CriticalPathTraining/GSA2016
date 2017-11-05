@@ -14,7 +14,8 @@
 
 
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">  
-    <WebPartPages:WebPartZone ID="Main" Title="Main Web Part Zone"
+
+<WebPartPages:WebPartZone ID="Main" Title="Main Web Part Zone"
                           FrameType="TitleBarOnly" runat="server" >
   <ZoneTemplate>
     <WebPartPages:XsltListViewWebPart
@@ -27,6 +28,7 @@
     </WebPartPages:XsltListViewWebPart>
   </ZoneTemplate>
 </WebPartPages:WebPartZone>
+
 
 </asp:Content>
 

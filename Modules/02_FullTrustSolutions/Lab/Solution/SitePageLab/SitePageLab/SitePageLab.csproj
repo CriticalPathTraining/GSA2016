@@ -1,22 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F97F1BAC-AFA1-4706-A441-EE47875D7F92}</ProjectGuid>
+    <ProjectGuid>{23719F85-91B1-4A7C-A44F-3777C009432E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SitePageLab</RootNamespace>
     <AssemblyName>SitePageLab</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetOfficeVersion>16.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
-    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
     <SandboxedSolution>False</SandboxedSolution>
-    <IncludeAssemblyInPackage>True</IncludeAssemblyInPackage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,26 +59,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CustomLists\Books\BooksInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b532b7dc-26b0-4728-8853-820d288c3605}</SharePointProjectItemId>
+      <SharePointProjectItemId>{277596d2-6187-45f7-892a-ea455cc64002}</SharePointProjectItemId>
     </None>
     <None Include="CustomLists\Books\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{99049bc5-4698-4ac2-bd34-3516cc0d57bf}</SharePointProjectItemId>
+      <SharePointProjectItemId>{ea9e38dc-d015-490b-a0a5-d61cf5d48692}</SharePointProjectItemId>
     </None>
     <None Include="CustomLists\Customers\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b4da185d-c546-4243-ab9a-5e1817856a62}</SharePointProjectItemId>
+      <SharePointProjectItemId>{2ea16974-2b67-4373-9fb8-303db9dedbdc}</SharePointProjectItemId>
     </None>
     <None Include="CustomSiteColumns\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{aee7e54b-1cc9-4144-b86a-ab7308801e52}</SharePointProjectItemId>
+      <SharePointProjectItemId>{1cc50a9a-c123-4ee9-a8d9-3a8a4ac7ccae}</SharePointProjectItemId>
     </None>
     <None Include="Features\MainSite\MainSite.feature">
-      <FeatureId>{da1e07d5-6dbf-4b5a-924c-fa9b67a602e5}</FeatureId>
+      <FeatureId>{46423ea8-77de-4880-acf9-3a131dfbb1c0}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="MySitePages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{965be7c6-a542-471f-82b5-93059d8514e5}</SharePointProjectItemId>
+      <SharePointProjectItemId>{2806b935-f8f9-49ba-9f70-f4bd9e23d348}</SharePointProjectItemId>
     </None>
     <None Include="Package\Package.package">
-      <PackageId>{2ac5b267-e03c-48ef-9898-87ea406ede19}</PackageId>
+      <PackageId>{b948893c-fea8-47a6-8410-dcee6becec2b}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>

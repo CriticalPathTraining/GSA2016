@@ -4,7 +4,4 @@
     <ProjectItemFile Source="Elements.xml" Target="Books\" Type="ElementManifest" />
     <ProjectItemFile Source="Schema.xml" Target="Books\" Type="ElementFile" />
   </Files>
-  <ExtensionData>
-    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x010064e6c7e62206417f8c3cb3f6d1dd2ea2" />
-  </ExtensionData>
 </ProjectItem>

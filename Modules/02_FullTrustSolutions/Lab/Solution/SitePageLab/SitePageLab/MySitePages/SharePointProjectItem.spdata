@@ -2,9 +2,9 @@
 <ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="MySitePages\" Type="ElementManifest" />
+    <ProjectItemFile Source="styles.css" Target="MySitePages\" Type="ElementFile" />
     <ProjectItemFile Source="Page1.aspx" Target="MySitePages\" Type="ElementFile" />
     <ProjectItemFile Source="Page2.aspx" Target="MySitePages\" Type="ElementFile" />
     <ProjectItemFile Source="Page3.aspx" Target="MySitePages\" Type="ElementFile" />
-    <ProjectItemFile Source="styles.css" Target="MySitePages\" Type="ElementFile" />
   </Files>
 </ProjectItem>

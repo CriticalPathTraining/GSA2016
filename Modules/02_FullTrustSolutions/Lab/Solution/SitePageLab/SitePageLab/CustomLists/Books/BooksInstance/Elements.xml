@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  
-  <ListInstance 
-    Title="Books" 
-    OnQuickLaunch="TRUE" 
-    TemplateType="100" 
-    Url="Lists/Books" 
-    Description="My List Instance">
+  <ListInstance Title="Books"
+                OnQuickLaunch="TRUE"
+                TemplateType="100"
+                Url="Lists/Books"
+                Description="My List Instance">
 
 
     <Data>
@@ -265,8 +263,6 @@
         </Row>
       </Rows>
     </Data>
-
-
 
   </ListInstance>
 </Elements>
