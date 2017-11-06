@@ -22,8 +22,8 @@
                   Command="Invoke_TitleBumpItUpButtonRequest"
                   LabelText="Bump It Up"
                   TemplateAlias="o1"
-                  Image32by32="_layouts/15/images/mewa_upb.gif"
-                  Image16by16="_layouts/15/images/kpitrend-0.gif" />
+                  Image16by16="_layouts/15/images/uparrow.png"
+                  Image32by32="_layouts/15/images/SolutionUpgrade_32x32.png" />
         </CommandUIDefinition>
       </CommandUIDefinitions>
       <CommandUIHandlers>

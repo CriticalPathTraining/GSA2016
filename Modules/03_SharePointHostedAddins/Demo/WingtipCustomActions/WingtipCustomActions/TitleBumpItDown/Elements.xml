@@ -22,8 +22,8 @@
                   Command="Invoke_TitleBumpItDownButtonRequest"
                   LabelText="Bump It Down"
                   TemplateAlias="o1"
-                  Image32by32="_layouts/15/images/mewa_downb.gif"
-                  Image16by16="_layouts/15/images/kpitrend-4.gif" />
+                  Image16by16="_layouts/15/images/downarrow.png"
+                  Image32by32="_layouts/15/images/SolutionDeactivate_32x32.png" />
         </CommandUIDefinition>
       </CommandUIDefinitions>
       <CommandUIHandlers>

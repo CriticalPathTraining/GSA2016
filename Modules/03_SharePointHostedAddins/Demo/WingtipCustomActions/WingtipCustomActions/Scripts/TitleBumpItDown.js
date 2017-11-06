@@ -15,12 +15,10 @@
       var etag = data.d.__metadata.etag;
       var itemType = data.d.__metadata.type;
       Wingtip.SharePointListManager.updateItem(hostWebUrl, listId, itemType, itemId, newTitle, etag).done(function () {
+        window.parent.postMessage('CloseCustomActionDialogRefresh', '*');
       });
     });
   }
-
-  sleep(3000);
-  window.parent.postMessage('CloseCustomActionDialogRefresh', '*');
 
 });
 
