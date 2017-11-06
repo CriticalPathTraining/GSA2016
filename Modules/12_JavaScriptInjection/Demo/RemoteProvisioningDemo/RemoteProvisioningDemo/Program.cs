@@ -34,17 +34,7 @@ namespace RemoteProvisioningDemo {
       // create new client context
       clientContext = new ClientContext(targetsite);
       
-      // get user name and secure password
-      string userName = ConfigurationManager.AppSettings["accessAccountName"];
-      string pwd = ConfigurationManager.AppSettings["accessAccountPassword"];
-      SecureString spwd = new SecureString();
-      foreach (char c in pwd.ToCharArray()) {
-        spwd.AppendChar(c);
-      }
-    
-        // create credentials for SharePoint Online using Office 365 user account
-      clientContext.Credentials = new SharePointOnlineCredentials(userName, spwd);
-
+   
       // initlaize static variables for client context, web and site
       siteCollection = clientContext.Site;
       clientContext.Load(siteCollection);
@@ -62,7 +52,7 @@ namespace RemoteProvisioningDemo {
 
     static void Main() {
 
-      InitializeClientContext("https://CptBiLabs.sharepoint.com");
+      InitializeClientContext("https://intranet.wingtip.com");
 
       DeleteAllSiteUserActions();
       EnsureAppRootFolder();

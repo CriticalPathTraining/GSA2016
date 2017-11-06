@@ -11,7 +11,7 @@
     // create service object
     var service = {};
 
-    var baseUri = "https://localhost:44300/odata/";
+    var baseUri = "https://localhost:44377/odata/";
 
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];

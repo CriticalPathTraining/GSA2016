@@ -4,23 +4,25 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD89E2D1-3160-4FE2-AC1A-55338B81262B}</ProjectGuid>
+    <ProjectGuid>{0C686AAC-7891-4C08-950C-2D4F4800D8DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SearchApp</RootNamespace>
-    <AssemblyName>SearchApp</AssemblyName>
+    <RootNamespace>MoreUniqueDocumentIDService</RootNamespace>
+    <AssemblyName>MoreUniqueDocumentIDService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetOfficeVersion>16.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
-    <ProjectMode>SharePointApp</ProjectMode>
-    <AppFeaturePartId>{623054c5-a17a-4017-b9f3-add5f2965135}</AppFeaturePartId>
-    <WspPartId>{3c45e7de-ff4c-4eec-adcd-78b55907247f}</WspPartId>
-    <CspkgPartId>{92143451-13e8-48f4-ad17-4f42e6de9973}</CspkgPartId>
-    <SqlPackagePartId>{ef5857de-9dc6-4e65-8b55-dd297e5e9738}</SqlPackagePartId>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ProjectMode>SharePointCustomization</ProjectMode>
     <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,63 +43,55 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Pages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{55d224c1-4480-4888-b016-edab6fbdbe20}</SharePointProjectItemId>
-    </None>
-    <Content Include="Pages\Elements.xml" />
-    <Content Include="Pages\Default.aspx" />
+    <Reference Include="Microsoft.Office.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.Office.DocumentManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ef5857de-9dc6-4e65-8b55-dd297e5e9738}</SharePointProjectItemId>
-    </None>
-    <Content Include="Scripts\Elements.xml" />
-    <Content Include="Scripts\App.js" />
-    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.7.1.js" />
-    <Content Include="Scripts\jquery-1.7.1.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Compile Include="Features\MoreUniqueDocumentIDService\MoreUniqueDocumentIDService.EventReceiver.cs">
+      <DependentUpon>MoreUniqueDocumentIDService.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MoreUniqueDocumentIDProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bf9c8d26-df92-4b46-b5c9-50b60cc412c2}</SharePointProjectItemId>
+    <None Include="Features\MoreUniqueDocumentIDService\MoreUniqueDocumentIDService.feature">
+      <FeatureId>{4891e461-6e8b-4696-8859-cb566b8ebe70}</FeatureId>
     </None>
-    <Content Include="Content\Elements.xml" />
-    <Content Include="Content\App.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Images\AppIcon.png">
-      <OpcRelationship>manifest-icon</OpcRelationship>
-    </Content>
-    <Content Include="Images\Elements.xml" />
-    <None Include="Images\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{3c41a671-e5a4-42df-b551-2c46b2c8694a}</SharePointProjectItemId>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="key.snk" />
     <None Include="Package\Package.package">
-      <PackageId>{c49be8ba-7727-42b3-aa1c-fd05628123f4}</PackageId>
+      <PackageId>{dbc5e463-4a02-41b6-8d52-e47b2a53d55f}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{079438f5-715a-4fc9-b894-6c26ddccc176}</FeatureId>
-    </None>
-    <None Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
-    </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <AppManifestFile Include="AppManifest.xml">
-      <SubType>Designer</SubType>
-    </AppManifestFile>
+    <Content Include="Features\MoreUniqueDocumentIDService\MoreUniqueDocumentIDService.Template.xml">
+      <DependentUpon>MoreUniqueDocumentIDService.feature</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />

@@ -9,7 +9,7 @@ using System.Security;
 namespace JSI_Demo {
   class Program {
 
-    static string targetSiteUrl = "https://demo.wingtip.com";
+    static string targetSiteUrl = "https://dev.wingtip.com";
 
     static ClientContext clientContext;
     static Site siteCollection;

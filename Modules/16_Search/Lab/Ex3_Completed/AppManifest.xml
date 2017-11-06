@@ -4,7 +4,7 @@
      Name="SearchApp"
      ProductID="{55d224c1-4480-4888-b016-edab6fbdbe20}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>Search App</Title>
