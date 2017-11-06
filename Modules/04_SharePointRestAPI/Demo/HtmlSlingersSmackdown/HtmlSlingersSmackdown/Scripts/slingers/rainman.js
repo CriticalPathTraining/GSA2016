@@ -29,7 +29,7 @@ function onGetCustomersComplete(data) {
   customersTable += "</thead>";
 
   customersTable += "<tbody>";
-  for (var currentCustomer = 1; currentCustomer < customers.length; currentCustomer++) {
+  for (var currentCustomer = 0; currentCustomer < customers.length; currentCustomer++) {
     customersTable += "<tr>";
     for (var currentColumn = 0; currentColumn < Columns.length; currentColumn++) {
       customersTable += "<td>" + customers[currentCustomer][Columns[currentColumn].Name] + "</td>"

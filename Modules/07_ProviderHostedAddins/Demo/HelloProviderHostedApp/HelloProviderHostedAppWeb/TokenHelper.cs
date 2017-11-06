@@ -1,5 +1,5 @@
-
 using Microsoft.IdentityModel;
+using Microsoft.IdentityModel.SecurityTokenService;
 using Microsoft.IdentityModel.S2S.Protocols.OAuth2;
 using Microsoft.IdentityModel.S2S.Tokens;
 using Microsoft.SharePoint.Client;
@@ -27,23 +27,23 @@ using X509SigningCredentials = Microsoft.IdentityModel.SecurityTokenService.X509
 
 namespace HelloProviderHostedAppWeb
 {
-
     public static class TokenHelper
     {
-
-        #region public methods
+        #region public fields
 
         /// <summary>
-        /// Configures .Net to trust all certificates when making network calls.  This is used so that calls 
-        /// to an https SharePoint server without a valid certificate are not rejected.  This should only be used during 
-        /// testing, and should never be used in a production app.
+        /// SharePoint principal.
         /// </summary>
-        public static void TrustAllCertificates()
-        {
-            //Trust all certificates
-            ServicePointManager.ServerCertificateValidationCallback =
-                ((sender, certificate, chain, sslPolicyErrors) => true);
-        }
+        public const string SharePointPrincipal = "00000003-0000-0ff1-ce00-000000000000";
+
+        /// <summary>
+        /// Lifetime of HighTrust access token, 12 hours.
+        /// </summary>
+        public static readonly TimeSpan HighTrustAccessTokenLifetime = TimeSpan.FromHours(12.0);
+
+        #endregion public fields
+
+        #region public methods
 
         /// <summary>
         /// Retrieves the context token string from the specified request by looking for well-known parameter names in the 
@@ -53,13 +53,7 @@ namespace HelloProviderHostedAppWeb
         /// <returns>The context token string</returns>
         public static string GetContextTokenFromRequest(HttpRequest request)
         {
-            string[] paramNames = { "AppContext", "AppContextToken", "AccessToken", "SPAppToken" };
-            foreach (string paramName in paramNames)
-            {
-                if (!string.IsNullOrEmpty(request.Form[paramName])) return request.Form[paramName];
-                if (!string.IsNullOrEmpty(request.QueryString[paramName])) return request.QueryString[paramName];
-            }
-            return null;
+            return GetContextTokenFromRequest(new HttpRequestWrapper(request));
         }
 
         /// <summary>
@@ -73,8 +67,14 @@ namespace HelloProviderHostedAppWeb
             string[] paramNames = { "AppContext", "AppContextToken", "AccessToken", "SPAppToken" };
             foreach (string paramName in paramNames)
             {
-                if (!string.IsNullOrEmpty(request.Form[paramName])) return request.Form[paramName];
-                if (!string.IsNullOrEmpty(request.QueryString[paramName])) return request.QueryString[paramName];
+                if (!string.IsNullOrEmpty(request.Form[paramName]))
+                {
+                    return request.Form[paramName];
+                }
+                if (!string.IsNullOrEmpty(request.QueryString[paramName]))
+                {
+                    return request.QueryString[paramName];
+                }
             }
             return null;
         }
@@ -169,7 +169,6 @@ namespace HelloProviderHostedAppWeb
                                   targetPrincipalName,
                                   targetHost,
                                   targetRealm);
-
         }
 
         /// <summary>
@@ -181,7 +180,7 @@ namespace HelloProviderHostedAppWeb
         /// <param name="targetPrincipalName">Name of the target principal to retrieve an access token for</param>
         /// <param name="targetHost">Url authority of the target principal</param>
         /// <param name="targetRealm">Realm to use for the access token's nameid and audience</param>
-        /// <param name="redirectUri">Redirect URI registerd for this app</param>
+        /// <param name="redirectUri">Redirect URI registered for this add-in</param>
         /// <returns>An access token with an audience of the target principal</returns>
         public static OAuth2AccessTokenResponse GetAccessToken(
             string authorizationCode,
@@ -190,7 +189,6 @@ namespace HelloProviderHostedAppWeb
             string targetRealm,
             Uri redirectUri)
         {
-
             if (targetRealm == null)
             {
                 targetRealm = Realm;
@@ -215,6 +213,26 @@ namespace HelloProviderHostedAppWeb
             {
                 oauth2Response =
                     client.Issue(AcsMetadataParser.GetStsUrl(targetRealm), oauth2Request) as OAuth2AccessTokenResponse;
+            }
+            catch (RequestFailedException)
+            {
+                if (!string.IsNullOrEmpty(SecondaryClientSecret))
+                {
+                    oauth2Request =
+                    OAuth2MessageFactory.CreateAccessTokenRequestWithAuthorizationCode(
+                        clientId,
+                        SecondaryClientSecret,
+                        authorizationCode,
+                        redirectUri,
+                        resource);
+
+                    oauth2Response =
+                        client.Issue(AcsMetadataParser.GetStsUrl(targetRealm), oauth2Request) as OAuth2AccessTokenResponse;
+                }
+                else
+                {
+                    throw;
+                }
             }
             catch (WebException wex)
             {
@@ -244,7 +262,6 @@ namespace HelloProviderHostedAppWeb
             string targetHost,
             string targetRealm)
         {
-
             if (targetRealm == null)
             {
                 targetRealm = Realm;
@@ -262,6 +279,19 @@ namespace HelloProviderHostedAppWeb
             {
                 oauth2Response =
                     client.Issue(AcsMetadataParser.GetStsUrl(targetRealm), oauth2Request) as OAuth2AccessTokenResponse;
+            }
+            catch (RequestFailedException)
+            {
+                if (!string.IsNullOrEmpty(SecondaryClientSecret))
+                {
+                    oauth2Request = OAuth2MessageFactory.CreateAccessTokenRequestWithRefreshToken(clientId, SecondaryClientSecret, refreshToken, resource);
+                    oauth2Response =
+                        client.Issue(AcsMetadataParser.GetStsUrl(targetRealm), oauth2Request) as OAuth2AccessTokenResponse;
+                }
+                else
+                {
+                    throw;
+                }
             }
             catch (WebException wex)
             {
@@ -310,6 +340,21 @@ namespace HelloProviderHostedAppWeb
                 oauth2Response =
                     client.Issue(AcsMetadataParser.GetStsUrl(targetRealm), oauth2Request) as OAuth2AccessTokenResponse;
             }
+            catch (RequestFailedException)
+            {
+                if (!string.IsNullOrEmpty(SecondaryClientSecret))
+                {
+                    oauth2Request = OAuth2MessageFactory.CreateAccessTokenRequestWithClientCredentials(clientId, SecondaryClientSecret, resource);
+                    oauth2Request.Resource = resource;
+
+                    oauth2Response =
+                        client.Issue(AcsMetadataParser.GetStsUrl(targetRealm), oauth2Request) as OAuth2AccessTokenResponse;
+                }
+                else
+                {
+                    throw;
+                }
+            }
             catch (WebException wex)
             {
                 using (StreamReader sr = new StreamReader(wex.Response.GetResponseStream()))
@@ -347,7 +392,7 @@ namespace HelloProviderHostedAppWeb
                 return null;
             }
 
-            if (ClientCertificate != null)
+            if (IsHighTrustApp())
             {
                 return GetS2SClientContextWithWindowsIdentity(sharepointUrl, null);
             }
@@ -356,9 +401,9 @@ namespace HelloProviderHostedAppWeb
         }
 
         /// <summary>
-        /// Creates a client context based on the properties of an app event
+        /// Creates a client context based on the properties of an add-in event
         /// </summary>
-        /// <param name="properties">Properties of an app event</param>
+        /// <param name="properties">Properties of an add-in event</param>
         /// <param name="useAppWeb">True to target the app web, false to target the host web</param>
         /// <returns>A ClientContext ready to call the app web or the parent web</returns>
         public static ClientContext CreateAppEventClientContext(SPRemoteEventProperties properties, bool useAppWeb)
@@ -369,11 +414,11 @@ namespace HelloProviderHostedAppWeb
             }
 
             Uri sharepointUrl = useAppWeb ? properties.AppEventProperties.AppWebFullUrl : properties.AppEventProperties.HostWebFullUrl;
-            if (ClientCertificate != null)
+            if (IsHighTrustApp())
             {
                 return GetS2SClientContextWithWindowsIdentity(sharepointUrl, null);
             }
-            
+
             return CreateAcsClientContextForUrl(properties, sharepointUrl);
         }
 
@@ -383,7 +428,7 @@ namespace HelloProviderHostedAppWeb
         /// </summary>
         /// <param name="targetUrl">Url of the target SharePoint site</param>
         /// <param name="authorizationCode">Authorization code to use when retrieving the access token from ACS</param>
-        /// <param name="redirectUri">Redirect URI registerd for this app</param>
+        /// <param name="redirectUri">Redirect URI registered for this add-in</param>
         /// <returns>A ClientContext ready to call targetUrl with a valid access token</returns>
         public static ClientContext GetClientContextWithAuthorizationCode(
             string targetUrl,
@@ -401,7 +446,7 @@ namespace HelloProviderHostedAppWeb
         /// <param name="targetPrincipalName">Name of the target SharePoint principal</param>
         /// <param name="authorizationCode">Authorization code to use when retrieving the access token from ACS</param>
         /// <param name="targetRealm">Realm to use for the access token's nameid and audience</param>
-        /// <param name="redirectUri">Redirect URI registerd for this app</param>
+        /// <param name="redirectUri">Redirect URI registered for this add-in</param>
         /// <returns>A ClientContext ready to call targetUrl with a valid access token</returns>
         public static ClientContext GetClientContextWithAuthorizationCode(
             string targetUrl,
@@ -446,7 +491,7 @@ namespace HelloProviderHostedAppWeb
         /// </summary>
         /// <param name="targetUrl">Url of the target SharePoint site</param>
         /// <param name="contextTokenString">Context token received from the target SharePoint site</param>
-        /// <param name="appHostUrl">Url authority of the hosted app.  If this is null, the value in the HostedAppHostName
+        /// <param name="appHostUrl">Url authority of the hosted add-in.  If this is null, the value in the HostedAppHostName
         /// of web.config will be used instead</param>
         /// <returns>A ClientContext ready to call targetUrl with a valid access token</returns>
         public static ClientContext GetClientContextWithContextToken(
@@ -464,7 +509,7 @@ namespace HelloProviderHostedAppWeb
         }
 
         /// <summary>
-        /// Returns the SharePoint url to which the app should redirect the browser to request consent and get back
+        /// Returns the SharePoint url to which the add-in should redirect the browser to request consent and get back
         /// an authorization code.
         /// </summary>
         /// <param name="contextUrl">Absolute Url of the SharePoint site</param>
@@ -482,7 +527,7 @@ namespace HelloProviderHostedAppWeb
         }
 
         /// <summary>
-        /// Returns the SharePoint url to which the app should redirect the browser to request consent and get back
+        /// Returns the SharePoint url to which the add-in should redirect the browser to request consent and get back
         /// an authorization code.
         /// </summary>
         /// <param name="contextUrl">Absolute Url of the SharePoint site</param>
@@ -503,7 +548,7 @@ namespace HelloProviderHostedAppWeb
         }
 
         /// <summary>
-        /// Returns the SharePoint url to which the app should redirect the browser to request a new context token.
+        /// Returns the SharePoint url to which the add-in should redirect the browser to request a new context token.
         /// </summary>
         /// <param name="contextUrl">Absolute Url of the SharePoint site</param>
         /// <param name="redirectUri">Uri to which SharePoint should redirect the browser to with a context token</param>
@@ -577,12 +622,27 @@ namespace HelloProviderHostedAppWeb
             }
             catch (WebException e)
             {
+                if (e.Response == null)
+                {
+                    return null;
+                }
+
                 string bearerResponseHeader = e.Response.Headers["WWW-Authenticate"];
+                if (string.IsNullOrEmpty(bearerResponseHeader))
+                {
+                    return null;
+                }
 
                 const string bearer = "Bearer realm=\"";
-                int realmIndex = bearerResponseHeader.IndexOf(bearer, StringComparison.Ordinal) + bearer.Length;
+                int bearerIndex = bearerResponseHeader.IndexOf(bearer, StringComparison.Ordinal);
+                if (bearerIndex < 0)
+                {
+                    return null;
+                }
 
-                if (bearerResponseHeader.Length > realmIndex)
+                int realmIndex = bearerIndex + bearer.Length;
+
+                if (bearerResponseHeader.Length >= realmIndex + 36)
                 {
                     string targetRealm = bearerResponseHeader.Substring(realmIndex, 36);
 
@@ -597,15 +657,37 @@ namespace HelloProviderHostedAppWeb
             return null;
         }
 
+        /// <summary>
+        /// Determines if this is a high trust add-in.
+        /// </summary>
+        /// <returns>True if this is a high trust add-in.</returns>
+        public static bool IsHighTrustApp()
+        {
+            return SigningCredentials != null;
+        }
+
+        /// <summary>
+        /// Ensures that the specified URL ends with '/' if it is not null or empty.
+        /// </summary>
+        /// <param name="url">The url.</param>
+        /// <returns>The url ending with '/' if it is not null or empty.</returns>
+        public static string EnsureTrailingSlash(string url)
+        {
+            if (!string.IsNullOrEmpty(url) && url[url.Length - 1] != '/')
+            {
+                return url + "/";
+            }
+
+            return url;
+        }
+
         #endregion
 
         #region private fields
 
         //
         // Configuration Constants
-        //
-
-        private const string SharePointPrincipal = "00000003-0000-0ff1-ce00-000000000000";
+        //        
 
         private const string AuthorizationPage = "_layouts/15/OAuthAuthorize.aspx";
         private const string RedirectPage = "_layouts/15/AppRedirect.aspx";
@@ -616,7 +698,6 @@ namespace HelloProviderHostedAppWeb
         private const string NameIdentifierClaimType = JsonWebTokenConstants.ReservedClaims.NameIdentifier;
         private const string TrustedForImpersonationClaimType = "trustedfordelegation";
         private const string ActorTokenClaimType = JsonWebTokenConstants.ReservedClaims.ActorToken;
-        private const int TokenLifetimeMinutes = 1000000;
 
         //
         // Environment Constants
@@ -626,7 +707,7 @@ namespace HelloProviderHostedAppWeb
         private static string AcsHostUrl = "accesscontrol.windows.net";
 
         //
-        // Hosted app configuration
+        // Hosted add-in configuration
         //
         private static readonly string ClientId = string.IsNullOrEmpty(WebConfigurationManager.AppSettings.Get("ClientId")) ? WebConfigurationManager.AppSettings.Get("HostedAppName") : WebConfigurationManager.AppSettings.Get("ClientId");
         private static readonly string IssuerId = string.IsNullOrEmpty(WebConfigurationManager.AppSettings.Get("IssuerId")) ? ClientId : WebConfigurationManager.AppSettings.Get("IssuerId");
@@ -672,7 +753,7 @@ namespace HelloProviderHostedAppWeb
             {
                 return String.Format(CultureInfo.InvariantCulture, "{0}/{1}@{2}", principalName, hostName, realm);
             }
-            
+
             return String.Format(CultureInfo.InvariantCulture, "{0}@{1}", principalName, realm);
         }
 
@@ -777,7 +858,7 @@ namespace HelloProviderHostedAppWeb
                 issuer: issuer,
                 audience: audience,
                 validFrom: DateTime.UtcNow,
-                validTo: DateTime.UtcNow.AddMinutes(TokenLifetimeMinutes),
+                validTo: DateTime.UtcNow.Add(HighTrustAccessTokenLifetime),
                 signingCredentials: SigningCredentials,
                 claims: actorClaims);
 
@@ -800,7 +881,7 @@ namespace HelloProviderHostedAppWeb
                 nameid, // outer token issuer should match actor token nameid
                 audience,
                 DateTime.UtcNow,
-                DateTime.UtcNow.AddMinutes(10),
+                DateTime.UtcNow.Add(HighTrustAccessTokenLifetime),
                 outerClaims);
 
             string accessToken = new JsonWebSecurityTokenHandler().WriteTokenAsString(jsonToken);
@@ -808,16 +889,6 @@ namespace HelloProviderHostedAppWeb
             #endregion Outer token
 
             return accessToken;
-        }
-
-        private static string EnsureTrailingSlash(string url)
-        {
-            if (!String.IsNullOrEmpty(url) && url[url.Length - 1] != '/')
-            {
-                return url + "/";
-            }
-            
-            return url;
         }
 
         #endregion
@@ -861,8 +932,8 @@ namespace HelloProviderHostedAppWeb
             private static JsonMetadataDocument GetMetadataDocument(string realm)
             {
                 string acsMetadataEndpointUrlWithRealm = String.Format(CultureInfo.InvariantCulture, "{0}?realm={1}",
-                                                                        GetAcsMetadataEndpointUrl(),
-                                                                        realm);
+                                                                       GetAcsMetadataEndpointUrl(),
+                                                                       realm);
                 byte[] acsMetadata;
                 using (WebClient webClient = new WebClient())
                 {
@@ -892,7 +963,7 @@ namespace HelloProviderHostedAppWeb
                 {
                     return s2sEndpoint.location;
                 }
-                
+
                 throw new Exception("Metadata document does not contain STS endpoint url");
             }
 
@@ -1067,12 +1138,6 @@ namespace HelloProviderHostedAppWeb
             return null;
         }
 
-    }
-
-    public class OAuthTokenPair
-    {
-        public string AccessToken;
-        public string RefreshToken;
     }
 
     /// <summary>

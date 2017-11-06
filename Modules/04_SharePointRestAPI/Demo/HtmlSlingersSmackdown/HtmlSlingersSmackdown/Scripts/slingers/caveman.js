@@ -48,7 +48,7 @@ function onGetCustomersComplete() {
 
     // add table rows
 
-    for (var customer = 1; customer < customers.length; customer++) {
+    for (var customer = 0; customer < customers.length; customer++) {
       var row = document.createElement("tr");
       var cell1 = document.createElement("td");
       cell1.appendChild(document.createTextNode(customers[customer].FirstName));

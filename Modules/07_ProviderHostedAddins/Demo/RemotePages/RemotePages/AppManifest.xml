@@ -4,7 +4,7 @@
      Name="RemotePages"
      ProductID="{61ca30e0-7eb7-4189-9dd5-acb36d28da35}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>Remote Pages</Title>
@@ -12,6 +12,6 @@
   </Properties>
 
   <AppPrincipal>
-    <Internal />
+    <RemoteWebApplication ClientId="*" />
   </AppPrincipal>
 </App>

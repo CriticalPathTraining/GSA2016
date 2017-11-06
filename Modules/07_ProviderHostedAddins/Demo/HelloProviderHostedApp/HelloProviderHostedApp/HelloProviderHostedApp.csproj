@@ -10,7 +10,7 @@
     <RootNamespace>HelloProviderHostedApp</RootNamespace>
     <AssemblyName>HelloProviderHostedApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
@@ -20,6 +20,8 @@
     <WorkflowPartId>{1836f41b-7ae0-4db9-a10a-0a78651ed592}</WorkflowPartId>
     <CspkgPartId>{e9b2cd51-9761-4369-ae5f-355b9cc17090}</CspkgPartId>
     <SqlPackagePartId>{de2b5394-fbda-4bda-ac31-08921b5be1a4}</SqlPackagePartId>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

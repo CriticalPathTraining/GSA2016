@@ -4,7 +4,7 @@
      Name="Server-SideCSOMDemo"
      ProductID="{dee7220b-8c52-4228-a4cb-48ebf10f5fb9}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>Server-Side CSOM Demo</Title>

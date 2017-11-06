@@ -20,7 +20,7 @@
     <WorkflowPartId>{b032970a-db09-45f2-a7f3-b688527b6836}</WorkflowPartId>
     <CspkgPartId>{99c818f5-02aa-435b-82b3-ecc611a62651}</CspkgPartId>
     <SqlPackagePartId>{15fd479a-ef8f-4223-8f17-5dd9a02c90f4}</SqlPackagePartId>
-    <MinimumOfficeToolsVersion>14.6</MinimumOfficeToolsVersion>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

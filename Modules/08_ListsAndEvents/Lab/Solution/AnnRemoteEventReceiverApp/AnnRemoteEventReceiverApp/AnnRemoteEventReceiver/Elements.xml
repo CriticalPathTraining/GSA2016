@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Receivers ListUrl="Lists/Announcements (RER)">
+  <Receivers ListUrl="Lists/Announcements">
     <Receiver>
       <Name>AnnRemoteEventReceiverItemAdding</Name>
       <Type>ItemAdding</Type>

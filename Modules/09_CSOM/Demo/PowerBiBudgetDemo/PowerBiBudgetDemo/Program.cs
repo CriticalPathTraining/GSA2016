@@ -10,8 +10,7 @@ namespace PowerBiBudgetDemo {
 
     class Program {
 
-        //static string siteUrl = ConfigurationManager.AppSettings["targetSiteUrl"];
-        static string siteUrl = "https://intranet.wingtip.com";
+         static string siteUrl = "https://dev.wingtip.com";
         static ClientContext clientContext = new ClientContext(siteUrl);
         static Site siteCollection = clientContext.Site;
         static Web site = clientContext.Web;

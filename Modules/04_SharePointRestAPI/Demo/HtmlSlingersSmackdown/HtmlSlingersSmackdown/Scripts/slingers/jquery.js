@@ -29,7 +29,7 @@ function onGetCustomersComplete(data) {
                    .append($("<td>").text("Email")));
 
   
-  for (var customer = 1; customer < customers.length; customer++) {
+  for (var customer = 0; customer < customers.length; customer++) {
     table.append($("<tr>")
                  .append($("<td>").text(customers[customer].FirstName))
                  .append($("<td>").text(customers[customer].Title))

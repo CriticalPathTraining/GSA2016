@@ -10,7 +10,7 @@
     <RootNamespace>RemotePages</RootNamespace>
     <AssemblyName>RemotePages</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
@@ -19,6 +19,8 @@
     <WspPartId>{dfef7e4b-c76c-4d88-a98f-619d0e713951}</WspPartId>
     <CspkgPartId>{5028e30c-f6ee-44ec-a5d0-854a6b384efc}</CspkgPartId>
     <SqlPackagePartId>{ed3f3844-4e86-4640-89e2-91936226f28c}</SqlPackagePartId>
+    <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,16 +64,6 @@
     </AppManifestFile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RemotePagesWeb\RemotePagesWeb.csproj">
-      <Project>{94A75CEF-FDEF-45A7-80CD-8939645666E3}</Project>
-      <Name>RemotePagesWeb</Name>
-      <Private>True</Private>
-      <RoleType>Web</RoleType>
-      <RoleName>RemotePagesWeb</RoleName>
-      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="AppPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d78317c2-40a5-4a46-a2a1-adc99cd7f176}</SharePointProjectItemId>
     </None>
@@ -81,6 +73,17 @@
     <None Include="CustomAction\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{feaaaa25-6242-4d9c-aabb-2df67d4b7295}</SharePointProjectItemId>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RemotePagesWeb\RemotePagesWeb.csproj">
+      <Project>{94A75CEF-FDEF-45A7-80CD-8939645666E3}</Project>
+      <Name>RemotePagesWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>RemotePagesWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

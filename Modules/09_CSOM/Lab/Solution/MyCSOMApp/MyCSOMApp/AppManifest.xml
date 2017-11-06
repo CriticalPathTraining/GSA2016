@@ -4,7 +4,7 @@
      Name="MyCSOMApp"
      ProductID="{ebc232ee-bc16-45eb-987e-ebb12000346b}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>My CSOM App</Title>

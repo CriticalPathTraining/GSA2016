@@ -10,7 +10,7 @@ namespace CsomLookupColumnDemo {
 
     static void Main() {
 
-      string url = "https://intranet.wingtip.com";
+      string url = "https://dev.wingtip.com";
       ClientContext clientContext = new ClientContext(url);
 
       Web site = clientContext.Web;

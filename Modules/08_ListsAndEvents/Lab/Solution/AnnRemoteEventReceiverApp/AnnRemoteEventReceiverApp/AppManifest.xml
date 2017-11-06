@@ -4,15 +4,15 @@
      Name="AnnRemoteEventReceiverApp"
      ProductID="{0466eff9-7b9d-43d6-9c5f-905a5b6b10b8}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>AnnRemoteEventReceiverApp</Title>
-    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/Lists/Announcements/?{StandardTokens}</StartPage>
   </Properties>
 
   <AppPrincipal>
-    <Internal/>
+    <RemoteWebApplication ClientId="*" />
   </AppPrincipal>
 
 </App>

@@ -6,7 +6,7 @@
      Name="HelloProvider-HostedApp"
      ProductID="{8d587998-fdbf-4d97-a739-613a647bed83}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0" >
+     SharePointMinVersion="16.0.0.0" >
 
   <Properties>
     <Title>Hello Provider-Hosted App</Title>
@@ -14,8 +14,7 @@
   </Properties>
 
   <AppPrincipal>
-    <!-- turn off external app authentication -->
-    <Internal /> 
+    <RemoteWebApplication ClientId="*" />
   </AppPrincipal>
   
 </App>
