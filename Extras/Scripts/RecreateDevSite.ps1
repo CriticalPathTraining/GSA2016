@@ -1,4 +1,7 @@
-﻿Add-PSSnapin "Microsoft.SharePoint.PowerShell"
+﻿# create new dev site at dev.wingtip.com
+# existinf site at same URL will be deleted
+
+Add-PSSnapin "Microsoft.SharePoint.PowerShell"
 
 $siteDomain = "dev.wingtip.com"
 $siteUrl = "https://$siteDomain"
